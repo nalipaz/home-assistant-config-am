@@ -15,4 +15,3 @@ sensor: !include config/sensors.yaml
 tts: !include config/tts.yaml
 group: !include groups.yaml
 automation: !include automations.yaml
-packages: !include_dir_named config/packages
