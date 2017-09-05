@@ -1,0 +1,35 @@
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  unit_system: imperial
+  time_zone: !secret time_zone
+introduction:
+frontend:
+config:
+http:
+  api_password: !secret http_password
+  base_url: !secret base_url
+updater:
+discovery:
+conversation:
+history:
+logbook:
+sun:
+zwave:
+  usb_path: /dev/ttyACM0
+sensor:
+  - platform: yr
+tts:
+  - platform: google
+group: !include groups.yaml
+automation: !include automations.yaml
+cover:
+  platform: opengarage
+  covers:
+    garage:
+      host: !secret garage_host
+      device_key: !secret garage_key
+      name: Garage Door
+
