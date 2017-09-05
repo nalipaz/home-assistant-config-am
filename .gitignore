@@ -1,0 +1,10 @@
+.HA_VERSION
+.uuid
+*.txt
+*.log
+*.db
+*.sqlite
+secrets.yaml
+zwave_device_config.yaml
+zwcfg_*.xml
+zwscene.xml
