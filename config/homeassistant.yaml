@@ -4,4 +4,3 @@ longitude: !secret longitude
 elevation: !secret elevation
 unit_system: imperial
 time_zone: !secret time_zone
-packages: !include_dir_named packages
