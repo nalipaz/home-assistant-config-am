@@ -3,8 +3,27 @@
     - platform: state
       entity_id: cover.garage_door
       to: 'open'
+- alias: Garage insecure
+  trigger:
+    - platform: state
+      entity_id: cover.garage_door
+      to: 'open'
       for:
-        minutes: 10
+        seconds: 10
   action:
     - service: cover.close_cover
       entity_id: cover.garage_door
+    - service: notify.html5
+      data_template:
+        message: >
+          {%- if states.automation.garage_open.attributes.last_triggered  -%}
+            {{ as_timestamp(now()) | timestamp_custom("%-I:%M %p", True) }}: The {{ states.cover.garage_door.attributes.friendly_name }} was opened at {{ as_timestamp(states.automation.garage_open.attributes.last_triggered) | timestamp_custom('%-I:%M %p', True) }} and left open for more than 10 minutes. It has now been secured.
+          {%- else -%}
+            {{ as_timestamp(now()) | timestamp_custom("%-I:%M %p", True) }}: The {{ states.cover.garage_door.attributes.friendly_name }} was opened and left open for more than 10 minutes. It has now been secured.
+          {%- endif -%}
+        title: "{{ states.cover.garage_door.attributes.friendly_name }}: Automatically secured"
+        target: ["heremedia_laptop", "nicholas_phone"]
+        data:
+          requireInteraction: True
+          tag: "garage-{{ as_timestamp(states.automation.garage_open.attributes.last_triggered) }}"
+          timestamp: "{{ as_timestamp(now()) | int }}"
