@@ -1,10 +1,10 @@
 - alias: Garage open
   trigger:
-    platform: state
-    entity_id: cover.garage_door
-    to: 'open'
-    for:
-      seconds: 30
+    - platform: state
+      entity_id: cover.garage_door
+      to: 'open'
+      for:
+        seconds: 30
   action:
-    enitity: cover.garage_door
-    service: cover.close_cover
+    - service: cover.close_cover
+      enitity: cover.garage_door
