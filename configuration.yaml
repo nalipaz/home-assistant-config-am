@@ -1,5 +1,4 @@
 homeassistant: !include config/homeassistant.yaml
-introduction:
 frontend:
 config:
 http: !include config/http.yaml
