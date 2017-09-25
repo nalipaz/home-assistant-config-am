@@ -13,4 +13,4 @@ zwave:
 tts: !include config/tts.yaml
 group: !include groups.yaml
 automation: !include_dir_merge_list config/automations/
-notify: !include notifications.yaml
+notify: !include config/notifications.yaml
