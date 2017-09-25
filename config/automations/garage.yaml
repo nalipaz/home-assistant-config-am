@@ -7,4 +7,4 @@
         seconds: 30
   action:
     - service: cover.close_cover
-      enitity: cover.garage_door
+      entity: cover.garage_door
