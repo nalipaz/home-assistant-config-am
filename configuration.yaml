@@ -12,4 +12,4 @@ zwave:
   usb_path: /dev/ttyACM0
 tts: !include config/tts.yaml
 group: !include groups.yaml
-automation: !include automations.yaml
+automation: !include_dir_merge_list config/automations/
