@@ -3,6 +3,7 @@
     - platform: state
       entity_id: cover.garage_door
       to: 'open'
+  action:
 - alias: Garage insecure
   trigger:
     - platform: state
