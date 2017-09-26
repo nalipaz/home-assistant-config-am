@@ -10,7 +10,7 @@
       entity_id: cover.garage_door
       to: 'open'
       for:
-        seconds: 10
+        minutes: 10
   action:
     - service: cover.close_cover
       entity_id: cover.garage_door
