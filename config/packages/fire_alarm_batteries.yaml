@@ -3,33 +3,33 @@ sensor:
     sensors:
       fire_alarm_batteries_master_bedroom:
         value_template: '{{states.fire_alarm_master_bedroom.attributes.battery_level}}'
-        friendly_name: Name
+        friendly_name: Master Bedroom
         unit_of_measure: '%'
       fire_alarm_batteries_second_bedroom:
         value_template: '{{states.fire_alarm_second_bedroom.attributes.battery_level}}'
-        friendly_name: Name
+        friendly_name: Second Bedroom
         unit_of_measure: '%'
       fire_alarm_batteries_third_bedroom:
         value_template: '{{states.fire_alarm_third_bedroom.attributes.battery_level}}'
-        friendly_name: Name
+        friendly_name: Third Bedroom
         unit_of_measure: '%'
       fire_alarm_batteries_fourth_bedroom:
         value_template: '{{states.fire_alarm_fourth_bedroom.attributes.battery_level}}'
-        friendly_name: Name
+        friendly_name: Fourth Bedroom
         unit_of_measure: '%'
       fire_alarm_batteries_hallway:
         value_template: '{{states.fire_alarm_hallway.attributes.battery_level}}'
-        friendly_name: Name
+        friendly_name: Hallway 1
         unit_of_measure: '%'
       fire_alarm_batteries_hallway_2:
         value_template: '{{states.fire_alarm_hallway_2.attributes.battery_level}}'
-        friendly_name: Name
+        friendly_name: Hallway 2
         unit_of_measure: '%'
       fire_alarm_batteries_hallway_3:
         value_template: '{{states.fire_alarm_hallway_3.attributes.battery_level}}'
-        friendly_name: Name
+        friendly_name: Hallway 3
         unit_of_measure: '%'
       fire_alarm_batteries_dining:
         value_template: '{{states.fire_alarm_dining.attributes.battery_level}}'
-        friendly_name: Name
+        friendly_name: Dining
         unit_of_measure: '%'
