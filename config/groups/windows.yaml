@@ -1,0 +1,12 @@
+windows:
+  name: Windows
+  entities:
+    - binary_sensor.window_common_bathroom_shower_sensor
+    - binary_sensor.window_fourth_bedroom_sensor
+    - binary_sensor.window_fourth_bedroom_sink_sensor
+    - binary_sensor.window_kitchen_sensor
+    - binary_sensor.window_master_bedroom_closet_sensor
+    - binary_sensor.window_master_bedroom_shower_sensor
+    - binary_sensor.window_master_bedroom_toilet_sensor
+    - binary_sensor.window_second_bedroom_sensor
+    - binary_sensor.window_third_bedroom_sensor

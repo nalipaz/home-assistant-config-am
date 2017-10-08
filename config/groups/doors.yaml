@@ -1,0 +1,11 @@
+doors:
+  name: Doors
+  entities:
+    - binary_sensor.door_fourth_bedroom_sensor
+    - binary_sensor.door_front_door_sensor
+    - binary_sensor.door_garage_interior_sensor
+    - binary_sensor.door_garage_side_sensor
+    - binary_sensor.door_rear_door_sensor
+    - binary_sensor.slider_fourth_bedroom_sensor
+    - binary_sensor.slider_living_room_sensor
+    - binary_sensor.slider_master_bedroom_sensor
