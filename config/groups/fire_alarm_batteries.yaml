@@ -1,5 +1,5 @@
-fire_alarms:
-  name: Fire Alarms
+fire_alarm_batteries:
+  name: Fire Alarm Batteries
   entities:
     - sensor.fire_alarm_batteries_master_bedroom
     - sensor.fire_alarm_batteries_second_bedroom
