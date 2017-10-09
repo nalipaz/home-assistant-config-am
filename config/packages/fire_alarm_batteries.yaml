@@ -33,3 +33,15 @@ sensor:
         value_template: '{{states["zwave"]["fire_alarm_dining"]["attributes"]["battery_level"]}}'
         friendly_name: Dining
         unit_of_measurement: '%'
+group:
+  fire_alarm_batteries:
+    name: Fire Alarm Batteries
+    entities:
+      - sensor.fire_alarm_batteries_master_bedroom
+      - sensor.fire_alarm_batteries_second_bedroom
+      - sensor.fire_alarm_batteries_third_bedroom
+      - sensor.fire_alarm_batteries_fourth_bedroom
+      - sensor.fire_alarm_batteries_hallway
+      - sensor.fire_alarm_batteries_hallway_2
+      - sensor.fire_alarm_batteries_hallway_3
+      - sensor.fire_alarm_batteries_dining
