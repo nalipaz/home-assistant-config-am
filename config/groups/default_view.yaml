@@ -6,3 +6,4 @@ soon_to_be_default_view:
     - group.doors
     - group.windows
     - group.garage
+    - group.thermostat
