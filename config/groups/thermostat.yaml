@@ -1,0 +1,5 @@
+thermostat:
+  name: Thermostat
+  entities:
+    - climate.thermostat_cooling_1
+    - climate.thermostat_heating_1
