@@ -21,10 +21,6 @@ sensor:
         value_template: '{{states["zwave"]["door_rear_door"]["attributes"]["battery_level"]}}'
         friendly_name: Rear Door
         unit_of_measurement: '%'
-      door_batteries_door_rear_door:
-        value_template: '{{states["zwave"]["door_rear_door"]["attributes"]["battery_level"]}}'
-        friendly_name: Rear Door
-        unit_of_measurement: '%'
       slider_batteries_slider_fourth_bedroom:
         value_template: '{{states["zwave"]["slider_fourth_bedroom"]["attributes"]["battery_level"]}}'
         friendly_name: Fourth Bedroom
