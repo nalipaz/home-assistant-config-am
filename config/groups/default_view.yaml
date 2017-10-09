@@ -1,0 +1,5 @@
+soon_to_be_default_view:
+  name: Home
+  view: yes
+  icon: mdi:home
+  entities:
