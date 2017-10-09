@@ -1,5 +1,6 @@
 homeassistant: !include config/homeassistant.yaml
 frontend:
+  themes: !include_dir_merge_named config/themes/
 config:
 http: !include config/http.yaml
 updater:
