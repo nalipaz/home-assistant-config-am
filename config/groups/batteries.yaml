@@ -1,0 +1,6 @@
+batteries:
+  name: Batteries
+  view: yes
+  icon: mdi:battery
+  entities:
+    - group.fire_alarm_batteries
