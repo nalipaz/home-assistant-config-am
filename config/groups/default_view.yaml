@@ -3,3 +3,6 @@ soon_to_be_default_view:
   view: yes
   icon: mdi:home
   entities:
+    - group.doors
+    - group.windows
+    - group.garage
