@@ -1,3 +1,6 @@
 [submodule "submodules/home-assistant-customizer"]
 	path = submodules/home-assistant-customizer
 	url = https://github.com/andrey-git/home-assistant-customizer.git
+[submodule "submodules/home-assistant-custom-ui"]
+	path = submodules/home-assistant-custom-ui
+	url = https://github.com/andrey-git/home-assistant-custom-ui.git

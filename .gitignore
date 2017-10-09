@@ -8,3 +8,6 @@ secrets.yaml
 zwave_device_config.yaml
 zwcfg_*.xml
 zwscene.xml
+customize.yaml
+html5_push_registrations.conf
+options.xml
