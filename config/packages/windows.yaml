@@ -1,0 +1,64 @@
+sensor:
+  - platform: template
+    sensors:
+      window_batteries_window_common_bathroom_shower:
+        value_template: '{{states["zwave"]["window_common_bathroom_shower"]["attributes"]["battery_level"]}}'
+        friendly_name: Common Bathroom Shower
+        unit_of_measurement: '%'
+      window_batteries_window_fourth_bedroom:
+        value_template: '{{states["zwave"]["window_fourth_bedroom"]["attributes"]["battery_level"]}}'
+        friendly_name: Fourth Bedroom
+        unit_of_measurement: '%'
+      window_batteries_window_fourth_bedroom_sink:
+        value_template: '{{states["zwave"]["window_fourth_bedroom_sink"]["attributes"]["battery_level"]}}'
+        friendly_name: Fourth Bedroom Sink
+        unit_of_measurement: '%'
+      window_batteries_window_kitchen:
+        value_template: '{{states["zwave"]["window_kitchen"]["attributes"]["battery_level"]}}'
+        friendly_name: Kitchen
+        unit_of_measurement: '%'
+      window_batteries_window_master_bedroom_closet:
+        value_template: '{{states["zwave"]["window_master_bedroom_closet"]["attributes"]["battery_level"]}}'
+        friendly_name: Master Bedroom Closet
+        unit_of_measurement: '%'
+      window_batteries_window_master_bedroom_shower:
+        value_template: '{{states["zwave"]["window_master_bedroom_shower"]["attributes"]["battery_level"]}}'
+        friendly_name: Master Bedroom Shower
+        unit_of_measurement: '%'
+      window_batteries_window_master_bedroom_toilet:
+        value_template: '{{states["zwave"]["window_master_bedroom_toilet"]["attributes"]["battery_level"]}}'
+        friendly_name: Master Bedroom Toilet
+        unit_of_measurement: '%'
+      window_batteries_window_second_bedroom:
+        value_template: '{{states["zwave"]["window_second_bedroom"]["attributes"]["battery_level"]}}'
+        friendly_name: Second Bedroom
+        unit_of_measurement: '%'
+      window_batteries_window_third_bedroom:
+        value_template: '{{states["zwave"]["window_third_bedroom"]["attributes"]["battery_level"]}}'
+        friendly_name: Third Bedroom
+        unit_of_measurement: '%'
+group:
+  windows:
+    name: Windows
+    entities:
+      - binary_sensor.window_common_bathroom_shower_sensor
+      - binary_sensor.window_fourth_bedroom_sensor
+      - binary_sensor.window_fourth_bedroom_sink_sensor
+      - binary_sensor.window_kitchen_sensor
+      - binary_sensor.window_master_bedroom_closet_sensor
+      - binary_sensor.window_master_bedroom_shower_sensor
+      - binary_sensor.window_master_bedroom_toilet_sensor
+      - binary_sensor.window_second_bedroom_sensor
+      - binary_sensor.window_third_bedroom_sensor
+  window_batteries:
+    name: Windows
+    entities:
+      - sensor.window_batteries_window_common_bathroom_shower
+      - sensor.window_batteries_window_fourth_bedroom
+      - sensor.window_batteries_window_fourth_bedroom_sink
+      - sensor.window_batteries_window_kitchen
+      - sensor.window_batteries_window_master_bedroom_closet
+      - sensor.window_batteries_window_master_bedroom_shower
+      - sensor.window_batteries_window_master_bedroom_toilet
+      - sensor.window_batteries_window_second_bedroom
+      - sensor.window_batteries_window_third_bedroom

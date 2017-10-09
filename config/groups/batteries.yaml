@@ -4,3 +4,6 @@ batteries:
   icon: mdi:battery
   entities:
     - group.fire_alarm_batteries
+    - group.door_batteries
+    - group.slider_batteries
+    - group.window_batteries
