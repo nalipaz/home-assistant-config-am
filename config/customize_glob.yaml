@@ -1,4 +1,4 @@
-sensor.fire_alarm_*:
+sensor.*_batteries_*:
   custom_ui_state_card: custom-ui
   templates:
-    theme: if (entity.state > 60) return 'default'; else if (entity.state > 20) return 'yellow'; else return 'red';
+    theme: if (entity.state > 99) return 'default'; else if (entity.state > 97) return 'yellow'; else return 'red';
