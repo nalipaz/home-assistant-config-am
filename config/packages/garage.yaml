@@ -37,3 +37,8 @@ automation:
             requireInteraction: True
             tag: "garage-{{ as_timestamp(states.automation.garage_open.attributes.last_triggered) }}"
             timestamp: "{{ as_timestamp(now()) | int }}"
+group:
+  garage:
+    name: Garage
+    entities:
+      - cover.garage_door
