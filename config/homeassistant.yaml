@@ -11,7 +11,7 @@ customize:
     custom_ui_state_card: state-card-custom-ui
     templates:
       rgb_color: >-
-        ['255','0','0']
+      ['{{255|int}}','{{0|int}}','{{0|int}}']
       theme: "return (entity.state < 97 && entity.state > 0) ? 'red' : (entity.state < 99 && entity.state > 97) ? 'yellow' : 'default';"
   sensor.fire_alarm_batteries_fourth_bedroom:
     custom_ui_state_card: state-card-custom-ui
