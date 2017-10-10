@@ -2,4 +2,4 @@
   custom_ui_state_card: state-card-custom-ui
   templates:
     theme: >
-      return (entity.state < 97 && entity.state > 0) ? 'red' : (entity.state < 99 && entity.state > 97) ? 'yellow' : 'default';
+      return (entity.state < 97) ? 'red' : 'yellow';
