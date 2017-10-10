@@ -1,4 +1,13 @@
 "sensor.*_batteries_*":
   custom_ui_state_card: state-card-custom-ui
   templates:
-    theme: if (entity.state >= 99) return 'default'; elseif (entity.state >= 97) return 'yellow'; else return 'red';
+    theme: >
+      if (entity.state >= 99) {
+        return 'default';
+      }
+      else if (entity.state >= 97) {
+        return 'yellow';
+      }
+      else {
+        return 'red';
+      }
