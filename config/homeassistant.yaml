@@ -6,3 +6,16 @@ unit_system: imperial
 time_zone: !secret time_zone
 packages: !include_dir_named packages
 customize_glob: !include customize_glob.yaml
+customize:
+  "sensor.fire_alarm_batteries_third_bedroom":
+    custom_ui_state_card: state-card-custom-ui
+    templates:
+      theme: "return (entity.state < 97 && entity.state > 0) ? 'red' : (entity.state < 99 && entity.state > 97) ? 'yellow' : 'default';"
+  "sensor.fire_alarm_batteries_fourth_bedroom":
+    custom_ui_state_card: state-card-custom-ui
+    templates:
+      theme: "return (entity.state < 97 && entity.state > 0) ? 'red' : (entity.state < 99 && entity.state > 97) ? 'yellow' : 'default';"
+  "sensor.fire_alarm_batteries_hallway":
+    custom_ui_state_card: state-card-custom-ui
+    templates:
+      theme: "return (entity.state < 97 && entity.state > 0) ? 'red' : (entity.state < 99 && entity.state > 97) ? 'yellow' : 'default';"
