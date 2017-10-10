@@ -15,6 +15,7 @@ sensor:
             Unknown
           {%- endif %}
         friendly_name: Master Bedroom
+        rgb_color: [255,0,0]
       fire_alarm_second_bedroom:
         value_template: >-
           {%- if is_state("sensor.fire_alarm_second_bedroom_alarm_type", "13") %}
