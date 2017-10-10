@@ -10,7 +10,8 @@ customize:
   sensor.fire_alarm_batteries_third_bedroom:
     custom_ui_state_card: state-card-custom-ui
     templates:
-      rgb_color: "return '[255,0,0]'"
+      rgb_color: >-
+        ['255','0','0']
       theme: "return (entity.state < 97 && entity.state > 0) ? 'red' : (entity.state < 99 && entity.state > 97) ? 'yellow' : 'default';"
   sensor.fire_alarm_batteries_fourth_bedroom:
     custom_ui_state_card: state-card-custom-ui
