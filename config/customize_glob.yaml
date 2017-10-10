@@ -1,4 +1,4 @@
-"sensor.*_batteries_*":
+"sensor.fire_alarm_batteries_*":
   custom_ui_state_card: state-card-custom-ui
   templates:
     theme: >
