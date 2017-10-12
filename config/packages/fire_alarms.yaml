@@ -241,7 +241,6 @@ automation:
         entity_id: "{{trigger.entity_id}}"
   - alias: Fire Alarm Battery Poor
     trigger:
-    trigger:
       - platform: numeric_state
         entity_id: sensor.fire_alarm_batteries_master_bedroom
         below: 97
