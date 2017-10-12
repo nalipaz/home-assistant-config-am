@@ -5,9 +5,10 @@
       above: 97.9
   action:
     service: customizer.set_attribute
-    attribute: rgb_color
-    value: "[0, 0, 0]"
-    entity_id: sensor.fire_alarm_batteries_master_bedroom
+    data:
+      attribute: rgb_color
+      value: "[0, 0, 0]"
+      entity_id: sensor.fire_alarm_batteries_master_bedroom
 #- alias: Fire Alarm Battery Fair
 #  trigger:
 #    - platform: numeric_state
