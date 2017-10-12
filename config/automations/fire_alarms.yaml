@@ -14,7 +14,7 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.fire_alarm_batteries_master_bedroom, sensor.fire_alarm_batteries_second_bedroom, sensor.fire_alarm_batteries_third_bedroom, sensor.fire_alarm_batteries_fourth_bedroom, sensor.fire_alarm_batteries_hallway, sensor.fire_alarm_batteries_hallway_2, sensor.fire_alarm_batteries_hallway_3, sensor.fire_alarm_batteries_dining
-      value_template: '{{ state.value|int }}'
+      value_template: '{{ state.state|int }}'
       above: 96.9
       below: 98
   action:
