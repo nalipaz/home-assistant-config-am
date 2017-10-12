@@ -6,7 +6,7 @@
   action:
     service: customizer.set_attribute
     attribute: rgb_color
-    value: [0, 0, 0]
+    value: "[0, 0, 0]"
     entity_id: "{{trigger.entity_id}}"
 #- alias: Fire Alarm Battery Fair
 #  trigger:
