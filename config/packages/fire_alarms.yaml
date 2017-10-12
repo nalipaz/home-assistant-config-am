@@ -197,7 +197,7 @@ automation:
         above: 97.9
     action:
       service: customizer.set_attribute
-      rgb_color: [0, 0, 0]
+      rgb_color: "[0, 0, 0]"
       data_template:
         entity_id: "{{trigger.entity_id}}"
   - alias: Fire Alarm Battery Fair
@@ -236,7 +236,7 @@ automation:
         below: 98
     action:
       service: customizer.set_attribute
-      rgb_color: [255, 255, 0]
+      rgb_color: "[255, 255, 0]"
       data_template:
         entity_id: "{{trigger.entity_id}}"
   - alias: Fire Alarm Battery Poor
@@ -267,6 +267,6 @@ automation:
         below: 97
     action:
       service: customizer.set_attribute
-      rgb_color: [255, 0, 0]
+      rgb_color: "[255, 0, 0]"
       data_template:
         entity_id: "{{trigger.entity_id}}"
