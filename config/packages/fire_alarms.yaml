@@ -179,7 +179,6 @@ automation:
       rgb_color: [0, 0, 0]
       data_template:
         entity_id: "{{trigger.entity_id}}"
-automation:
   - alias: Fire Alarm Battery Fair
     trigger:
       - platform: numeric_state
@@ -191,7 +190,6 @@ automation:
       rgb_color: [255, 255, 0]
       data_template:
         entity_id: "{{trigger.entity_id}}"
-automation:
   - alias: Fire Alarm Battery Poor
     trigger:
       - platform: numeric_state
