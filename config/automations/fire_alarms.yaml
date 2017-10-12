@@ -20,6 +20,7 @@
     data:
       attribute: rgb_color
       value: "[255, 255, 0]"
+    data_template:
       entity_id: "{{trigger.entity_id}}"
 - alias: Fire Alarm Battery Critical
   trigger:
