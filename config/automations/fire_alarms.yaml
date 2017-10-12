@@ -13,8 +13,8 @@
 - alias: Fire Alarm Battery Fair
   trigger:
     - platform: numeric_state
-      entity_id: zwave.fire_alarm_master_bedroom, zwave.fire_alarm_second_bedroom, zwave.fire_alarm_third_bedroom, zwave.fire_alarm_fourth_bedroom, zwave.fire_alarm_hallway, zwave.fire_alarm_hallway_2, zwave.fire_alarm_hallway_3, zwave.fire_alarm_dining
-      value_template: '{{ state.attributes.battery|int }}'
+      entity_id: sensor.fire_alarm_batteries_master_bedroom, sensor.fire_alarm_batteries_second_bedroom, sensor.fire_alarm_batteries_third_bedroom, sensor.fire_alarm_batteries_fourth_bedroom, sensor.fire_alarm_batteries_hallway, sensor.fire_alarm_batteries_hallway_2, sensor.fire_alarm_batteries_hallway_3, sensor.fire_alarm_batteries_dining
+      value_template: '{{ state.value|int }}'
       above: 96.9
       below: 98
   action:
