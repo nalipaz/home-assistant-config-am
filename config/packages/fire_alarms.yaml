@@ -158,7 +158,7 @@ group:
       - sensor.fire_alarm_hallway_3
       - sensor.fire_alarm_dining
   fire_alarm_batteries:
-    name: Fire Alarm Batteries
+    name: Fire Alarms
     entities:
       - sensor.fire_alarm_batteries_master_bedroom
       - sensor.fire_alarm_batteries_second_bedroom
