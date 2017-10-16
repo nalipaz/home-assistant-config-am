@@ -56,6 +56,6 @@ group:
   slider_batteries:
     name: Sliding Doors
     entities:
-      - sensor.slider_batteries_sliderfourth_bedroom
+      - sensor.slider_batteries_slider_fourth_bedroom
       - sensor.slider_batteries_slider_living_room
       - sensor.slider_batteries_slider_master_bedroom
