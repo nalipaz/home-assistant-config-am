@@ -1,0 +1,27 @@
+automation:
+  - alias: "Front Door"
+    trigger:
+      platform: state
+      entity_id: sensor.front_door
+    condition:
+      - condition: and
+        conditions:
+          - condition: template
+            value_template: "{{ trigger.to_state.state != 'None' }}"
+    action:
+      - service: notify.html5
+        data_template:
+          message: '{{ as_timestamp(now()) | int | timestamp_custom("%-I:%M %p", True) }}: The Front Door is now changed'
+          title: 'Maravilla: Front Door'
+          data:
+            requireInteraction: True
+sensor:
+  - platform: mqtt
+    state_topic: august/Front-Door
+    name: Front Door
+  - platform: mqtt
+    state_topic: august/Rear-Door
+    name: Front Door
+  - platform: mqtt
+    state_topic: august/4th-Bedroom
+    name: Front Door
