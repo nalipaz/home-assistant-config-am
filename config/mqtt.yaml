@@ -4,4 +4,5 @@ keepalive: 60
 username: !secret mqtt_username
 password: !secret mqtt_password
 protocol: 3.1
-certificate: !secret mqtt_certificate
+client_cert: !secret mqtt_client_cert
+client_key: !secret mqtt_client_key
