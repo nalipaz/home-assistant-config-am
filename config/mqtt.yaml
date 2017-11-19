@@ -3,6 +3,6 @@ port: !secret mqtt_port
 keepalive: 60
 username: !secret mqtt_username
 password: !secret mqtt_password
-protocol: 3.1
+protocol: !secret mqtt_protocol
 certificate: !secret mqtt_certificate
 tls_insecure: !secret mqtt_tls
