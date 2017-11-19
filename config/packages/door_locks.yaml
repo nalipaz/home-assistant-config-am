@@ -1,8 +1,8 @@
 automation:
-  - alias: "Front Door"
+  - alias: "Front Door Lock"
     trigger:
       platform: state
-      entity_id: sensor.front_door
+      entity_id: sensor.front_door_lock
     condition:
       - condition: and
         conditions:
@@ -18,10 +18,10 @@ automation:
 sensor:
   - platform: mqtt
     state_topic: august/Front-Door
-    name: Front Door
+    name: Front Door Lock
   - platform: mqtt
     state_topic: august/Rear-Door
-    name: Front Door
+    name: Rear Door Lock
   - platform: mqtt
     state_topic: august/4th-Bedroom
-    name: Front Door
+    name: 4th Bedroom Lock
