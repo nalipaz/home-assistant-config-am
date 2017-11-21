@@ -6,7 +6,7 @@ automation:
     action:
       - service: notify.html5
         data_template:
-          message: '{{ trigger.payload_json.state }}'
+          message: 'The {{ trigger.payload_json.lock }} was {{ trigger.payload_json.state }} by {{ trigger.payload_json.user }}.'
           title: 'Maravilla: {{ trigger.payload_json.lock }}'
           data:
             requireInteraction: True
