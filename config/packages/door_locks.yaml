@@ -15,6 +15,12 @@ automation:
     action:
       - service: notify.html5
         data_template:
+          message: 'Door state changed'
+          title: 'Maravilla: {{ trigger.to_state.name }}'
+          data:
+            requireInteraction: True
+      - service: notify.html5
+        data_template:
           message: '{{ as_timestamp(trigger.payload.time) | int | timestamp_custom("%-I:%M %p", True) }}: The {{ trigger.payload_json.lock }} has been {{ trigger.payload_json.state }} by {{ trigger.payload.user }}.'
           title: 'Maravilla: {{ trigger.to_state.name }}'
           icon: '{{ trigger.payload_json.user-photo }}'
