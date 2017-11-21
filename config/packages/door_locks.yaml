@@ -1,12 +1,8 @@
 automation:
-  - alias: "Front Door Lock"
+  - alias: "Door Locks"
     trigger:
       - platform: mqtt
-        topic: "august/Front-Door"
-      - platform: mqtt
-        topic: "august/Rear-Door"
-      - platform: mqtt
-        topic: "august/4th-Bedroom"
+        topic: "august/+"
     action:
       - service: notify.html5
         data_template:
@@ -16,9 +12,8 @@ automation:
             requireInteraction: True
       - service: notify.html5
         data_template:
-          message: '{{ trigger.payload_json.time }}: The {{ trigger.payload_json.lock }} has been {{ trigger.payload_json.state }} by {{ trigger.payload.user }}.'
-          title: 'Maravilla: {{ trigger.payload_json.lock }}'
-          icon: '{{ trigger.payload_json.user-photo }}'
+          message: '{{ trigger.payload_json }}'
+          title: 'Maravilla: lock changed'
           data:
             requireInteraction: True
 sensor:
