@@ -1,12 +1,8 @@
 automation:
   - alias: "Front Door Lock"
     trigger:
-      - platform: state
-        entity_id: sensor.door_lock_front
-      - platform: state
-        entity_id: sensor.door_lock_rear
-      - platform: state
-        entity_id: sensor.door_lock_4th_bedroom
+      - platform: mqtt
+        topic: "august/#"
     condition:
       - condition: and
         conditions:
@@ -21,8 +17,8 @@ automation:
             requireInteraction: True
       - service: notify.html5
         data_template:
-          message: '{{ as_timestamp(trigger.payload.time) | int | timestamp_custom("%-I:%M %p", True) }}: The {{ trigger.payload_json.lock }} has been {{ trigger.payload_json.state }} by {{ trigger.payload.user }}.'
-          title: 'Maravilla: {{ trigger.to_state.name }}'
+          message: '{{ as_timestamp(trigger.payload_json.time) | int | timestamp_custom("%-I:%M %p", True) }}: The {{ trigger.payload_json.lock }} has been {{ trigger.payload_json.state }} by {{ trigger.payload.user }}.'
+          title: 'Maravilla: {{ trigger.payload_json.lock }}'
           icon: '{{ trigger.payload_json.user-photo }}'
           data:
             requireInteraction: True
