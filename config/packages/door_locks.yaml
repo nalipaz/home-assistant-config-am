@@ -1,8 +1,12 @@
 automation:
   - alias: "Front Door Lock"
     trigger:
-      platform: state
-      entity_id: sensor.front_door_lock
+      - platform: state
+        entity_id: sensor.door_lock_front
+      - platform: state
+        entity_id: sensor.door_lock_rear
+      - platform: state
+        entity_id: sensor.door_lock_4th_bedroom
     condition:
       - condition: and
         conditions:
@@ -11,17 +15,18 @@ automation:
     action:
       - service: notify.html5
         data_template:
-          message: '{{ as_timestamp(now()) | int | timestamp_custom("%-I:%M %p", True) }}: The Front Door is now changed'
-          title: 'Maravilla: Front Door'
+          message: '{{ as_timestamp(trigger.payload.time) | int | timestamp_custom("%-I:%M %p", True) }}: The {{ trigger.payload_json.lock }} has been {{ trigger.payload_json.state }} by {{ trigger.payload.user }}.'
+          title: 'Maravilla: {{ trigger.to_state.name }}'
+          icon: '{{ trigger.payload_json.user-photo }}'
           data:
             requireInteraction: True
 sensor:
   - platform: mqtt
     state_topic: august/Front-Door
-    name: Front Door Lock
+    name: door_lock_front
   - platform: mqtt
     state_topic: august/Rear-Door
-    name: Rear Door Lock
+    name: door_lock_rear
   - platform: mqtt
     state_topic: august/4th-Bedroom
-    name: 4th Bedroom Lock
+    name: door_lock_4th_bedroom
