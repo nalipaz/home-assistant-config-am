@@ -7,16 +7,11 @@ automation:
         topic: "august/Rear-Door"
       - platform: mqtt
         topic: "august/4th-Bedroom"
-    condition:
-      - condition: and
-        conditions:
-          - condition: template
-            value_template: "{{ trigger.to_state.state != 'None' }}"
     action:
       - service: notify.html5
         data_template:
           message: 'Door state changed'
-          title: 'Maravilla: {{ trigger.to_state.name }}'
+          title: 'Maravilla: State changed'
           data:
             requireInteraction: True
       - service: notify.html5
