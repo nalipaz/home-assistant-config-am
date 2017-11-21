@@ -12,7 +12,7 @@ automation:
             requireInteraction: True
       - service: notify.html5
         data_template:
-          message: '{{ trigger.payload_json }}'
+          message: '{{ trigger.payload_json.lock }}'
           title: 'Maravilla: lock changed'
           data:
             requireInteraction: True
