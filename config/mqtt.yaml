@@ -1,8 +1,3 @@
 broker: !secret mqtt_broker
-port: !secret mqtt_port
-keepalive: 60
 username: !secret mqtt_username
 password: !secret mqtt_password
-protocol: !secret mqtt_protocol
-certificate: !secret mqtt_certificate
-tls_insecure: !secret mqtt_tls
