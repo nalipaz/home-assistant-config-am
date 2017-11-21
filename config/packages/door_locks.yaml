@@ -6,14 +6,8 @@ automation:
     action:
       - service: notify.html5
         data_template:
-          message: 'Door state changed'
-          title: 'Maravilla: State changed'
-          data:
-            requireInteraction: True
-      - service: notify.html5
-        data_template:
-          message: '{{ trigger.payload_json.lock }}'
-          title: 'Maravilla: lock changed'
+          message: '{{ trigger.payload_json.state }}'
+          title: 'Maravilla: {{ trigger.payload_json.lock }}'
           data:
             requireInteraction: True
 sensor:
