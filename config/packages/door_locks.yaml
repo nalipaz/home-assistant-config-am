@@ -7,7 +7,7 @@ automation:
       - service: notify.html5
         data_template:
           message: >
-            The {{ trigger.payload_json.lock }} was {{ trigger.payload_json.state }} by {{ trigger.payload_json.user }} on {{ trigger.payload_json.time | timestamp_custom('%I:%M %p', True) }}.
+            The {{ trigger.payload_json.lock }} was {{ trigger.payload_json.state }} by {{ trigger.payload_json.user }} at {{ trigger.payload_json.time | timestamp_custom('%I:%M %p', True) }}.
           title: 'Maravilla: {{ trigger.payload_json.lock }}'
           data:
             requireInteraction: True
