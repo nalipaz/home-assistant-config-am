@@ -15,9 +15,34 @@ sensor:
   - platform: mqtt
     state_topic: august/Front-Door
     name: door_lock_front
+    value_template: >
+      {%- if value_json.state == 'locked' -%}
+        on
+      {%- else -%}
+        off
+      {%- endif -%}
   - platform: mqtt
     state_topic: august/Rear-Door
     name: door_lock_rear
+    value_template: >
+      {%- if value_json.state == 'locked' -%}
+        on
+      {%- else -%}
+        off
+      {%- endif -%}
   - platform: mqtt
     state_topic: august/4th-Bedroom
     name: door_lock_4th_bedroom
+    value_template: >
+      {%- if value_json.state == 'locked' -%}
+        on
+      {%- else -%}
+        off
+      {%- endif -%}
+group:
+  door_locks:
+    name: Door Locks
+    entities:
+      - sensor.door_lock_front
+      - sensor.door_lock_rear
+      - sensor.door_lock_4th_bedroom
