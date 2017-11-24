@@ -5,38 +5,164 @@ sensor:
         value_template: '{{states["zwave"]["window_common_bathroom_shower"]["attributes"]["battery_level"]}}'
         friendly_name: Common Bathroom Shower
         unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["window_common_bathroom_shower"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
       window_batteries_window_fourth_bedroom:
         value_template: '{{states["zwave"]["window_fourth_bedroom"]["attributes"]["battery_level"]}}'
         friendly_name: Fourth Bedroom
         unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["window_fourth_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
       window_batteries_window_fourth_bedroom_sink:
         value_template: '{{states["zwave"]["window_fourth_bedroom_sink"]["attributes"]["battery_level"]}}'
         friendly_name: Fourth Bedroom Sink
         unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["window_fourth_bedroom_sink"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
       window_batteries_window_kitchen:
         value_template: '{{states["zwave"]["window_kitchen"]["attributes"]["battery_level"]}}'
         friendly_name: Kitchen
         unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["window_kitchen"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
       window_batteries_window_master_bedroom_closet:
         value_template: '{{states["zwave"]["window_master_bedroom_closet"]["attributes"]["battery_level"]}}'
         friendly_name: Master Bedroom Closet
         unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["window_master_bedroom_closet"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
       window_batteries_window_master_bedroom_shower:
         value_template: '{{states["zwave"]["window_master_bedroom_shower"]["attributes"]["battery_level"]}}'
         friendly_name: Master Bedroom Shower
+        icon_template: >-
+          {% set level = ((states["zwave"]["window_master_bedroom_shower"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
         unit_of_measurement: '%'
       window_batteries_window_master_bedroom_toilet:
         value_template: '{{states["zwave"]["window_master_bedroom_toilet"]["attributes"]["battery_level"]}}'
         friendly_name: Master Bedroom Toilet
         unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["window_master_bedroom_toilet"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
       window_batteries_window_second_bedroom:
         value_template: '{{states["zwave"]["window_second_bedroom"]["attributes"]["battery_level"]}}'
         friendly_name: Second Bedroom
         unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["window_second_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
       window_batteries_window_third_bedroom:
         value_template: '{{states["zwave"]["window_third_bedroom"]["attributes"]["battery_level"]}}'
         friendly_name: Third Bedroom
         unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["window_third_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
 group:
   windows:
     name: Windows
