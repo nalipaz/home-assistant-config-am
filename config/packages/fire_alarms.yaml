@@ -124,7 +124,7 @@ sensor:
             mdi:battery-
             {%- if ((states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 70 -%}
               60
-            {%- elseif ((states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 50 -%}
+            {%- elif ((states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 50 -%}
               40
             {%- else -%}
               outline
@@ -141,7 +141,7 @@ sensor:
             mdi:battery-
             {%- if ((states["zwave"]["fire_alarm_second_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 70 -%}
               60
-            {%- elseif ((states["zwave"]["fire_alarm_second_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 50 -%}
+            {%- elif ((states["zwave"]["fire_alarm_second_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 50 -%}
               40
             {%- else -%}
               outline
