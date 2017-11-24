@@ -46,7 +46,7 @@ sensor:
         entity_id: sensor.door_lock_front
         value_template: sensor.door_lock_front.state
         icon_template: >
-          {%- if states(sensor.door_lock_front) == 'locked' -%}
+          {%- if states('sensor.door_lock_front') == 'locked' -%}
             mdi:lock
           {%- else -%}
             mdi:lock-open
@@ -56,7 +56,7 @@ sensor:
         entity_id: sensor.door_lock_rear
         value_template: sensor.door_lock_rear.state
         icon_template: >
-          {%- if states(sensor.door_lock_rear) == 'locked' -%}
+          {%- if states('sensor.door_lock_rear') == 'locked' -%}
             mdi:lock
           {%- else -%}
             mdi:lock-open
@@ -66,7 +66,7 @@ sensor:
         entity_id: sensor.door_lock_4th_bedroom
         value_template: sensor.door_lock_4th_bedroom.state
         icon_template: >
-          {%- if states(sensor.door_lock_4th_bedroom) == 'locked' -%}
+          {%- if states('sensor.door_lock_4th_bedroom') == 'locked' -%}
             mdi:lock
           {%- else -%}
             mdi:lock-open
