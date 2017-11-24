@@ -39,10 +39,42 @@ sensor:
       {%- else -%}
         unlocked
       {%- endif -%}
+  - platform: template
+    sensors:
+      door_lock_front_state:
+        friendly_name: Front Door
+        entity_id: sensor.door_lock_front
+        value_template: sensor.door_lock_front.state
+        icon_template: >
+          {%- if states(sensor.door_lock_front) == 'locked' -%}
+            mdi:lock
+          {%- else -%}
+            mdi:lock-open
+          {%- endif -%}
+      door_lock_rear_state:
+        friendly_name: Rear Door
+        entity_id: sensor.door_lock_rear
+        value_template: sensor.door_lock_rear.state
+        icon_template: >
+          {%- if states(sensor.door_lock_rear) == 'locked' -%}
+            mdi:lock
+          {%- else -%}
+            mdi:lock-open
+          {%- endif -%}
+      door_lock_4th_bedroom_state:
+        friendly_name: 4th Bedroom
+        entity_id: sensor.door_lock_4th_bedroom
+        value_template: sensor.door_lock_4th_bedroom.state
+        icon_template: >
+          {%- if states(sensor.door_lock_4th_bedroom) == 'locked' -%}
+            mdi:lock
+          {%- else -%}
+            mdi:lock-open
+          {%- endif -%}
 group:
   door_locks:
     name: Door Locks
     entities:
-      - sensor.door_lock_front
-      - sensor.door_lock_rear
-      - sensor.door_lock_4th_bedroom
+      - sensor.door_lock_front_state
+      - sensor.door_lock_rear_state
+      - sensor.door_lock_4th_bedroom_state
