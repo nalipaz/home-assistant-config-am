@@ -114,8 +114,7 @@ sensor:
           {%- endif %}
         friendly_name: Dining Room
       fire_alarm_batteries_master_bedroom:
-        value_template: '{{states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]}}'
-        icon_template: '{{ ((states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int }}'
+        value_template: '{{((states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int}}'
         friendly_name: Master Bedroom
         unit_of_measurement: '%'
       fire_alarm_batteries_second_bedroom:
