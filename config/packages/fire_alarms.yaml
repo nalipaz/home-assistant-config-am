@@ -11,7 +11,7 @@ sensor:
             Carbon Monoxide!
           {%- elif is_state("sensor.fire_alarm_master_bedroom_alarm_type", "12") %}
             Testing
-          {% else %}
+          {%- else -%}
             Unknown
           {%- endif %}
         friendly_name: Master Bedroom
@@ -115,6 +115,7 @@ sensor:
         friendly_name: Dining Room
       fire_alarm_batteries_master_bedroom:
         value_template: '{{states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]}}'
+        icon_template: '{{ ((states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int }}'
         friendly_name: Master Bedroom
         unit_of_measurement: '%'
       fire_alarm_batteries_second_bedroom:
