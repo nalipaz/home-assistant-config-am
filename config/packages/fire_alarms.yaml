@@ -119,15 +119,15 @@ sensor:
         unit_of_measurement: '%'
         icon_template: >-
           {% set level = ((states["zwave"]["fire_alarm_master"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
-            mdi:battery
+            mdi:
           {%- if level > 90 -%}
-
+            battery
           {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
-            -{{ level }}
+            battery-{{ level }}
           {%- elif level > 50 -%}
-            -60
+            battery-60
           {%- elif level > 30 -%}
-            -40
+            battery-40
           {%- else -%}
             -alert
           {%- endif -%}
@@ -137,15 +137,15 @@ sensor:
         unit_of_measurement: '%'
         icon_template: >-
           {% set level = ((states["zwave"]["fire_alarm_second_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
-            mdi:battery
+            mdi:
           {%- if level > 90 -%}
-
+            battery
           {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
-            -{{ level }}
+            battery-{{ level }}
           {%- elif level > 50 -%}
-            -60
+            battery-60
           {%- elif level > 30 -%}
-            -40
+            battery-40
           {%- else -%}
             -alert
           {%- endif -%}
@@ -155,15 +155,15 @@ sensor:
         unit_of_measurement: '%'
         icon_template: >-
           {% set level = ((states["zwave"]["fire_alarm_third_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
-            mdi:battery
+            mdi:
           {%- if level > 90 -%}
-
+            battery
           {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
-            -{{ level }}
+            battery-{{ level }}
           {%- elif level > 50 -%}
-            -60
+            battery-60
           {%- elif level > 30 -%}
-            -40
+            battery-40
           {%- else -%}
             -alert
           {%- endif -%}
@@ -173,15 +173,15 @@ sensor:
         unit_of_measurement: '%'
         icon_template: >-
           {% set level = ((states["zwave"]["fire_alarm_fourth_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
-            mdi:battery
+            mdi:
           {%- if level > 90 -%}
-
+            battery
           {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
-            -{{ level }}
+            battery-{{ level }}
           {%- elif level > 50 -%}
-            -60
+            battery-60
           {%- elif level > 30 -%}
-            -40
+            battery-40
           {%- else -%}
             -alert
           {%- endif -%}
@@ -191,15 +191,15 @@ sensor:
         unit_of_measurement: '%'
         icon_template: >-
           {% set level = ((states["zwave"]["fire_alarm_hallway"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
-            mdi:battery
+            mdi:
           {%- if level > 90 -%}
-
+            battery
           {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
-            -{{ level }}
+            battery-{{ level }}
           {%- elif level > 50 -%}
-            -60
+            battery-60
           {%- elif level > 30 -%}
-            -40
+            battery-40
           {%- else -%}
             -alert
           {%- endif -%}
@@ -209,15 +209,15 @@ sensor:
         unit_of_measurement: '%'
         icon_template: >-
           {% set level = ((states["zwave"]["fire_alarm_hallway_2_2"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
-            mdi:battery
+            mdi:
           {%- if level > 90 -%}
-
+            battery
           {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
-            -{{ level }}
+            battery-{{ level }}
           {%- elif level > 50 -%}
-            -60
+            battery-60
           {%- elif level > 30 -%}
-            -40
+            battery-40
           {%- else -%}
             -alert
           {%- endif -%}
@@ -227,15 +227,15 @@ sensor:
         unit_of_measurement: '%'
         icon_template: >-
           {% set level = ((states["zwave"]["fire_alarm_hallway_3"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
-            mdi:battery
+            mdi:
           {%- if level > 90 -%}
-
+            battery
           {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
-            -{{ level }}
+            battery-{{ level }}
           {%- elif level > 50 -%}
-            -60
+            battery-60
           {%- elif level > 30 -%}
-            -40
+            battery-40
           {%- else -%}
             -alert
           {%- endif -%}
@@ -245,15 +245,15 @@ sensor:
         unit_of_measurement: '%'
         icon_template: >-
           {% set level = ((states["zwave"]["fire_alarm_dining"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
-            mdi:battery
+            mdi:
           {%- if level > 90 -%}
-
+            battery
           {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
-            -{{ level }}
+            battery-{{ level }}
           {%- elif level > 50 -%}
-            -60
+            battery-60
           {%- elif level > 30 -%}
-            -40
+            battery-40
           {%- else -%}
             -alert
           {%- endif -%}
