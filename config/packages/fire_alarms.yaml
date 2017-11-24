@@ -117,35 +117,26 @@ sensor:
         value_template: '{{states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]}}'
         friendly_name: Master Bedroom
         unit_of_measurement: '%'
-        icon_template: >-
-          {%- if ((states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 100 -%}
-            mdi:battery
-          {%- else -%}
-            mdi:battery-
-            {%- if ((states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 70 -%}
-              60
-            {%- elif ((states["zwave"]["fire_alarm_master_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 50 -%}
-              40
-            {%- else -%}
-              outline
-            {%- endif -%}
-          {%- endif -%}
       fire_alarm_batteries_second_bedroom:
         value_template: '{{states["zwave"]["fire_alarm_second_bedroom"]["attributes"]["battery_level"]}}'
         friendly_name: Second Bedroom
         unit_of_measurement: '%'
         icon_template: >-
-          {%- if ((states["zwave"]["fire_alarm_second_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 100 -%}
+          {% set level = ((states["zwave"]["fire_alarm_second_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
             mdi:battery
+          {%- if level < 100 -%}
+            -
+          {%- endif -%}
+          {%- if level > 70 -%}
+            {{ level }}
+          {%- elif level > 50 -%}
+            60
+          {%- elif level > 30 -%}
+            40
+          {%- elif level > 10 -%}
+            {{ level }}
           {%- else -%}
-            mdi:battery-
-            {%- if ((states["zwave"]["fire_alarm_second_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 70 -%}
-              60
-            {%- elif ((states["zwave"]["fire_alarm_second_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int == 50 -%}
-              40
-            {%- else -%}
-              outline
-            {%- endif -%}
+            alert
           {%- endif -%}
       fire_alarm_batteries_third_bedroom:
         value_template: '{{states["zwave"]["fire_alarm_third_bedroom"]["attributes"]["battery_level"]}}'
