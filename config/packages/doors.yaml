@@ -6,7 +6,7 @@ sensor:
         friendly_name: Fourth Bedroom
         unit_of_measurement: '%'
         icon_template: >-
-          {% set level = ((states["zwave"]["fire_alarm_fourth_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+          {% set level = ((states["zwave"]["door_fourth_bedroom"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
             mdi:battery
           {%- if level > 90 -%}
 
