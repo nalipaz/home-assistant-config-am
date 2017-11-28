@@ -17,3 +17,7 @@ automation: !include_dir_merge_list config/automations/
 notify: !include config/notifications.yaml
 customizer: !include config/customizer.yaml
 mqtt: !include config/mqtt.yaml
+google:
+  client_id: !secret google_calendar_client_id
+  client_secret: !secret google_calendar_client_id
+wink:
