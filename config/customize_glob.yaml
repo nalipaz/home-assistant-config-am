@@ -1,0 +1,4 @@
+"binary_sensor.door_*":
+  hidden: true
+"binary_sensor.slider_*":
+  hidden: true

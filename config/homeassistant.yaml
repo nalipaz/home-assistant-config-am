@@ -5,3 +5,5 @@ elevation: !secret elevation
 unit_system: imperial
 time_zone: !secret time_zone
 packages: !include_dir_named packages
+customize: !include customize.yaml
+customize_glob: !include customize_glob.yaml
