@@ -1,4 +1,12 @@
-"binary_sensor.door_*":
+"sensor.*_access_control":
   hidden: true
-"binary_sensor.slider_*":
+"sensor.*_alarm_level":
+  hidden: true
+"sensor.*_alarm_type":
+  hidden: true
+"sensor.*_sourcenodeid":
+  hidden: true
+"sensor.*_burglar":
+  hidden: true
+group.all_*:
   hidden: true
