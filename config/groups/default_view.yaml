@@ -1,4 +1,4 @@
-soon_to_be_default_view:
+default_view:
   name: Home
   view: yes
   icon: mdi:home
@@ -7,3 +7,5 @@ soon_to_be_default_view:
     - group.windows
     - group.garage
     - group.thermostat
+    - group.fire_alarms
+    - group.door_locks
