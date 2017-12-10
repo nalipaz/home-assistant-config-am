@@ -11,6 +11,7 @@ logbook:
 sun:
 zwave:
   usb_path: /dev/ttyACM0
+  network_key: !secret zwave_network_key
 tts: !include config/tts.yaml
 group: !include_dir_merge_named config/groups/
 automation: !include_dir_merge_list config/automations/
