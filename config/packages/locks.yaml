@@ -1,0 +1,30 @@
+#automation:
+#  - alias: 4BR booked
+#    trigger:
+#      - platform: state
+#        entity_id: calendar.airbnb_4br
+#        to: 'on'
+#    action:
+#      - service: lock.unlock
+#        entity_id: lock.4th_bedroom
+#      - service: notify.html5
+#        data_template:
+#          message: >
+#            {%- if states.automation.4br_booked.attributes.last_triggered  -%}
+#              {{ as_timestamp(now()) | timestamp_custom("%-I:%M %p", True) }}: The {{ states.cover.4br_booked.attributes.friendly_name }} was unlocked at {{ as_timestamp(states.automation.4br_booked.attributes.last_triggered) | timestamp_custom('%-I:%M %p', True) }}.
+#            {%- else -%}
+#              {{ as_timestamp(now()) | timestamp_custom("%-I:%M %p", True) }}: The {{ states.cover.4br_booked.attributes.friendly_name }} was unlocked.
+#            {%- endif -%}
+#          title: "{{ states.lock.4th_bedroom.attributes.friendly_name }}: Automatically unlocked"
+#          data:
+#            requireInteraction: True
+#            tag: "lock-4br-{{ as_timestamp(states.automation.4br_booked.attributes.last_triggered) }}"
+#            timestamp: "{{ as_timestamp(now()) | int }}"
+#
+#group:
+#  door_locks:
+#    name: Door Locks
+#    entities:
+#      - lock.front_door
+#      - lock.4th_bedroom
+#      - lock.rear_door
