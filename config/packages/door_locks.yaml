@@ -89,18 +89,156 @@ group:
     entities:
       - input_text.door_keypad_front_10_name
       - input_text.door_keypad_front_10_code
-  door_keypad_rear:
-    name: Rear Door Keypad
+  door_keypad_rear_1:
+    name: Rear Door Pin Code 1
     entities:
-      - input_text.door_keypad_rear_name
-  door_keypad_garage_side:
-    name: Garage Side Door Keypad
+      - input_text.door_keypad_rear_1_name
+      - input_text.door_keypad_rear_1_code
+  door_keypad_rear_2:
+    name: Rear Door Pin Code 2
     entities:
-      - input_text.door_keypad_garage_side_name
-  door_keypad_4th_bedroom:
-    name: 4th Bedroom Door Keypad
+      - input_text.door_keypad_rear_2_name
+      - input_text.door_keypad_rear_2_code
+  door_keypad_rear_3:
+    name: Rear Door Pin Code 3
     entities:
-      - input_text.door_keypad_4th_bedroom_name
+      - input_text.door_keypad_rear_3_name
+      - input_text.door_keypad_rear_3_code
+  door_keypad_rear_4:
+    name: Rear Door Pin Code 4
+    entities:
+      - input_text.door_keypad_rear_4_name
+      - input_text.door_keypad_rear_4_code
+  door_keypad_rear_5:
+    name: Rear Door Pin Code 5
+    entities:
+      - input_text.door_keypad_rear_5_name
+      - input_text.door_keypad_rear_5_code
+  door_keypad_rear_6:
+    name: Rear Door Pin Code 6
+    entities:
+      - input_text.door_keypad_rear_6_name
+      - input_text.door_keypad_rear_6_code
+  door_keypad_rear_7:
+    name: Rear Door Pin Code 7
+    entities:
+      - input_text.door_keypad_rear_7_name
+      - input_text.door_keypad_rear_7_code
+  door_keypad_rear_8:
+    name: Rear Door Pin Code 8
+    entities:
+      - input_text.door_keypad_rear_8_name
+      - input_text.door_keypad_rear_8_code
+  door_keypad_rear_9:
+    name: Rear Door Pin Code 9
+    entities:
+      - input_text.door_keypad_rear_9_name
+      - input_text.door_keypad_rear_9_code
+  door_keypad_rear_10:
+    name: Rear Door Pin Code 10
+    entities:
+      - input_text.door_keypad_rear_10_name
+      - input_text.door_keypad_rear_10_code
+  door_keypad_garage_side_1:
+    name: Garage Side Door Pin Code 1
+    entities:
+      - input_text.door_keypad_garage_side_1_name
+      - input_text.door_keypad_garage_side_1_code
+  door_keypad_garage_side_2:
+    name: Garage Side Door Pin Code 2
+    entities:
+      - input_text.door_keypad_garage_side_2_name
+      - input_text.door_keypad_garage_side_2_code
+  door_keypad_garage_side_3:
+    name: Garage Side Door Pin Code 3
+    entities:
+      - input_text.door_keypad_garage_side_3_name
+      - input_text.door_keypad_garage_side_3_code
+  door_keypad_garage_side_4:
+    name: Garage Side Door Pin Code 4
+    entities:
+      - input_text.door_keypad_garage_side_4_name
+      - input_text.door_keypad_garage_side_4_code
+  door_keypad_garage_side_5:
+    name: Garage Side Door Pin Code 5
+    entities:
+      - input_text.door_keypad_garage_side_5_name
+      - input_text.door_keypad_garage_side_5_code
+  door_keypad_garage_side_6:
+    name: Garage Side Door Pin Code 6
+    entities:
+      - input_text.door_keypad_garage_side_6_name
+      - input_text.door_keypad_garage_side_6_code
+  door_keypad_garage_side_7:
+    name: Garage Side Door Pin Code 7
+    entities:
+      - input_text.door_keypad_garage_side_7_name
+      - input_text.door_keypad_garage_side_7_code
+  door_keypad_garage_side_8:
+    name: Garage Side Door Pin Code 8
+    entities:
+      - input_text.door_keypad_garage_side_8_name
+      - input_text.door_keypad_garage_side_8_code
+  door_keypad_garage_side_9:
+    name: Garage Side Door Pin Code 9
+    entities:
+      - input_text.door_keypad_garage_side_9_name
+      - input_text.door_keypad_garage_side_9_code
+  door_keypad_garage_side_10:
+    name: Garage Side Door Pin Code 10
+    entities:
+      - input_text.door_keypad_garage_side_10_name
+      - input_text.door_keypad_garage_side_10_code
+  door_keypad_4th_bedroom_1:
+    name: 4th Bedroom Door Pin Code 1
+    entities:
+      - input_text.door_keypad_4th_bedroom_1_name
+      - input_text.door_keypad_4th_bedroom_1_code
+  door_keypad_4th_bedroom_2:
+    name: 4th Bedroom Door Pin Code 2
+    entities:
+      - input_text.door_keypad_4th_bedroom_2_name
+      - input_text.door_keypad_4th_bedroom_2_code
+  door_keypad_4th_bedroom_3:
+    name: 4th Bedroom Door Pin Code 3
+    entities:
+      - input_text.door_keypad_4th_bedroom_3_name
+      - input_text.door_keypad_4th_bedroom_3_code
+  door_keypad_4th_bedroom_4:
+    name: 4th Bedroom Door Pin Code 4
+    entities:
+      - input_text.door_keypad_4th_bedroom_4_name
+      - input_text.door_keypad_4th_bedroom_4_code
+  door_keypad_4th_bedroom_5:
+    name: 4th Bedroom Door Pin Code 5
+    entities:
+      - input_text.door_keypad_4th_bedroom_5_name
+      - input_text.door_keypad_4th_bedroom_5_code
+  door_keypad_4th_bedroom_6:
+    name: 4th Bedroom Door Pin Code 6
+    entities:
+      - input_text.door_keypad_4th_bedroom_6_name
+      - input_text.door_keypad_4th_bedroom_6_code
+  door_keypad_4th_bedroom_7:
+    name: 4th Bedroom Door Pin Code 7
+    entities:
+      - input_text.door_keypad_4th_bedroom_7_name
+      - input_text.door_keypad_4th_bedroom_7_code
+  door_keypad_4th_bedroom_8:
+    name: 4th Bedroom Door Pin Code 8
+    entities:
+      - input_text.door_keypad_4th_bedroom_8_name
+      - input_text.door_keypad_4th_bedroom_8_code
+  door_keypad_4th_bedroom_9:
+    name: 4th Bedroom Door Pin Code 9
+    entities:
+      - input_text.door_keypad_4th_bedroom_9_name
+      - input_text.door_keypad_4th_bedroom_9_code
+  door_keypad_4th_bedroom_10:
+    name: 4th Bedroom Door Pin Code 10
+    entities:
+      - input_text.door_keypad_4th_bedroom_10_name
+      - input_text.door_keypad_4th_bedroom_10_code
 
 input_text:
   door_keypad_front_1_name:
@@ -143,12 +281,126 @@ input_text:
     name: Name
   door_keypad_front_10_code:
     name: Code
-  door_keypad_rear_name:
+  door_keypad_rear_1_name:
     name: Name
-  door_keypad_garage_side_name:
+  door_keypad_rear_1_code:
+    name: Code
+  door_keypad_rear_2_name:
     name: Name
-  door_keypad_4th_bedroom_name:
+  door_keypad_rear_2_code:
+    name: Code
+  door_keypad_rear_3_name:
     name: Name
+  door_keypad_rear_3_code:
+    name: Code
+  door_keypad_rear_4_name:
+    name: Name
+  door_keypad_rear_4_code:
+    name: Code
+  door_keypad_rear_5_name:
+    name: Name
+  door_keypad_rear_5_code:
+    name: Code
+  door_keypad_rear_6_name:
+    name: Name
+  door_keypad_rear_6_code:
+    name: Code
+  door_keypad_rear_7_name:
+    name: Name
+  door_keypad_rear_7_code:
+    name: Code
+  door_keypad_rear_8_name:
+    name: Name
+  door_keypad_rear_8_code:
+    name: Code
+  door_keypad_rear_9_name:
+    name: Name
+  door_keypad_rear_9_code:
+    name: Code
+  door_keypad_rear_10_name:
+    name: Name
+  door_keypad_rear_10_code:
+    name: Code
+  door_keypad_garage_side_1_name:
+    name: Name
+  door_keypad_garage_side_1_code:
+    name: Code
+  door_keypad_garage_side_2_name:
+    name: Name
+  door_keypad_garage_side_2_code:
+    name: Code
+  door_keypad_garage_side_3_name:
+    name: Name
+  door_keypad_garage_side_3_code:
+    name: Code
+  door_keypad_garage_side_4_name:
+    name: Name
+  door_keypad_garage_side_4_code:
+    name: Code
+  door_keypad_garage_side_5_name:
+    name: Name
+  door_keypad_garage_side_5_code:
+    name: Code
+  door_keypad_garage_side_6_name:
+    name: Name
+  door_keypad_garage_side_6_code:
+    name: Code
+  door_keypad_garage_side_7_name:
+    name: Name
+  door_keypad_garage_side_7_code:
+    name: Code
+  door_keypad_garage_side_8_name:
+    name: Name
+  door_keypad_garage_side_8_code:
+    name: Code
+  door_keypad_garage_side_9_name:
+    name: Name
+  door_keypad_garage_side_9_code:
+    name: Code
+  door_keypad_garage_side_10_name:
+    name: Name
+  door_keypad_garage_side_10_code:
+    name: Code
+  door_keypad_4th_bedroom_1_name:
+    name: Name
+  door_keypad_4th_bedroom_1_code:
+    name: Code
+  door_keypad_4th_bedroom_2_name:
+    name: Name
+  door_keypad_4th_bedroom_2_code:
+    name: Code
+  door_keypad_4th_bedroom_3_name:
+    name: Name
+  door_keypad_4th_bedroom_3_code:
+    name: Code
+  door_keypad_4th_bedroom_4_name:
+    name: Name
+  door_keypad_4th_bedroom_4_code:
+    name: Code
+  door_keypad_4th_bedroom_5_name:
+    name: Name
+  door_keypad_4th_bedroom_5_code:
+    name: Code
+  door_keypad_4th_bedroom_6_name:
+    name: Name
+  door_keypad_4th_bedroom_6_code:
+    name: Code
+  door_keypad_4th_bedroom_7_name:
+    name: Name
+  door_keypad_4th_bedroom_7_code:
+    name: Code
+  door_keypad_4th_bedroom_8_name:
+    name: Name
+  door_keypad_4th_bedroom_8_code:
+    name: Code
+  door_keypad_4th_bedroom_9_name:
+    name: Name
+  door_keypad_4th_bedroom_9_code:
+    name: Code
+  door_keypad_4th_bedroom_10_name:
+    name: Name
+  door_keypad_4th_bedroom_10_code:
+    name: Code
 
 script:
   door_keypad_front_save:
