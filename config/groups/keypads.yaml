@@ -1,0 +1,9 @@
+keypads:
+  name: Keypads
+  view: yes
+  icon: mdi:dialpad
+  entities:
+    - group.door_keypad_front
+    - group.door_keypad_rear
+    - group.door_keypad_garage_side
+    - group.door_keypad_4th_bedroom
