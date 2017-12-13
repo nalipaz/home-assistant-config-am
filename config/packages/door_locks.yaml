@@ -44,201 +44,241 @@ group:
     entities:
       - input_text.door_keypad_front_1_name
       - input_text.door_keypad_front_1_code
+      - script.door_keypad_front_1_save
   door_keypad_front_2:
     name: Front Door Pin Code 2
     entities:
       - input_text.door_keypad_front_2_name
       - input_text.door_keypad_front_2_code
+      - script.door_keypad_front_2_save
   door_keypad_front_3:
     name: Front Door Pin Code 3
     entities:
       - input_text.door_keypad_front_3_name
       - input_text.door_keypad_front_3_code
+      - script.door_keypad_front_3_save
   door_keypad_front_4:
     name: Front Door Pin Code 4
     entities:
       - input_text.door_keypad_front_4_name
       - input_text.door_keypad_front_4_code
+      - script.door_keypad_front_4_save
   door_keypad_front_5:
     name: Front Door Pin Code 5
     entities:
       - input_text.door_keypad_front_5_name
       - input_text.door_keypad_front_5_code
+      - script.door_keypad_front_5_save
   door_keypad_front_6:
     name: Front Door Pin Code 6
     entities:
       - input_text.door_keypad_front_6_name
       - input_text.door_keypad_front_6_code
+      - script.door_keypad_front_6_save
   door_keypad_front_7:
     name: Front Door Pin Code 7
     entities:
       - input_text.door_keypad_front_7_name
       - input_text.door_keypad_front_7_code
+      - script.door_keypad_front_7_save
   door_keypad_front_8:
     name: Front Door Pin Code 8
     entities:
       - input_text.door_keypad_front_8_name
       - input_text.door_keypad_front_8_code
+      - script.door_keypad_front_8_save
   door_keypad_front_9:
     name: Front Door Pin Code 9
     entities:
       - input_text.door_keypad_front_9_name
       - input_text.door_keypad_front_9_code
+      - script.door_keypad_front_9_save
   door_keypad_front_10:
     name: Front Door Pin Code 10
     entities:
       - input_text.door_keypad_front_10_name
       - input_text.door_keypad_front_10_code
+      - script.door_keypad_front_10_save
   door_keypad_rear_1:
     name: Rear Door Pin Code 1
     entities:
       - input_text.door_keypad_rear_1_name
       - input_text.door_keypad_rear_1_code
+      - script.door_keypad_rear_1_save
   door_keypad_rear_2:
     name: Rear Door Pin Code 2
     entities:
       - input_text.door_keypad_rear_2_name
       - input_text.door_keypad_rear_2_code
+      - script.door_keypad_rear_2_save
   door_keypad_rear_3:
     name: Rear Door Pin Code 3
     entities:
       - input_text.door_keypad_rear_3_name
       - input_text.door_keypad_rear_3_code
+      - script.door_keypad_rear_3_save
   door_keypad_rear_4:
     name: Rear Door Pin Code 4
     entities:
       - input_text.door_keypad_rear_4_name
       - input_text.door_keypad_rear_4_code
+      - script.door_keypad_rear_4_save
   door_keypad_rear_5:
     name: Rear Door Pin Code 5
     entities:
       - input_text.door_keypad_rear_5_name
       - input_text.door_keypad_rear_5_code
+      - script.door_keypad_rear_5_save
   door_keypad_rear_6:
     name: Rear Door Pin Code 6
     entities:
       - input_text.door_keypad_rear_6_name
       - input_text.door_keypad_rear_6_code
+      - script.door_keypad_rear_6_save
   door_keypad_rear_7:
     name: Rear Door Pin Code 7
     entities:
       - input_text.door_keypad_rear_7_name
       - input_text.door_keypad_rear_7_code
+      - script.door_keypad_rear_7_save
   door_keypad_rear_8:
     name: Rear Door Pin Code 8
     entities:
       - input_text.door_keypad_rear_8_name
       - input_text.door_keypad_rear_8_code
+      - script.door_keypad_rear_8_save
   door_keypad_rear_9:
     name: Rear Door Pin Code 9
     entities:
       - input_text.door_keypad_rear_9_name
       - input_text.door_keypad_rear_9_code
+      - script.door_keypad_rear_9_save
   door_keypad_rear_10:
     name: Rear Door Pin Code 10
     entities:
       - input_text.door_keypad_rear_10_name
       - input_text.door_keypad_rear_10_code
+      - script.door_keypad_rear_10_save
   door_keypad_garage_side_1:
     name: Garage Side Door Pin Code 1
     entities:
       - input_text.door_keypad_garage_side_1_name
       - input_text.door_keypad_garage_side_1_code
+      - script.door_keypad_garage_side_1_save
   door_keypad_garage_side_2:
     name: Garage Side Door Pin Code 2
     entities:
       - input_text.door_keypad_garage_side_2_name
       - input_text.door_keypad_garage_side_2_code
+      - script.door_keypad_garage_side_2_save
   door_keypad_garage_side_3:
     name: Garage Side Door Pin Code 3
     entities:
       - input_text.door_keypad_garage_side_3_name
       - input_text.door_keypad_garage_side_3_code
+      - script.door_keypad_garage_side_3_save
   door_keypad_garage_side_4:
     name: Garage Side Door Pin Code 4
     entities:
       - input_text.door_keypad_garage_side_4_name
       - input_text.door_keypad_garage_side_4_code
+      - script.door_keypad_garage_side_4_save
   door_keypad_garage_side_5:
     name: Garage Side Door Pin Code 5
     entities:
       - input_text.door_keypad_garage_side_5_name
       - input_text.door_keypad_garage_side_5_code
+      - script.door_keypad_garage_side_5_save
   door_keypad_garage_side_6:
     name: Garage Side Door Pin Code 6
     entities:
       - input_text.door_keypad_garage_side_6_name
       - input_text.door_keypad_garage_side_6_code
+      - script.door_keypad_garage_side_6_save
   door_keypad_garage_side_7:
     name: Garage Side Door Pin Code 7
     entities:
       - input_text.door_keypad_garage_side_7_name
       - input_text.door_keypad_garage_side_7_code
+      - script.door_keypad_garage_side_7_save
   door_keypad_garage_side_8:
     name: Garage Side Door Pin Code 8
     entities:
       - input_text.door_keypad_garage_side_8_name
       - input_text.door_keypad_garage_side_8_code
+      - script.door_keypad_garage_side_8_save
   door_keypad_garage_side_9:
     name: Garage Side Door Pin Code 9
     entities:
       - input_text.door_keypad_garage_side_9_name
       - input_text.door_keypad_garage_side_9_code
+      - script.door_keypad_garage_side_9_save
   door_keypad_garage_side_10:
     name: Garage Side Door Pin Code 10
     entities:
       - input_text.door_keypad_garage_side_10_name
       - input_text.door_keypad_garage_side_10_code
+      - script.door_keypad_garage_side_10_save
   door_keypad_4th_bedroom_1:
     name: 4th Bedroom Door Pin Code 1
     entities:
       - input_text.door_keypad_4th_bedroom_1_name
       - input_text.door_keypad_4th_bedroom_1_code
+      - script.door_keypad_4th_bedroom_1_save
   door_keypad_4th_bedroom_2:
     name: 4th Bedroom Door Pin Code 2
     entities:
       - input_text.door_keypad_4th_bedroom_2_name
       - input_text.door_keypad_4th_bedroom_2_code
+      - script.door_keypad_4th_bedroom_2_save
   door_keypad_4th_bedroom_3:
     name: 4th Bedroom Door Pin Code 3
     entities:
       - input_text.door_keypad_4th_bedroom_3_name
       - input_text.door_keypad_4th_bedroom_3_code
+      - script.door_keypad_4th_bedroom_3_save
   door_keypad_4th_bedroom_4:
     name: 4th Bedroom Door Pin Code 4
     entities:
       - input_text.door_keypad_4th_bedroom_4_name
       - input_text.door_keypad_4th_bedroom_4_code
+      - script.door_keypad_4th_bedroom_4_save
   door_keypad_4th_bedroom_5:
     name: 4th Bedroom Door Pin Code 5
     entities:
       - input_text.door_keypad_4th_bedroom_5_name
       - input_text.door_keypad_4th_bedroom_5_code
+      - script.door_keypad_4th_bedroom_5_save
   door_keypad_4th_bedroom_6:
     name: 4th Bedroom Door Pin Code 6
     entities:
       - input_text.door_keypad_4th_bedroom_6_name
       - input_text.door_keypad_4th_bedroom_6_code
+      - script.door_keypad_4th_bedroom_6_save
   door_keypad_4th_bedroom_7:
     name: 4th Bedroom Door Pin Code 7
     entities:
       - input_text.door_keypad_4th_bedroom_7_name
       - input_text.door_keypad_4th_bedroom_7_code
+      - script.door_keypad_4th_bedroom_7_save
   door_keypad_4th_bedroom_8:
     name: 4th Bedroom Door Pin Code 8
     entities:
       - input_text.door_keypad_4th_bedroom_8_name
       - input_text.door_keypad_4th_bedroom_8_code
+      - script.door_keypad_4th_bedroom_8_save
   door_keypad_4th_bedroom_9:
     name: 4th Bedroom Door Pin Code 9
     entities:
       - input_text.door_keypad_4th_bedroom_9_name
       - input_text.door_keypad_4th_bedroom_9_code
+      - script.door_keypad_4th_bedroom_9_save
   door_keypad_4th_bedroom_10:
     name: 4th Bedroom Door Pin Code 10
     entities:
       - input_text.door_keypad_4th_bedroom_10_name
       - input_text.door_keypad_4th_bedroom_10_code
+      - script.door_keypad_4th_bedroom_10_save
 
 input_text:
   door_keypad_front_1_name:
@@ -403,8 +443,364 @@ input_text:
     name: Code
 
 script:
-  door_keypad_front_save:
+  door_keypad_front_1_save:
     alias: Save
     sequence:
-      - service: input_number.set_value
+      - service: lock.set_usercode
+        data:
+          node_id: 37
+          code_slot: 1
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_front_1_code') }}"
+  door_keypad_front_2_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 37
+          code_slot: 2
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_front_2_code') }}"
+  door_keypad_front_3_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 37
+          code_slot: 3
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_front_3_code') }}"
+  door_keypad_front_4_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 37
+          code_slot: 4
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_front_4_code') }}"
+  door_keypad_front_5_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 37
+          code_slot: 5
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_front_5_code') }}"
+  door_keypad_front_6_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 37
+          code_slot: 6
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_front_6_code') }}"
+  door_keypad_front_7_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 37
+          code_slot: 7
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_front_7_code') }}"
+  door_keypad_front_8_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 37
+          code_slot: 8
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_front_8_code') }}"
+  door_keypad_front_9_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 37
+          code_slot: 9
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_front_9_code') }}"
+  door_keypad_front_10_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 37
+          code_slot: 10
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_front_10_code') }}"
 
+  door_keypad_rear_1_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 39
+          code_slot: 1
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_rear_1_code') }}"
+  door_keypad_rear_2_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 39
+          code_slot: 2
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_rear_2_code') }}"
+  door_keypad_rear_3_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 39
+          code_slot: 3
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_rear_3_code') }}"
+  door_keypad_rear_4_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 39
+          code_slot: 4
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_rear_4_code') }}"
+  door_keypad_rear_5_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 39
+          code_slot: 5
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_rear_5_code') }}"
+  door_keypad_rear_6_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 39
+          code_slot: 6
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_rear_6_code') }}"
+  door_keypad_rear_7_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 39
+          code_slot: 7
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_rear_7_code') }}"
+  door_keypad_rear_8_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 39
+          code_slot: 8
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_rear_8_code') }}"
+  door_keypad_rear_9_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 39
+          code_slot: 9
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_rear_9_code') }}"
+  door_keypad_rear_10_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 39
+          code_slot: 10
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_rear_10_code') }}"
+  door_keypad_garage_side_1_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 45
+          code_slot: 1
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_garage_side_1_code') }}"
+  door_keypad_garage_side_2_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 45
+          code_slot: 2
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_garage_side_2_code') }}"
+  door_keypad_garage_side_3_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 45
+          code_slot: 3
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_garage_side_3_code') }}"
+  door_keypad_garage_side_4_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 45
+          code_slot: 4
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_garage_side_4_code') }}"
+  door_keypad_garage_side_5_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 45
+          code_slot: 5
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_garage_side_5_code') }}"
+  door_keypad_garage_side_6_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 45
+          code_slot: 6
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_garage_side_6_code') }}"
+  door_keypad_garage_side_7_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 45
+          code_slot: 7
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_garage_side_7_code') }}"
+  door_keypad_garage_side_8_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 45
+          code_slot: 8
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_garage_side_8_code') }}"
+  door_keypad_garage_side_9_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 45
+          code_slot: 9
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_garage_side_9_code') }}"
+  door_keypad_garage_side_10_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 45
+          code_slot: 10
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_garage_side_10_code') }}"
+  door_keypad_4th_bedroom_1_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 38
+          code_slot: 1
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_4th_bedroom_1_code') }}"
+  door_keypad_4th_bedroom_2_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 38
+          code_slot: 2
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_4th_bedroom_2_code') }}"
+  door_keypad_4th_bedroom_3_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 38
+          code_slot: 3
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_4th_bedroom_3_code') }}"
+  door_keypad_4th_bedroom_4_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 38
+          code_slot: 4
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_4th_bedroom_4_code') }}"
+  door_keypad_4th_bedroom_5_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 38
+          code_slot: 5
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_4th_bedroom_5_code') }}"
+  door_keypad_4th_bedroom_6_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 38
+          code_slot: 6
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_4th_bedroom_6_code') }}"
+  door_keypad_4th_bedroom_7_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 38
+          code_slot: 7
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_4th_bedroom_7_code') }}"
+  door_keypad_4th_bedroom_8_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 38
+          code_slot: 8
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_4th_bedroom_8_code') }}"
+  door_keypad_4th_bedroom_9_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 38
+          code_slot: 9
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_4th_bedroom_9_code') }}"
+  door_keypad_4th_bedroom_10_save:
+    alias: Save
+    sequence:
+      - service: lock.set_usercode
+        data:
+          node_id: 38
+          code_slot: 10
+        data_template:
+          usercode: "{{ states('input_text.door_keypad_4th_bedroom_10_code') }}"
