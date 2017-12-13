@@ -39,15 +39,56 @@
 #          usercode: !secret 1br_temp_code
 
 group:
-  door_keypad_front:
-    name: Front Door
-    entities:
-      - group.door_keypad_front_1
   door_keypad_front_1:
     name: Front Door Pin Code 1
     entities:
       - input_text.door_keypad_front_1_name
       - input_text.door_keypad_front_1_code
+  door_keypad_front_2:
+    name: Front Door Pin Code 2
+    entities:
+      - input_text.door_keypad_front_2_name
+      - input_text.door_keypad_front_2_code
+  door_keypad_front_3:
+    name: Front Door Pin Code 3
+    entities:
+      - input_text.door_keypad_front_3_name
+      - input_text.door_keypad_front_3_code
+  door_keypad_front_4:
+    name: Front Door Pin Code 4
+    entities:
+      - input_text.door_keypad_front_4_name
+      - input_text.door_keypad_front_4_code
+  door_keypad_front_5:
+    name: Front Door Pin Code 5
+    entities:
+      - input_text.door_keypad_front_5_name
+      - input_text.door_keypad_front_5_code
+  door_keypad_front_6:
+    name: Front Door Pin Code 6
+    entities:
+      - input_text.door_keypad_front_6_name
+      - input_text.door_keypad_front_6_code
+  door_keypad_front_7:
+    name: Front Door Pin Code 7
+    entities:
+      - input_text.door_keypad_front_7_name
+      - input_text.door_keypad_front_7_code
+  door_keypad_front_8:
+    name: Front Door Pin Code 8
+    entities:
+      - input_text.door_keypad_front_8_name
+      - input_text.door_keypad_front_8_code
+  door_keypad_front_9:
+    name: Front Door Pin Code 9
+    entities:
+      - input_text.door_keypad_front_9_name
+      - input_text.door_keypad_front_9_code
+  door_keypad_front_10:
+    name: Front Door Pin Code 10
+    entities:
+      - input_text.door_keypad_front_10_name
+      - input_text.door_keypad_front_10_code
   door_keypad_rear:
     name: Rear Door Keypad
     entities:

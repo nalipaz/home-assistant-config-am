@@ -3,7 +3,16 @@ keypads:
   view: yes
   icon: mdi:dialpad
   entities:
-    - group.door_keypad_front
+    - group.door_keypad_front_1
+    - group.door_keypad_front_2
+    - group.door_keypad_front_3
+    - group.door_keypad_front_4
+    - group.door_keypad_front_5
+    - group.door_keypad_front_6
+    - group.door_keypad_front_7
+    - group.door_keypad_front_8
+    - group.door_keypad_front_9
+    - group.door_keypad_front_10
     - group.door_keypad_rear
     - group.door_keypad_garage_side
     - group.door_keypad_4th_bedroom
