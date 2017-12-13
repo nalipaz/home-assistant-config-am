@@ -1,0 +1,8 @@
+script:
+  save_front_door_usercode_var:
+    alias: Save Front Door Usercode
+    sequence:
+      - service: lock.get_usercode
+        data:
+          node_id: 37
+          code_slot: 3

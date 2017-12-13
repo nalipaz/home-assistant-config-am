@@ -40,51 +40,68 @@
 
 group:
   door_keypad_front:
-    name: Front Door Keypad
+    name: Front Door
     entities:
-      - input_number.door_keypad_front_code_slot
-      - input_text.door_keypad_front_name
+      - group.door_keypad_front_1
+  door_keypad_front_1:
+    name: Front Door Pin Code 1
+    entities:
+      - input_text.door_keypad_front_1_name
+      - input_text.door_keypad_front_1_code
   door_keypad_rear:
     name: Rear Door Keypad
     entities:
-      - input_number.door_keypad_rear_code_slot
       - input_text.door_keypad_rear_name
   door_keypad_garage_side:
     name: Garage Side Door Keypad
     entities:
-      - input_number.door_keypad_garage_side_code_slot
       - input_text.door_keypad_garage_side_name
   door_keypad_4th_bedroom:
     name: 4th Bedroom Door Keypad
     entities:
-      - input_number.door_keypad_4th_bedroom_code_slot
       - input_text.door_keypad_4th_bedroom_name
 
-input_number:
-  door_keypad_front_code_slot:
-    name: Code Slot
-    min: 1
-    max: 20
-    mode: box
-  door_keypad_rear_code_slot:
-    name: Code Slot
-    min: 1
-    max: 20
-    mode: box
-  door_keypad_garage_side_code_slot:
-    name: Code Slot
-    min: 1
-    max: 20
-    mode: box
-  door_keypad_4th_bedroom_code_slot:
-    name: Code Slot
-    min: 1
-    max: 20
-    mode: box
-
 input_text:
-  door_keypad_front_name:
+  door_keypad_front_1_name:
     name: Name
+  door_keypad_front_1_code:
+    name: Code
+  door_keypad_front_2_name:
+    name: Name
+  door_keypad_front_2_code:
+    name: Code
+  door_keypad_front_3_name:
+    name: Name
+  door_keypad_front_3_code:
+    name: Code
+  door_keypad_front_4_name:
+    name: Name
+  door_keypad_front_4_code:
+    name: Code
+  door_keypad_front_5_name:
+    name: Name
+  door_keypad_front_5_code:
+    name: Code
+  door_keypad_front_6_name:
+    name: Name
+  door_keypad_front_6_code:
+    name: Code
+  door_keypad_front_7_name:
+    name: Name
+  door_keypad_front_7_code:
+    name: Code
+  door_keypad_front_8_name:
+    name: Name
+  door_keypad_front_8_code:
+    name: Code
+  door_keypad_front_9_name:
+    name: Name
+  door_keypad_front_9_code:
+    name: Code
+  door_keypad_front_10_name:
+    name: Name
+  door_keypad_front_10_code:
+    name: Code
   door_keypad_rear_name:
     name: Name
   door_keypad_garage_side_name:
@@ -92,8 +109,9 @@ input_text:
   door_keypad_4th_bedroom_name:
     name: Name
 
-#script:
-#  door_keypad_front_save:
-#    alias: Save
-#    sequence:
-#      - service:
+script:
+  door_keypad_front_save:
+    alias: Save
+    sequence:
+      - service: input_number.set_value
+
