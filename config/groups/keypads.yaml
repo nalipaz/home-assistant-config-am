@@ -28,7 +28,7 @@ keypad_rear:
     - group.door_keypad_rear_8
     - group.door_keypad_rear_9
     - group.door_keypad_rear_10
-keypad_garagde_side:
+keypad_garage_side:
   name: Garage Side Door Keypad
   view: yes
   icon: mdi:dialpad
