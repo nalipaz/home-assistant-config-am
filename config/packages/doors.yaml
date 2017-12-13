@@ -171,9 +171,3 @@ group:
       - sensor.slider_batteries_slider_fourth_bedroom
       - sensor.slider_batteries_slider_living_room
       - sensor.slider_batteries_slider_master_bedroom
-  door_locks:
-    name: Door Locks
-    entities:
-      - lock.front_door
-      - lock.4th_bedroom
-      - lock.rear_door
