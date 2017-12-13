@@ -1,3 +1,11 @@
+group.keypad_front:
+  order: 10
+group.keypad_rear:
+  order: 11
+group.keypad_garage_side:
+  order: 12
+group.keypad_4th_bedroom:
+  order: 13
 group.door_keypad_front_1:
   order: 1
 group.door_keypad_front_2:

@@ -1,5 +1,5 @@
-keypads:
-  name: Keypads
+keypad_front:
+  name: Front Door Keypad
   view: yes
   icon: mdi:dialpad
   entities:
@@ -13,6 +13,11 @@ keypads:
     - group.door_keypad_front_8
     - group.door_keypad_front_9
     - group.door_keypad_front_10
+keypad_rear:
+  name: Rear Door Keypad
+  view: yes
+  icon: mdi:dialpad
+  entities:
     - group.door_keypad_rear_1
     - group.door_keypad_rear_2
     - group.door_keypad_rear_3
@@ -23,6 +28,11 @@ keypads:
     - group.door_keypad_rear_8
     - group.door_keypad_rear_9
     - group.door_keypad_rear_10
+keypad_garagde_side:
+  name: Garage Side Door Keypad
+  view: yes
+  icon: mdi:dialpad
+  entities:
     - group.door_keypad_garage_side_1
     - group.door_keypad_garage_side_2
     - group.door_keypad_garage_side_3
@@ -33,6 +43,11 @@ keypads:
     - group.door_keypad_garage_side_8
     - group.door_keypad_garage_side_9
     - group.door_keypad_garage_side_10
+keypad_4th_bedroom:
+  name: 4th Bedroom Door Keypad
+  view: yes
+  icon: mdi:dialpad
+  entities:
     - group.door_keypad_4th_bedroom_1
     - group.door_keypad_4th_bedroom_2
     - group.door_keypad_4th_bedroom_3
