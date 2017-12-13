@@ -65,18 +65,22 @@ input_number:
     name: Code Slot
     min: 1
     max: 20
+    mode: box
   door_keypad_rear_code_slot:
     name: Code Slot
     min: 1
     max: 20
+    mode: box
   door_keypad_garage_side_code_slot:
     name: Code Slot
     min: 1
     max: 20
+    mode: box
   door_keypad_4th_bedroom_code_slot:
     name: Code Slot
     min: 1
     max: 20
+    mode: box
 
 input_text:
   door_keypad_front_name:
