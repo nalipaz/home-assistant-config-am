@@ -1,0 +1,80 @@
+group.door_keypad_front_1:
+  order: 1
+group.door_keypad_front_2:
+  order: 2
+group.door_keypad_front_3:
+  order: 3
+group.door_keypad_front_4:
+  order: 4
+group.door_keypad_front_5:
+  order: 5
+group.door_keypad_front_6:
+  order: 6
+group.door_keypad_front_7:
+  order: 7
+group.door_keypad_front_8:
+  order: 8
+group.door_keypad_front_9:
+  order: 9
+group.door_keypad_front_10:
+  order: 10
+group.door_keypad_rear_1:
+  order: 1
+group.door_keypad_rear_2:
+  order: 2
+group.door_keypad_rear_3:
+  order: 3
+group.door_keypad_rear_4:
+  order: 4
+group.door_keypad_rear_5:
+  order: 5
+group.door_keypad_rear_6:
+  order: 6
+group.door_keypad_rear_7:
+  order: 7
+group.door_keypad_rear_8:
+  order: 8
+group.door_keypad_rear_9:
+  order: 9
+group.door_keypad_rear_10:
+  order: 10
+group.door_keypad_garage_side_1:
+  order: 1
+group.door_keypad_garage_side_2:
+  order: 2
+group.door_keypad_garage_side_3:
+  order: 3
+group.door_keypad_garage_side_4:
+  order: 4
+group.door_keypad_garage_side_5:
+  order: 5
+group.door_keypad_garage_side_6:
+  order: 6
+group.door_keypad_garage_side_7:
+  order: 7
+group.door_keypad_garage_side_8:
+  order: 8
+group.door_keypad_garage_side_9:
+  order: 9
+group.door_keypad_garage_side_10:
+  order: 10
+group.door_keypad_4th_bedroom_1:
+  order: 1
+group.door_keypad_4th_bedroom_2:
+  order: 2
+group.door_keypad_4th_bedroom_3:
+  order: 3
+group.door_keypad_4th_bedroom_4:
+  order: 4
+group.door_keypad_4th_bedroom_5:
+  order: 5
+group.door_keypad_4th_bedroom_6:
+  order: 6
+group.door_keypad_4th_bedroom_7:
+  order: 7
+group.door_keypad_4th_bedroom_8:
+  order: 8
+group.door_keypad_4th_bedroom_9:
+  order: 9
+group.door_keypad_4th_bedroom_10:
+  order: 10
