@@ -1,0 +1,95 @@
+#automation:
+#  - alias: 1BR Check-in
+#    trigger:
+#      - platform: time
+#        at: '14:45:00'
+#    condition:
+#      condition: and
+#      conditions:
+#        - condition: state
+#          entity_id: calendar.airbnb_1br
+#          state: 'on'
+#        - condition: template
+#          value_template: "{% {{ states.calendar.airbnb_1br.attributes.start_time|replace(' 00:00:00','')|replace('-','') }} == {{ now().year }}{{ now().month }}{{ now().day }} %}"
+#    action:
+#      - service: lock.set_usercode
+#        data:
+#          node_id: 11
+#          code_slot: 3
+#          usercode:
+#      - service: variable.set_variable
+#        data:
+#          variable: airbnb_1br_booking
+#          value: '{{ calendar.airbnb_1br.attributes.message }}'
+#  - alias: 1BR Check-out
+#    trigger:
+#      - platform: time
+#        at: '12:15:00'
+#    condition:
+#      condition: and
+#      conditions:
+#        - condition: state
+#          entity_id: calendar.airbnb_1br
+#          state: 'on'
+#    action:
+#      - service: lock.set_usercode
+#        data:
+#          node: 11
+#          codeslot: 3
+#          usercode: !secret 1br_temp_code
+
+group:
+  door_keypad_front:
+    name: Front Door Keypad
+    entities:
+      - input_number.door_keypad_front_code_slot
+      - input_text.door_keypad_front_name
+  door_keypad_rear:
+    name: Rear Door Keypad
+    entities:
+      - input_number.door_keypad_rear_code_slot
+      - input_text.door_keypad_rear_name
+  door_keypad_garage_side:
+    name: Garage Side Door Keypad
+    entities:
+      - input_number.door_keypad_garage_side_code_slot
+      - input_text.door_keypad_garage_side_name
+  door_keypad_4th_bedroom:
+    name: 4th Bedroom Door Keypad
+    entities:
+      - input_number.door_keypad_4th_bedroom_code_slot
+      - input_text.door_keypad_4th_bedroom_name
+
+input_number:
+  door_keypad_front_code_slot:
+    name: Code Slot
+    min: 1
+    max: 20
+  door_keypad_rear_code_slot:
+    name: Code Slot
+    min: 1
+    max: 20
+  door_keypad_garage_side_code_slot:
+    name: Code Slot
+    min: 1
+    max: 20
+  door_keypad_4th_bedroom_code_slot:
+    name: Code Slot
+    min: 1
+    max: 20
+
+input_text:
+  door_keypad_front_name:
+    name: Name
+  door_keypad_rear_name:
+    name: Name
+  door_keypad_garage_side_name:
+    name: Name
+  door_keypad_4th_bedroom_name:
+    name: Name
+
+#script:
+#  door_keypad_front_save:
+#    alias: Save
+#    sequence:
+#      - service:
