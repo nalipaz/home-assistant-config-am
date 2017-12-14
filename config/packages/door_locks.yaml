@@ -367,7 +367,7 @@ input_boolean:
     name: Front Door
   door_keypad_1_rear_switch:
     name: Rear Door
-  door_keypad_1_garage_site_switch:
+  door_keypad_1_garage_side_switch:
     name: Garage Side Door
   door_keypad_1_4th_bedroom_switch:
     name: 4th Bedroom Door
@@ -375,7 +375,7 @@ input_boolean:
     name: Front Door
   door_keypad_2_rear_switch:
     name: Rear Door
-  door_keypad_2_garage_site_switch:
+  door_keypad_2_garage_side_switch:
     name: Garage Side Door
   door_keypad_2_4th_bedroom_switch:
     name: 4th Bedroom Door
@@ -383,7 +383,7 @@ input_boolean:
     name: Front Door
   door_keypad_3_rear_switch:
     name: Rear Door
-  door_keypad_3_garage_site_switch:
+  door_keypad_3_garage_side_switch:
     name: Garage Side Door
   door_keypad_3_4th_bedroom_switch:
     name: 4th Bedroom Door
@@ -391,7 +391,7 @@ input_boolean:
     name: Front Door
   door_keypad_4_rear_switch:
     name: Rear Door
-  door_keypad_4_garage_site_switch:
+  door_keypad_4_garage_side_switch:
     name: Garage Side Door
   door_keypad_4_4th_bedroom_switch:
     name: 4th Bedroom Door
@@ -399,7 +399,7 @@ input_boolean:
     name: Front Door
   door_keypad_5_rear_switch:
     name: Rear Door
-  door_keypad_5_garage_site_switch:
+  door_keypad_5_garage_side_switch:
     name: Garage Side Door
   door_keypad_5_4th_bedroom_switch:
     name: 4th Bedroom Door
@@ -407,7 +407,7 @@ input_boolean:
     name: Front Door
   door_keypad_6_rear_switch:
     name: Rear Door
-  door_keypad_6_garage_site_switch:
+  door_keypad_6_garage_side_switch:
     name: Garage Side Door
   door_keypad_6_4th_bedroom_switch:
     name: 4th Bedroom Door
@@ -415,7 +415,7 @@ input_boolean:
     name: Front Door
   door_keypad_7_rear_switch:
     name: Rear Door
-  door_keypad_7_garage_site_switch:
+  door_keypad_7_garage_side_switch:
     name: Garage Side Door
   door_keypad_7_4th_bedroom_switch:
     name: 4th Bedroom Door
@@ -423,7 +423,7 @@ input_boolean:
     name: Front Door
   door_keypad_8_rear_switch:
     name: Rear Door
-  door_keypad_8_garage_site_switch:
+  door_keypad_8_garage_side_switch:
     name: Garage Side Door
   door_keypad_8_4th_bedroom_switch:
     name: 4th Bedroom Door
@@ -431,7 +431,7 @@ input_boolean:
     name: Front Door
   door_keypad_9_rear_switch:
     name: Rear Door
-  door_keypad_9_garage_site_switch:
+  door_keypad_9_garage_side_switch:
     name: Garage Side Door
   door_keypad_9_4th_bedroom_switch:
     name: 4th Bedroom Door
