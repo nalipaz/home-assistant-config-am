@@ -44,6 +44,8 @@ group:
     entities:
       - input_text.door_keypad_front_1_name
       - input_text.door_keypad_front_1_code
+      - input_datetime.door_keypad_front_1_date_start
+      - input_datetime.door_keypad_front_1_date_end
       - script.door_keypad_front_1_save
   door_keypad_front_2:
     name: Front Door Pin Code 2
@@ -441,6 +443,16 @@ input_text:
     name: Name
   door_keypad_4th_bedroom_10_code:
     name: Code
+
+input_datetime:
+  door_keypad_front_1_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_front_1_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
 
 script:
   door_keypad_front_1_save:
