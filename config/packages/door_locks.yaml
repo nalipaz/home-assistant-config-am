@@ -47,7 +47,10 @@ group:
       - input_select.door_keypad_1_access_schedule
       - input_datetime.door_keypad_1_date_start
       - input_datetime.door_keypad_1_date_end
-      - script.door_keypad_1_save
+      - input_boolean.door_keypad_1_front_switch
+      - input_boolean.door_keypad_1_rear_switch
+      - input_boolean.door_keypad_1_garage_side_switch
+      - input_boolean.door_keypad_1_4th_bedroom_switch
   door_keypad_2:
     name: Pin Code 2
     entities:
@@ -56,7 +59,10 @@ group:
       - input_select.door_keypad_2_access_schedule
       - input_datetime.door_keypad_2_date_start
       - input_datetime.door_keypad_2_date_end
-      - script.door_keypad_2_save
+      - input_boolean.door_keypad_2_front_switch
+      - input_boolean.door_keypad_2_rear_switch
+      - input_boolean.door_keypad_2_garage_side_switch
+      - input_boolean.door_keypad_2_4th_bedroom_switch
   door_keypad_3:
     name: Pin Code 3
     entities:
@@ -65,7 +71,10 @@ group:
       - input_select.door_keypad_3_access_schedule
       - input_datetime.door_keypad_3_date_start
       - input_datetime.door_keypad_3_date_end
-      - script.door_keypad_3_save
+      - input_boolean.door_keypad_3_front_switch
+      - input_boolean.door_keypad_3_rear_switch
+      - input_boolean.door_keypad_3_garage_side_switch
+      - input_boolean.door_keypad_3_4th_bedroom_switch
   door_keypad_4:
     name: Pin Code 4
     entities:
@@ -74,7 +83,10 @@ group:
       - input_select.door_keypad_4_access_schedule
       - input_datetime.door_keypad_4_date_start
       - input_datetime.door_keypad_4_date_end
-      - script.door_keypad_4_save
+      - input_boolean.door_keypad_4_front_switch
+      - input_boolean.door_keypad_4_rear_switch
+      - input_boolean.door_keypad_4_garage_side_switch
+      - input_boolean.door_keypad_4_4th_bedroom_switch
   door_keypad_5:
     name: Pin Code 5
     entities:
@@ -83,7 +95,10 @@ group:
       - input_select.door_keypad_5_access_schedule
       - input_datetime.door_keypad_5_date_start
       - input_datetime.door_keypad_5_date_end
-      - script.door_keypad_5_save
+      - input_boolean.door_keypad_5_front_switch
+      - input_boolean.door_keypad_5_rear_switch
+      - input_boolean.door_keypad_5_garage_side_switch
+      - input_boolean.door_keypad_5_4th_bedroom_switch
   door_keypad_6:
     name: Pin Code 6
     entities:
@@ -92,7 +107,10 @@ group:
       - input_select.door_keypad_6_access_schedule
       - input_datetime.door_keypad_6_date_start
       - input_datetime.door_keypad_6_date_end
-      - script.door_keypad_6_save
+      - input_boolean.door_keypad_6_front_switch
+      - input_boolean.door_keypad_6_rear_switch
+      - input_boolean.door_keypad_6_garage_side_switch
+      - input_boolean.door_keypad_6_4th_bedroom_switch
   door_keypad_7:
     name: Pin Code 7
     entities:
@@ -101,7 +119,10 @@ group:
       - input_select.door_keypad_7_access_schedule
       - input_datetime.door_keypad_7_date_start
       - input_datetime.door_keypad_7_date_end
-      - script.door_keypad_7_save
+      - input_boolean.door_keypad_7_front_switch
+      - input_boolean.door_keypad_7_rear_switch
+      - input_boolean.door_keypad_7_garage_side_switch
+      - input_boolean.door_keypad_7_4th_bedroom_switch
   door_keypad_8:
     name: Pin Code 8
     entities:
@@ -110,7 +131,10 @@ group:
       - input_select.door_keypad_8_access_schedule
       - input_datetime.door_keypad_8_date_start
       - input_datetime.door_keypad_8_date_end
-      - script.door_keypad_8_save
+      - input_boolean.door_keypad_8_front_switch
+      - input_boolean.door_keypad_8_rear_switch
+      - input_boolean.door_keypad_8_garage_side_switch
+      - input_boolean.door_keypad_8_4th_bedroom_switch
   door_keypad_9:
     name: Pin Code 9
     entities:
@@ -119,7 +143,10 @@ group:
       - input_select.door_keypad_9_access_schedule
       - input_datetime.door_keypad_9_date_start
       - input_datetime.door_keypad_9_date_end
-      - script.door_keypad_9_save
+      - input_boolean.door_keypad_9_front_switch
+      - input_boolean.door_keypad_9_rear_switch
+      - input_boolean.door_keypad_9_garage_side_switch
+      - input_boolean.door_keypad_9_4th_bedroom_switch
   door_keypad_10:
     name: Pin Code 10
     entities:
@@ -128,7 +155,10 @@ group:
       - input_select.door_keypad_10_access_schedule
       - input_datetime.door_keypad_10_date_start
       - input_datetime.door_keypad_10_date_end
-      - script.door_keypad_10_save
+      - input_boolean.door_keypad_10_front_switch
+      - input_boolean.door_keypad_10_rear_switch
+      - input_boolean.door_keypad_10_garage_side_switch
+      - input_boolean.door_keypad_10_4th_bedroom_switch
 
 input_text:
   door_keypad_1_name:
