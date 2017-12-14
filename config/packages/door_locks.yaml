@@ -46,241 +46,600 @@ group:
       - input_text.door_keypad_front_1_code
       - input_datetime.door_keypad_front_1_date_start
       - input_datetime.door_keypad_front_1_date_end
+      - door_keypad_front_1_access_schedule
+      - group.door_keypad_front_1_datetimes
       - script.door_keypad_front_1_save
+
+  door_keypad_front_1_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_front_1_date_start
+      - input_datetime.door_keypad_front_1_date_end
+
   door_keypad_front_2:
     name: Front Door Pin Code 2
     entities:
       - input_text.door_keypad_front_2_name
       - input_text.door_keypad_front_2_code
+      - door_keypad_front_2_access_schedule
+      - group.door_keypad_front_2_datetimes
       - script.door_keypad_front_2_save
+
+  door_keypad_front_2_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_front_2_date_start
+      - input_datetime.door_keypad_front_2_date_end
+
   door_keypad_front_3:
     name: Front Door Pin Code 3
     entities:
       - input_text.door_keypad_front_3_name
       - input_text.door_keypad_front_3_code
+      - door_keypad_front_3_access_schedule
+      - group.door_keypad_front_3_datetimes
       - script.door_keypad_front_3_save
+
+  door_keypad_front_3_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_front_3_date_start
+      - input_datetime.door_keypad_front_3_date_end
+
   door_keypad_front_4:
     name: Front Door Pin Code 4
     entities:
       - input_text.door_keypad_front_4_name
       - input_text.door_keypad_front_4_code
+      - door_keypad_front_4_access_schedule
+      - group.door_keypad_front_4_datetimes
       - script.door_keypad_front_4_save
+
+  door_keypad_front_4_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_front_4_date_start
+      - input_datetime.door_keypad_front_4_date_end
+
   door_keypad_front_5:
     name: Front Door Pin Code 5
     entities:
       - input_text.door_keypad_front_5_name
       - input_text.door_keypad_front_5_code
+      - door_keypad_front_5_access_schedule
+      - group.door_keypad_front_5_datetimes
       - script.door_keypad_front_5_save
+
+  door_keypad_front_5_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_front_5_date_start
+      - input_datetime.door_keypad_front_5_date_end
+
   door_keypad_front_6:
     name: Front Door Pin Code 6
     entities:
       - input_text.door_keypad_front_6_name
       - input_text.door_keypad_front_6_code
+      - door_keypad_front_6_access_schedule
+      - group.door_keypad_front_6_datetimes
       - script.door_keypad_front_6_save
+
+  door_keypad_front_6_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_front_6_date_start
+      - input_datetime.door_keypad_front_6_date_end
+
   door_keypad_front_7:
     name: Front Door Pin Code 7
     entities:
       - input_text.door_keypad_front_7_name
       - input_text.door_keypad_front_7_code
+      - door_keypad_front_7_access_schedule
+      - group.door_keypad_front_7_datetimes
       - script.door_keypad_front_7_save
+
+  door_keypad_front_7_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_front_7_date_start
+      - input_datetime.door_keypad_front_7_date_end
+
   door_keypad_front_8:
     name: Front Door Pin Code 8
     entities:
       - input_text.door_keypad_front_8_name
       - input_text.door_keypad_front_8_code
+      - door_keypad_front_8_access_schedule
+      - group.door_keypad_front_8_datetimes
       - script.door_keypad_front_8_save
+
+  door_keypad_front_8_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_front_8_date_start
+      - input_datetime.door_keypad_front_8_date_end
+
   door_keypad_front_9:
     name: Front Door Pin Code 9
     entities:
       - input_text.door_keypad_front_9_name
       - input_text.door_keypad_front_9_code
+      - door_keypad_front_9_access_schedule
+      - group.door_keypad_front_9_datetimes
       - script.door_keypad_front_9_save
+
+  door_keypad_front_9_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_front_9_date_start
+      - input_datetime.door_keypad_front_9_date_end
+
   door_keypad_front_10:
     name: Front Door Pin Code 10
     entities:
       - input_text.door_keypad_front_10_name
       - input_text.door_keypad_front_10_code
+      - door_keypad_front_10_access_schedule
+      - group.door_keypad_front_10_datetimes
       - script.door_keypad_front_10_save
+
+  door_keypad_front_10_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_front_10_date_start
+      - input_datetime.door_keypad_front_10_date_end
+
   door_keypad_rear_1:
     name: Rear Door Pin Code 1
     entities:
       - input_text.door_keypad_rear_1_name
       - input_text.door_keypad_rear_1_code
+      - door_keypad_rear_1_access_schedule
+      - group.door_keypad_rear_1_datetimes
       - script.door_keypad_rear_1_save
+
+  door_keypad_rear_1_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_rear_1_date_start
+      - input_datetime.door_keypad_rear_1_date_end
+
   door_keypad_rear_2:
     name: Rear Door Pin Code 2
     entities:
       - input_text.door_keypad_rear_2_name
       - input_text.door_keypad_rear_2_code
+      - door_keypad_rear_2_access_schedule
+      - group.door_keypad_rear_2_datetimes
       - script.door_keypad_rear_2_save
+
+  door_keypad_rear_2_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_rear_2_date_start
+      - input_datetime.door_keypad_rear_2_date_end
+
   door_keypad_rear_3:
     name: Rear Door Pin Code 3
     entities:
       - input_text.door_keypad_rear_3_name
       - input_text.door_keypad_rear_3_code
+      - door_keypad_rear_3_access_schedule
+      - group.door_keypad_rear_3_datetimes
       - script.door_keypad_rear_3_save
+
+  door_keypad_rear_3_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_rear_3_date_start
+      - input_datetime.door_keypad_rear_3_date_end
+
   door_keypad_rear_4:
     name: Rear Door Pin Code 4
     entities:
       - input_text.door_keypad_rear_4_name
       - input_text.door_keypad_rear_4_code
+      - door_keypad_rear_4_access_schedule
+      - group.door_keypad_rear_4_datetimes
       - script.door_keypad_rear_4_save
+
+  door_keypad_rear_4_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_rear_4_date_start
+      - input_datetime.door_keypad_rear_4_date_end
+
   door_keypad_rear_5:
     name: Rear Door Pin Code 5
     entities:
       - input_text.door_keypad_rear_5_name
       - input_text.door_keypad_rear_5_code
+      - door_keypad_rear_5_access_schedule
+      - group.door_keypad_rear_5_datetimes
       - script.door_keypad_rear_5_save
+
+  door_keypad_rear_5_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_rear_5_date_start
+      - input_datetime.door_keypad_rear_5_date_end
+
   door_keypad_rear_6:
     name: Rear Door Pin Code 6
     entities:
       - input_text.door_keypad_rear_6_name
       - input_text.door_keypad_rear_6_code
+      - door_keypad_rear_6_access_schedule
+      - group.door_keypad_rear_6_datetimes
       - script.door_keypad_rear_6_save
+
+  door_keypad_rear_6_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_rear_6_date_start
+      - input_datetime.door_keypad_rear_6_date_end
+
   door_keypad_rear_7:
     name: Rear Door Pin Code 7
     entities:
       - input_text.door_keypad_rear_7_name
       - input_text.door_keypad_rear_7_code
+      - door_keypad_rear_7_access_schedule
+      - group.door_keypad_rear_7_datetimes
       - script.door_keypad_rear_7_save
+
+  door_keypad_rear_7_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_rear_7_date_start
+      - input_datetime.door_keypad_rear_7_date_end
+
   door_keypad_rear_8:
     name: Rear Door Pin Code 8
     entities:
       - input_text.door_keypad_rear_8_name
       - input_text.door_keypad_rear_8_code
+      - door_keypad_rear_8_access_schedule
+      - group.door_keypad_rear_8_datetimes
       - script.door_keypad_rear_8_save
+
+  door_keypad_rear_8_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_rear_8_date_start
+      - input_datetime.door_keypad_rear_8_date_end
+
   door_keypad_rear_9:
     name: Rear Door Pin Code 9
     entities:
       - input_text.door_keypad_rear_9_name
       - input_text.door_keypad_rear_9_code
+      - door_keypad_rear_9_access_schedule
+      - group.door_keypad_rear_9_datetimes
       - script.door_keypad_rear_9_save
+
+  door_keypad_rear_9_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_rear_9_date_start
+      - input_datetime.door_keypad_rear_9_date_end
+
   door_keypad_rear_10:
     name: Rear Door Pin Code 10
     entities:
       - input_text.door_keypad_rear_10_name
       - input_text.door_keypad_rear_10_code
+      - door_keypad_rear_10_access_schedule
+      - group.door_keypad_rear_10_datetimes
       - script.door_keypad_rear_10_save
+
+  door_keypad_rear_10_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_rear_10_date_start
+      - input_datetime.door_keypad_rear_10_date_end
+
   door_keypad_garage_side_1:
     name: Garage Side Door Pin Code 1
     entities:
       - input_text.door_keypad_garage_side_1_name
       - input_text.door_keypad_garage_side_1_code
+      - door_keypad_garage_side_1_access_schedule
+      - group.door_keypad_garage_side_1_datetimes
       - script.door_keypad_garage_side_1_save
+
+  door_keypad_garage_side_1_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_garage_side_1_date_start
+      - input_datetime.door_keypad_garage_side_1_date_end
+
   door_keypad_garage_side_2:
     name: Garage Side Door Pin Code 2
     entities:
       - input_text.door_keypad_garage_side_2_name
       - input_text.door_keypad_garage_side_2_code
+      - door_keypad_garage_side_2_access_schedule
+      - group.door_keypad_garage_side_2_datetimes
       - script.door_keypad_garage_side_2_save
+
+  door_keypad_garage_side_2_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_garage_side_2_date_start
+      - input_datetime.door_keypad_garage_side_2_date_end
+
   door_keypad_garage_side_3:
     name: Garage Side Door Pin Code 3
     entities:
       - input_text.door_keypad_garage_side_3_name
       - input_text.door_keypad_garage_side_3_code
+      - door_keypad_garage_side_3_access_schedule
+      - group.door_keypad_garage_side_3_datetimes
       - script.door_keypad_garage_side_3_save
+
+  door_keypad_garage_side_3_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_garage_side_3_date_start
+      - input_datetime.door_keypad_garage_side_3_date_end
+
   door_keypad_garage_side_4:
     name: Garage Side Door Pin Code 4
     entities:
       - input_text.door_keypad_garage_side_4_name
       - input_text.door_keypad_garage_side_4_code
+      - door_keypad_garage_side_4_access_schedule
+      - group.door_keypad_garage_side_4_datetimes
       - script.door_keypad_garage_side_4_save
+
+  door_keypad_garage_side_4_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_garage_side_4_date_start
+      - input_datetime.door_keypad_garage_side_4_date_end
+
   door_keypad_garage_side_5:
     name: Garage Side Door Pin Code 5
     entities:
       - input_text.door_keypad_garage_side_5_name
       - input_text.door_keypad_garage_side_5_code
+      - door_keypad_garage_side_5_access_schedule
+      - group.door_keypad_garage_side_5_datetimes
       - script.door_keypad_garage_side_5_save
+
+  door_keypad_garage_side_5_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_garage_side_5_date_start
+      - input_datetime.door_keypad_garage_side_5_date_end
+
   door_keypad_garage_side_6:
     name: Garage Side Door Pin Code 6
     entities:
       - input_text.door_keypad_garage_side_6_name
       - input_text.door_keypad_garage_side_6_code
+      - door_keypad_garage_side_6_access_schedule
+      - group.door_keypad_garage_side_6_datetimes
       - script.door_keypad_garage_side_6_save
+
+  door_keypad_garage_side_6_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_garage_side_6_date_start
+      - input_datetime.door_keypad_garage_side_6_date_end
+
   door_keypad_garage_side_7:
     name: Garage Side Door Pin Code 7
     entities:
       - input_text.door_keypad_garage_side_7_name
       - input_text.door_keypad_garage_side_7_code
+      - door_keypad_garage_side_7_access_schedule
+      - group.door_keypad_garage_side_7_datetimes
       - script.door_keypad_garage_side_7_save
+
+  door_keypad_garage_side_7_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_garage_side_7_date_start
+      - input_datetime.door_keypad_garage_side_7_date_end
+
   door_keypad_garage_side_8:
     name: Garage Side Door Pin Code 8
     entities:
       - input_text.door_keypad_garage_side_8_name
       - input_text.door_keypad_garage_side_8_code
+      - door_keypad_garage_side_8_access_schedule
+      - group.door_keypad_garage_side_8_datetimes
       - script.door_keypad_garage_side_8_save
+
+  door_keypad_garage_side_8_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_garage_side_8_date_start
+      - input_datetime.door_keypad_garage_side_8_date_end
+
   door_keypad_garage_side_9:
     name: Garage Side Door Pin Code 9
     entities:
       - input_text.door_keypad_garage_side_9_name
       - input_text.door_keypad_garage_side_9_code
+      - door_keypad_garage_side_9_access_schedule
+      - group.door_keypad_garage_side_9_datetimes
       - script.door_keypad_garage_side_9_save
+
+  door_keypad_garage_side_9_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_garage_side_9_date_start
+      - input_datetime.door_keypad_garage_side_9_date_end
+
   door_keypad_garage_side_10:
     name: Garage Side Door Pin Code 10
     entities:
       - input_text.door_keypad_garage_side_10_name
       - input_text.door_keypad_garage_side_10_code
+      - door_keypad_garage_side_10_access_schedule
+      - group.door_keypad_garage_side_10_datetimes
       - script.door_keypad_garage_side_10_save
+
+  door_keypad_garage_side_10_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_garage_side_10_date_start
+      - input_datetime.door_keypad_garage_side_10_date_end
+
   door_keypad_4th_bedroom_1:
     name: 4th Bedroom Door Pin Code 1
     entities:
       - input_text.door_keypad_4th_bedroom_1_name
       - input_text.door_keypad_4th_bedroom_1_code
+      - door_keypad_4th_bedroom_1_access_schedule
+      - group.door_keypad_4th_bedroom_1_datetimes
       - script.door_keypad_4th_bedroom_1_save
+
+  door_keypad_4th_bedroom_1_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_4th_bedroom_1_date_start
+      - input_datetime.door_keypad_4th_bedroom_1_date_end
+
   door_keypad_4th_bedroom_2:
     name: 4th Bedroom Door Pin Code 2
     entities:
       - input_text.door_keypad_4th_bedroom_2_name
       - input_text.door_keypad_4th_bedroom_2_code
+      - door_keypad_4th_bedroom_2_access_schedule
+      - group.door_keypad_4th_bedroom_2_datetimes
       - script.door_keypad_4th_bedroom_2_save
+
+  door_keypad_4th_bedroom_2_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_4th_bedroom_2_date_start
+      - input_datetime.door_keypad_4th_bedroom_2_date_end
+
   door_keypad_4th_bedroom_3:
     name: 4th Bedroom Door Pin Code 3
     entities:
       - input_text.door_keypad_4th_bedroom_3_name
       - input_text.door_keypad_4th_bedroom_3_code
+      - door_keypad_4th_bedroom_3_access_schedule
+      - group.door_keypad_4th_bedroom_3_datetimes
       - script.door_keypad_4th_bedroom_3_save
+
+  door_keypad_4th_bedroom_3_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_4th_bedroom_3_date_start
+      - input_datetime.door_keypad_4th_bedroom_3_date_end
+
   door_keypad_4th_bedroom_4:
     name: 4th Bedroom Door Pin Code 4
     entities:
       - input_text.door_keypad_4th_bedroom_4_name
       - input_text.door_keypad_4th_bedroom_4_code
+      - door_keypad_4th_bedroom_4_access_schedule
+      - group.door_keypad_4th_bedroom_4_datetimes
       - script.door_keypad_4th_bedroom_4_save
+
+  door_keypad_4th_bedroom_4_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_4th_bedroom_4_date_start
+      - input_datetime.door_keypad_4th_bedroom_4_date_end
+
   door_keypad_4th_bedroom_5:
     name: 4th Bedroom Door Pin Code 5
     entities:
       - input_text.door_keypad_4th_bedroom_5_name
       - input_text.door_keypad_4th_bedroom_5_code
+      - door_keypad_4th_bedroom_5_access_schedule
+      - group.door_keypad_4th_bedroom_5_datetimes
       - script.door_keypad_4th_bedroom_5_save
+
+  door_keypad_4th_bedroom_5_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_4th_bedroom_5_date_start
+      - input_datetime.door_keypad_4th_bedroom_5_date_end
+
   door_keypad_4th_bedroom_6:
     name: 4th Bedroom Door Pin Code 6
     entities:
       - input_text.door_keypad_4th_bedroom_6_name
       - input_text.door_keypad_4th_bedroom_6_code
+      - door_keypad_4th_bedroom_6_access_schedule
+      - group.door_keypad_4th_bedroom_6_datetimes
       - script.door_keypad_4th_bedroom_6_save
+
+  door_keypad_4th_bedroom_6_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_4th_bedroom_6_date_start
+      - input_datetime.door_keypad_4th_bedroom_6_date_end
+
   door_keypad_4th_bedroom_7:
     name: 4th Bedroom Door Pin Code 7
     entities:
       - input_text.door_keypad_4th_bedroom_7_name
       - input_text.door_keypad_4th_bedroom_7_code
+      - door_keypad_4th_bedroom_7_access_schedule
+      - group.door_keypad_4th_bedroom_7_datetimes
       - script.door_keypad_4th_bedroom_7_save
+
+  door_keypad_4th_bedroom_7_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_4th_bedroom_7_date_start
+      - input_datetime.door_keypad_4th_bedroom_7_date_end
+
   door_keypad_4th_bedroom_8:
     name: 4th Bedroom Door Pin Code 8
     entities:
       - input_text.door_keypad_4th_bedroom_8_name
       - input_text.door_keypad_4th_bedroom_8_code
+      - door_keypad_4th_bedroom_8_access_schedule
+      - group.door_keypad_4th_bedroom_8_datetimes
       - script.door_keypad_4th_bedroom_8_save
+
+  door_keypad_4th_bedroom_8_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_4th_bedroom_8_date_start
+      - input_datetime.door_keypad_4th_bedroom_8_date_end
+
   door_keypad_4th_bedroom_9:
     name: 4th Bedroom Door Pin Code 9
     entities:
       - input_text.door_keypad_4th_bedroom_9_name
       - input_text.door_keypad_4th_bedroom_9_code
+      - door_keypad_4th_bedroom_9_access_schedule
+      - group.door_keypad_4th_bedroom_9_datetimes
       - script.door_keypad_4th_bedroom_9_save
+
+  door_keypad_4th_bedroom_9_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_4th_bedroom_9_date_start
+      - input_datetime.door_keypad_4th_bedroom_9_date_end
+
   door_keypad_4th_bedroom_10:
     name: 4th Bedroom Door Pin Code 10
     entities:
       - input_text.door_keypad_4th_bedroom_10_name
       - input_text.door_keypad_4th_bedroom_10_code
+      - door_keypad_4th_bedroom_10_access_schedule
+      - group.door_keypad_4th_bedroom_10_datetimes
       - script.door_keypad_4th_bedroom_10_save
+
+  door_keypad_4th_bedroom_10_datetimes:
+    name: Dates
+    entities:
+      - input_datetime.door_keypad_4th_bedroom_10_date_start
+      - input_datetime.door_keypad_4th_bedroom_10_date_end
 
 input_text:
   door_keypad_front_1_name:
@@ -444,12 +803,566 @@ input_text:
   door_keypad_4th_bedroom_10_code:
     name: Code
 
+input_select:
+  door_keypad_front_1_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_front_2_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_front_3_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_front_4_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_front_5_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_front_6_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_front_7_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_front_8_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_front_9_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_front_10_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_rear_1_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_rear_2_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_rear_3_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_rear_4_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_rear_5_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_rear_6_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_rear_7_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_rear_8_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_rear_9_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_rear_10_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_garage_side_1_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_garage_side_2_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_garage_side_3_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_garage_side_4_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_garage_side_5_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_garage_side_6_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_garage_side_7_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_garage_side_8_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_garage_side_9_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_garage_side_10_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_4th_bedroom_1_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_4th_bedroom_2_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_4th_bedroom_3_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_4th_bedroom_4_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_4th_bedroom_5_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_4th_bedroom_6_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_4th_bedroom_7_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_4th_bedroom_8_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_4th_bedroom_9_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+  door_keypad_4th_bedroom_10_access_schedule:
+    name: Access Schedule
+    options:
+      - Always
+      - Recurring
+      - Temporary
+
 input_datetime:
   door_keypad_front_1_date_start:
     name: Start Time
     has_date: true
     has_time: true
   door_keypad_front_1_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_front_2_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_front_2_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_front_3_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_front_3_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_front_4_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_front_4_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_front_5_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_front_5_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_front_6_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_front_6_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_front_7_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_front_7_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_front_8_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_front_8_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_front_9_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_front_9_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_front_10_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_front_10_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_1_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_1_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_2_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_2_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_3_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_3_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_4_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_4_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_5_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_5_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_6_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_6_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_7_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_7_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_8_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_8_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_9_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_9_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_10_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_rear_10_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_1_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_1_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_2_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_2_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_3_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_3_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_4_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_4_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_5_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_5_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_6_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_6_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_7_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_7_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_8_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_8_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_9_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_9_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_10_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_garage_side_10_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_1_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_1_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_2_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_2_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_3_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_3_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_4_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_4_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_5_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_5_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_6_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_6_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_7_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_7_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_8_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_8_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_9_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_9_date_end:
+    name: End Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_10_date_start:
+    name: Start Time
+    has_date: true
+    has_time: true
+  door_keypad_4th_bedroom_10_date_end:
     name: End Time
     has_date: true
     has_time: true
