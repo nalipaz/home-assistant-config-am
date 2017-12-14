@@ -39,21 +39,21 @@
 #          usercode: !secret 1br_temp_code
 
 group:
-  keypad_front:
-    name: Front Door Keypad
+  keypads:
+    name: Door Keypads
     view: yes
     icon: mdi:dialpad
     entities:
-      - group.door_keypad_front_1
-      - group.door_keypad_front_2
-      - group.door_keypad_front_3
-      - group.door_keypad_front_4
-      - group.door_keypad_front_5
-      - group.door_keypad_front_6
-      - group.door_keypad_front_7
-      - group.door_keypad_front_8
-      - group.door_keypad_front_9
-      - group.door_keypad_front_10
+      - group.door_keypad_1
+      - group.door_keypad_2
+      - group.door_keypad_3
+      - group.door_keypad_4
+      - group.door_keypad_5
+      - group.door_keypad_6
+      - group.door_keypad_7
+      - group.door_keypad_8
+      - group.door_keypad_9
+      - group.door_keypad_10
 
   door_keypad_1:
     name: Pin Code 1
