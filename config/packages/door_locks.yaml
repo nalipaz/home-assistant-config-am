@@ -44,8 +44,6 @@ group:
     entities:
       - input_text.door_keypad_front_1_name
       - input_text.door_keypad_front_1_code
-      - input_datetime.door_keypad_front_1_date_start
-      - input_datetime.door_keypad_front_1_date_end
       - group.door_keypad_front_1_access_schedule
       - group.door_keypad_front_1_datetimes
       - script.door_keypad_front_1_save
