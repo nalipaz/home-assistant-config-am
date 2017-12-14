@@ -46,7 +46,7 @@ group:
       - input_text.door_keypad_front_1_code
       - input_datetime.door_keypad_front_1_date_start
       - input_datetime.door_keypad_front_1_date_end
-      - door_keypad_front_1_access_schedule
+      - group.door_keypad_front_1_access_schedule
       - group.door_keypad_front_1_datetimes
       - script.door_keypad_front_1_save
 
@@ -61,7 +61,7 @@ group:
     entities:
       - input_text.door_keypad_front_2_name
       - input_text.door_keypad_front_2_code
-      - door_keypad_front_2_access_schedule
+      - group.door_keypad_front_2_access_schedule
       - group.door_keypad_front_2_datetimes
       - script.door_keypad_front_2_save
 
@@ -76,7 +76,7 @@ group:
     entities:
       - input_text.door_keypad_front_3_name
       - input_text.door_keypad_front_3_code
-      - door_keypad_front_3_access_schedule
+      - group.door_keypad_front_3_access_schedule
       - group.door_keypad_front_3_datetimes
       - script.door_keypad_front_3_save
 
@@ -91,7 +91,7 @@ group:
     entities:
       - input_text.door_keypad_front_4_name
       - input_text.door_keypad_front_4_code
-      - door_keypad_front_4_access_schedule
+      - group.door_keypad_front_4_access_schedule
       - group.door_keypad_front_4_datetimes
       - script.door_keypad_front_4_save
 
@@ -106,7 +106,7 @@ group:
     entities:
       - input_text.door_keypad_front_5_name
       - input_text.door_keypad_front_5_code
-      - door_keypad_front_5_access_schedule
+      - group.door_keypad_front_5_access_schedule
       - group.door_keypad_front_5_datetimes
       - script.door_keypad_front_5_save
 
@@ -121,7 +121,7 @@ group:
     entities:
       - input_text.door_keypad_front_6_name
       - input_text.door_keypad_front_6_code
-      - door_keypad_front_6_access_schedule
+      - group.door_keypad_front_6_access_schedule
       - group.door_keypad_front_6_datetimes
       - script.door_keypad_front_6_save
 
@@ -136,7 +136,7 @@ group:
     entities:
       - input_text.door_keypad_front_7_name
       - input_text.door_keypad_front_7_code
-      - door_keypad_front_7_access_schedule
+      - group.door_keypad_front_7_access_schedule
       - group.door_keypad_front_7_datetimes
       - script.door_keypad_front_7_save
 
@@ -151,7 +151,7 @@ group:
     entities:
       - input_text.door_keypad_front_8_name
       - input_text.door_keypad_front_8_code
-      - door_keypad_front_8_access_schedule
+      - group.door_keypad_front_8_access_schedule
       - group.door_keypad_front_8_datetimes
       - script.door_keypad_front_8_save
 
@@ -166,7 +166,7 @@ group:
     entities:
       - input_text.door_keypad_front_9_name
       - input_text.door_keypad_front_9_code
-      - door_keypad_front_9_access_schedule
+      - group.door_keypad_front_9_access_schedule
       - group.door_keypad_front_9_datetimes
       - script.door_keypad_front_9_save
 
@@ -181,7 +181,7 @@ group:
     entities:
       - input_text.door_keypad_front_10_name
       - input_text.door_keypad_front_10_code
-      - door_keypad_front_10_access_schedule
+      - group.door_keypad_front_10_access_schedule
       - group.door_keypad_front_10_datetimes
       - script.door_keypad_front_10_save
 
