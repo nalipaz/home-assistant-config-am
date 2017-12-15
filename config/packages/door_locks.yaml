@@ -287,7 +287,7 @@ automation:
 
 group:
   keypads:
-    name: Door Keypads
+    name: Personal Entry Codes
     view: yes
     icon: mdi:dialpad
     entities:
@@ -303,7 +303,7 @@ group:
       - group.door_keypad_10
 
   keypads_maids:
-    name: Maids
+    name: Maid Entry Code Entry Codes
     view: yes
     icon: mdi:basket-fill
     entities:
@@ -319,7 +319,7 @@ group:
       - group.door_keypad_20
 
   keypads_airbnb:
-    name: Airbnb
+    name: Airbnb Entry Codes
     view: yes
     icon: mdi:hotel
     entities:
@@ -336,7 +336,7 @@ group:
 
   door_keypad_1:
     control: hidden
-    name: Pin Code 1
+    name: Entry Code 1
     entities:
       - input_text.door_keypad_1_name
       - input_text.door_keypad_1_code
@@ -350,7 +350,7 @@ group:
       - script.door_keypad_1_delete
   door_keypad_2:
     control: hidden
-    name: Pin Code 2
+    name: Entry Code 2
     entities:
       - input_text.door_keypad_2_name
       - input_text.door_keypad_2_code
@@ -364,7 +364,7 @@ group:
       - script.door_keypad_2_delete
   door_keypad_3:
     control: hidden
-    name: Pin Code 3
+    name: Entry Code 3
     entities:
       - input_text.door_keypad_3_name
       - input_text.door_keypad_3_code
@@ -378,7 +378,7 @@ group:
       - script.door_keypad_3_delete
   door_keypad_4:
     control: hidden
-    name: Pin Code 4
+    name: Entry Code 4
     entities:
       - input_text.door_keypad_4_name
       - input_text.door_keypad_4_code
@@ -392,7 +392,7 @@ group:
       - script.door_keypad_4_delete
   door_keypad_5:
     control: hidden
-    name: Pin Code 5
+    name: Entry Code 5
     entities:
       - input_text.door_keypad_5_name
       - input_text.door_keypad_5_code
@@ -406,7 +406,7 @@ group:
       - script.door_keypad_5_delete
   door_keypad_6:
     control: hidden
-    name: Pin Code 6
+    name: Entry Code 6
     entities:
       - input_text.door_keypad_6_name
       - input_text.door_keypad_6_code
@@ -420,7 +420,7 @@ group:
       - script.door_keypad_6_delete
   door_keypad_7:
     control: hidden
-    name: Pin Code 7
+    name: Entry Code 7
     entities:
       - input_text.door_keypad_7_name
       - input_text.door_keypad_7_code
@@ -434,7 +434,7 @@ group:
       - script.door_keypad_7_delete
   door_keypad_8:
     control: hidden
-    name: Pin Code 8
+    name: Entry Code 8
     entities:
       - input_text.door_keypad_8_name
       - input_text.door_keypad_8_code
@@ -448,7 +448,7 @@ group:
       - script.door_keypad_8_delete
   door_keypad_9:
     control: hidden
-    name: Pin Code 9
+    name: Entry Code 9
     entities:
       - input_text.door_keypad_9_name
       - input_text.door_keypad_9_code
@@ -462,7 +462,7 @@ group:
       - script.door_keypad_9_delete
   door_keypad_10:
     control: hidden
-    name: Pin Code 10
+    name: Entry Code 10
     entities:
       - input_text.door_keypad_10_name
       - input_text.door_keypad_10_code
@@ -477,7 +477,7 @@ group:
 
   door_keypad_11:
     control: hidden
-    name: Maid 1
+    name: Maid Entry Code 1
     entities:
       - input_text.door_keypad_11_name
       - input_text.door_keypad_11_code
@@ -491,7 +491,7 @@ group:
       - script.door_keypad_11_delete
   door_keypad_12:
     control: hidden
-    name: Maid 2
+    name: Maid Entry Code 2
     entities:
       - input_text.door_keypad_12_name
       - input_text.door_keypad_12_code
@@ -505,7 +505,7 @@ group:
       - script.door_keypad_12_delete
   door_keypad_13:
     control: hidden
-    name: Maid 3
+    name: Maid Entry Code 3
     entities:
       - input_text.door_keypad_13_name
       - input_text.door_keypad_13_code
@@ -519,7 +519,7 @@ group:
       - script.door_keypad_13_delete
   door_keypad_14:
     control: hidden
-    name: Maid 4
+    name: Maid Entry Code 4
     entities:
       - input_text.door_keypad_14_name
       - input_text.door_keypad_14_code
@@ -533,7 +533,7 @@ group:
       - script.door_keypad_14_delete
   door_keypad_15:
     control: hidden
-    name: Maid 5
+    name: Maid Entry Code 5
     entities:
       - input_text.door_keypad_15_name
       - input_text.door_keypad_15_code
@@ -547,7 +547,7 @@ group:
       - script.door_keypad_15_delete
   door_keypad_16:
     control: hidden
-    name: Maid 6
+    name: Maid Entry Code 6
     entities:
       - input_text.door_keypad_16_name
       - input_text.door_keypad_16_code
@@ -561,7 +561,7 @@ group:
       - script.door_keypad_16_delete
   door_keypad_17:
     control: hidden
-    name: Maid 7
+    name: Maid Entry Code 7
     entities:
       - input_text.door_keypad_17_name
       - input_text.door_keypad_17_code
@@ -575,7 +575,7 @@ group:
       - script.door_keypad_17_delete
   door_keypad_18:
     control: hidden
-    name: Maid 8
+    name: Maid Entry Code 8
     entities:
       - input_text.door_keypad_18_name
       - input_text.door_keypad_18_code
@@ -589,7 +589,7 @@ group:
       - script.door_keypad_18_delete
   door_keypad_19:
     control: hidden
-    name: Maid 9
+    name: Maid Entry Code 9
     entities:
       - input_text.door_keypad_19_name
       - input_text.door_keypad_19_code
@@ -603,7 +603,7 @@ group:
       - script.door_keypad_19_delete
   door_keypad_20:
     control: hidden
-    name: Maid 10
+    name: Maid Entry Code 10
     entities:
       - input_text.door_keypad_20_name
       - input_text.door_keypad_20_code
@@ -617,7 +617,7 @@ group:
       - script.door_keypad_20_delete
   door_keypad_21:
     control: hidden
-    name: Airbnb Guest 1
+    name: Airbnb Entry Code 1
     entities:
       - input_text.door_keypad_21_name
       - input_text.door_keypad_21_code
@@ -631,7 +631,7 @@ group:
       - script.door_keypad_21_delete
   door_keypad_22:
     control: hidden
-    name: Airbnb Guest 2
+    name: Airbnb Entry Code 2
     entities:
       - input_text.door_keypad_22_name
       - input_text.door_keypad_22_code
@@ -645,7 +645,7 @@ group:
       - script.door_keypad_22_delete
   door_keypad_23:
     control: hidden
-    name: Airbnb Guest 3
+    name: Airbnb Entry Code 3
     entities:
       - input_text.door_keypad_23_name
       - input_text.door_keypad_23_code
@@ -659,7 +659,7 @@ group:
       - script.door_keypad_23_delete
   door_keypad_24:
     control: hidden
-    name: Airbnb Guest 4
+    name: Airbnb Entry Code 4
     entities:
       - input_text.door_keypad_24_name
       - input_text.door_keypad_24_code
@@ -673,7 +673,7 @@ group:
       - script.door_keypad_24_delete
   door_keypad_25:
     control: hidden
-    name: Airbnb Guest 5
+    name: Airbnb Entry Code 5
     entities:
       - input_text.door_keypad_25_name
       - input_text.door_keypad_25_code
@@ -687,7 +687,7 @@ group:
       - script.door_keypad_25_delete
   door_keypad_26:
     control: hidden
-    name: Airbnb Guest 6
+    name: Airbnb Entry Code 6
     entities:
       - input_text.door_keypad_26_name
       - input_text.door_keypad_26_code
@@ -701,7 +701,7 @@ group:
       - script.door_keypad_26_delete
   door_keypad_27:
     control: hidden
-    name: Airbnb Guest 7
+    name: Airbnb Entry Code 7
     entities:
       - input_text.door_keypad_27_name
       - input_text.door_keypad_27_code
@@ -715,7 +715,7 @@ group:
       - script.door_keypad_27_delete
   door_keypad_28:
     control: hidden
-    name: Airbnb Guest 8
+    name: Airbnb Entry Code 8
     entities:
       - input_text.door_keypad_28_name
       - input_text.door_keypad_28_code
@@ -729,7 +729,7 @@ group:
       - script.door_keypad_28_delete
   door_keypad_29:
     control: hidden
-    name: Airbnb Guest 9
+    name: Airbnb Entry Code 9
     entities:
       - input_text.door_keypad_29_name
       - input_text.door_keypad_29_code
@@ -743,7 +743,7 @@ group:
       - script.door_keypad_29_delete
   door_keypad_30:
     control: hidden
-    name: Airbnb Guest 10
+    name: Airbnb Entry Code 10
     entities:
       - input_text.door_keypad_30_name
       - input_text.door_keypad_30_code
