@@ -300,7 +300,7 @@ group:
   keypads:
     name: Maids
     view: yes
-    icon: mdi:dialpad
+    icon: mdi:basket-fill
     entities:
       - group.door_keypad_11
       - group.door_keypad_12
@@ -316,7 +316,7 @@ group:
   keypads:
     name: Airbnb
     view: yes
-    icon: mdi:dialpad
+    icon: mdi:hotel
     entities:
       - group.door_keypad_21
       - group.door_keypad_22
