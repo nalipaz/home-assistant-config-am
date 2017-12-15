@@ -339,26 +339,6 @@ automation:
             {% set input_id = 'input_text.door_keypad_' ~ lock_id ~ '_code' %}
             {{ input_id }}
 
-      - service: input_datetime.set_datetime
-        data_template:
-          date: ''
-          time: ''
-          entity_id: >-
-            {% set object_id = trigger.to_state.object_id %}
-            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
-            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_start' %}
-            {{ input_id }}
-
-      - service: input_datetime.set_datetime
-        data_template:
-          date: ''
-          time: ''
-          entity_id: >-
-            {% set object_id = trigger.to_state.object_id %}
-            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
-            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_end' %}
-            {{ input_id }}
-
       - service: input_select.select_option
         data_template:
           value: 'Always'
@@ -367,6 +347,26 @@ automation:
             {% set lock_id = "_".join(object_id.split("_")[2:]) %}
             {% set input_id = 'input_select.door_keypad_' ~ lock_id ~ '_access_schedule' %}
             {{ input_id }}
+
+#      - service: input_datetime.set_datetime
+#        data_template:
+#          date: ''
+#          time: ''
+#          entity_id: >-
+#            {% set object_id = trigger.to_state.object_id %}
+#            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
+#            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_start' %}
+#            {{ input_id }}
+#
+#      - service: input_datetime.set_datetime
+#        data_template:
+#          date: ''
+#          time: ''
+#          entity_id: >-
+#            {% set object_id = trigger.to_state.object_id %}
+#            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
+#            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_end' %}
+#            {{ input_id }}
 
 
 
