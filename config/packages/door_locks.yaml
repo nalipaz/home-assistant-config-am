@@ -1540,7 +1540,7 @@ script:
         entity_id: input_text.door_keypad_1_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_1_access_schedule
 
   door_keypad_2_delete:
@@ -1556,7 +1556,7 @@ script:
         entity_id: input_text.door_keypad_2_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_2_access_schedule
 
   door_keypad_3_delete:
@@ -1572,7 +1572,7 @@ script:
         entity_id: input_text.door_keypad_3_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_3_access_schedule
 
   door_keypad_4_delete:
@@ -1588,7 +1588,7 @@ script:
         entity_id: input_text.door_keypad_4_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_4_access_schedule
 
   door_keypad_5_delete:
@@ -1604,7 +1604,7 @@ script:
         entity_id: input_text.door_keypad_5_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_5_access_schedule
 
   door_keypad_6_delete:
@@ -1620,7 +1620,7 @@ script:
         entity_id: input_text.door_keypad_6_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_6_access_schedule
 
   door_keypad_7_delete:
@@ -1636,7 +1636,7 @@ script:
         entity_id: input_text.door_keypad_7_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_7_access_schedule
 
   door_keypad_8_delete:
@@ -1652,7 +1652,7 @@ script:
         entity_id: input_text.door_keypad_8_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_8_access_schedule
 
   door_keypad_9_delete:
@@ -1668,7 +1668,7 @@ script:
         entity_id: input_text.door_keypad_9_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_9_access_schedule
 
   door_keypad_10_delete:
@@ -1684,7 +1684,7 @@ script:
         entity_id: input_text.door_keypad_10_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_10_access_schedule
 
   door_keypad_11_delete:
@@ -1700,7 +1700,7 @@ script:
         entity_id: input_text.door_keypad_11_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_11_access_schedule
 
   door_keypad_12_delete:
@@ -1716,7 +1716,7 @@ script:
         entity_id: input_text.door_keypad_12_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_12_access_schedule
 
   door_keypad_13_delete:
@@ -1732,7 +1732,7 @@ script:
         entity_id: input_text.door_keypad_13_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_13_access_schedule
 
   door_keypad_14_delete:
@@ -1748,7 +1748,7 @@ script:
         entity_id: input_text.door_keypad_14_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_14_access_schedule
 
   door_keypad_15_delete:
@@ -1764,7 +1764,7 @@ script:
         entity_id: input_text.door_keypad_15_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_15_access_schedule
 
   door_keypad_16_delete:
@@ -1780,7 +1780,7 @@ script:
         entity_id: input_text.door_keypad_16_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_16_access_schedule
 
   door_keypad_17_delete:
@@ -1796,7 +1796,7 @@ script:
         entity_id: input_text.door_keypad_17_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_17_access_schedule
 
   door_keypad_18_delete:
@@ -1812,7 +1812,7 @@ script:
         entity_id: input_text.door_keypad_18_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_18_access_schedule
 
   door_keypad_19_delete:
@@ -1828,7 +1828,7 @@ script:
         entity_id: input_text.door_keypad_19_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_19_access_schedule
 
   door_keypad_20_delete:
@@ -1844,7 +1844,7 @@ script:
         entity_id: input_text.door_keypad_20_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_20_access_schedule
 
   door_keypad_21_delete:
@@ -1860,7 +1860,7 @@ script:
         entity_id: input_text.door_keypad_21_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_21_access_schedule
 
   door_keypad_22_delete:
@@ -1876,7 +1876,7 @@ script:
         entity_id: input_text.door_keypad_22_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_22_access_schedule
 
   door_keypad_23_delete:
@@ -1892,7 +1892,7 @@ script:
         entity_id: input_text.door_keypad_23_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_23_access_schedule
 
   door_keypad_24_delete:
@@ -1908,7 +1908,7 @@ script:
         entity_id: input_text.door_keypad_24_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_24_access_schedule
 
   door_keypad_25_delete:
@@ -1924,7 +1924,7 @@ script:
         entity_id: input_text.door_keypad_25_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_25_access_schedule
 
   door_keypad_26_delete:
@@ -1940,7 +1940,7 @@ script:
         entity_id: input_text.door_keypad_26_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_26_access_schedule
 
   door_keypad_27_delete:
@@ -1956,7 +1956,7 @@ script:
         entity_id: input_text.door_keypad_27_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_27_access_schedule
 
   door_keypad_28_delete:
@@ -1972,7 +1972,7 @@ script:
         entity_id: input_text.door_keypad_28_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_28_access_schedule
 
   door_keypad_29_delete:
@@ -1988,7 +1988,7 @@ script:
         entity_id: input_text.door_keypad_29_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_29_access_schedule
 
   door_keypad_30_delete:
@@ -2004,7 +2004,7 @@ script:
         entity_id: input_text.door_keypad_30_code
     - service: input_select.select_option
       data:
-        value: 'Always'
+        option: 'Always'
         entity_id: input_select.door_keypad_30_access_schedule
 
 #      - service: input_datetime.set_datetime
