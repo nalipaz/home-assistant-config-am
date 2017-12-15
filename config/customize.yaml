@@ -4,3 +4,5 @@ group.keypads_maids:
   order: 11
 group.keypads_airbnb:
   order: 12
+group.all_locks:
+  friendly_name: Locks
