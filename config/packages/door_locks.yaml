@@ -1572,6 +1572,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_1_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_1_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_1_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_1_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_1_4thbedroom_switch
 
   door_keypad_2_delete:
     alias: Delete
@@ -1588,6 +1600,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_2_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_2_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_2_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_2_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_2_4thbedroom_switch
 
   door_keypad_3_delete:
     alias: Delete
@@ -1604,6 +1628,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_3_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_3_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_3_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_3_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_3_4thbedroom_switch
 
   door_keypad_4_delete:
     alias: Delete
@@ -1620,6 +1656,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_4_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_4_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_4_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_4_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_4_4thbedroom_switch
 
   door_keypad_5_delete:
     alias: Delete
@@ -1636,6 +1684,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_5_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_5_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_5_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_5_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_5_4thbedroom_switch
 
   door_keypad_6_delete:
     alias: Delete
@@ -1652,6 +1712,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_6_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_6_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_6_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_6_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_6_4thbedroom_switch
 
   door_keypad_7_delete:
     alias: Delete
@@ -1668,6 +1740,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_7_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_7_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_7_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_7_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_7_4thbedroom_switch
 
   door_keypad_8_delete:
     alias: Delete
@@ -1684,6 +1768,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_8_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_8_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_8_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_8_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_8_4thbedroom_switch
 
   door_keypad_9_delete:
     alias: Delete
@@ -1700,6 +1796,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_9_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_9_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_9_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_9_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_9_4thbedroom_switch
 
   door_keypad_10_delete:
     alias: Delete
@@ -1716,6 +1824,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_10_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_10_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_10_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_10_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_10_4thbedroom_switch
 
   door_keypad_11_delete:
     alias: Delete
@@ -1732,6 +1852,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_11_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_11_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_11_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_11_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_11_4thbedroom_switch
 
   door_keypad_12_delete:
     alias: Delete
@@ -1748,6 +1880,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_12_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_12_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_12_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_12_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_12_4thbedroom_switch
 
   door_keypad_13_delete:
     alias: Delete
@@ -1764,6 +1908,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_13_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_13_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_13_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_13_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_13_4thbedroom_switch
 
   door_keypad_14_delete:
     alias: Delete
@@ -1780,6 +1936,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_14_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_14_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_14_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_14_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_14_4thbedroom_switch
 
   door_keypad_15_delete:
     alias: Delete
@@ -1796,6 +1964,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_15_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_15_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_15_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_15_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_15_4thbedroom_switch
 
   door_keypad_16_delete:
     alias: Delete
@@ -1812,6 +1992,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_16_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_16_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_16_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_16_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_16_4thbedroom_switch
 
   door_keypad_17_delete:
     alias: Delete
@@ -1828,6 +2020,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_17_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_17_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_17_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_17_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_17_4thbedroom_switch
 
   door_keypad_18_delete:
     alias: Delete
@@ -1844,6 +2048,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_18_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_18_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_18_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_18_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_18_4thbedroom_switch
 
   door_keypad_19_delete:
     alias: Delete
@@ -1860,6 +2076,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_19_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_19_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_19_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_19_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_19_4thbedroom_switch
 
   door_keypad_20_delete:
     alias: Delete
@@ -1876,6 +2104,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_20_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_20_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_20_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_20_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_20_4thbedroom_switch
 
   door_keypad_21_delete:
     alias: Delete
@@ -1892,6 +2132,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_21_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_21_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_21_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_21_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_21_4thbedroom_switch
 
   door_keypad_22_delete:
     alias: Delete
@@ -1908,6 +2160,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_22_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_22_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_22_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_22_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_22_4thbedroom_switch
 
   door_keypad_23_delete:
     alias: Delete
@@ -1924,6 +2188,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_23_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_23_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_23_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_23_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_23_4thbedroom_switch
 
   door_keypad_24_delete:
     alias: Delete
@@ -1940,6 +2216,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_24_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_24_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_24_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_24_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_24_4thbedroom_switch
 
   door_keypad_25_delete:
     alias: Delete
@@ -1956,6 +2244,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_25_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_25_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_25_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_25_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_25_4thbedroom_switch
 
   door_keypad_26_delete:
     alias: Delete
@@ -1972,6 +2272,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_26_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_26_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_26_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_26_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_26_4thbedroom_switch
 
   door_keypad_27_delete:
     alias: Delete
@@ -1988,6 +2300,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_27_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_27_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_27_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_27_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_27_4thbedroom_switch
 
   door_keypad_28_delete:
     alias: Delete
@@ -2004,6 +2328,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_28_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_28_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_28_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_28_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_28_4thbedroom_switch
 
   door_keypad_29_delete:
     alias: Delete
@@ -2020,6 +2356,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_29_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_29_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_29_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_29_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_29_4thbedroom_switch
 
   door_keypad_30_delete:
     alias: Delete
@@ -2036,6 +2384,18 @@ script:
       data:
         option: 'Always'
         entity_id: input_select.door_keypad_30_access_schedule
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_30_front_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_30_rear_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_30_garageside_switch
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.door_keypad_30_4thbedroom_switch
 
 #      - service: input_datetime.set_datetime
 #        data_template:
