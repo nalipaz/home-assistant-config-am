@@ -124,6 +124,16 @@ automation:
           - input_boolean.door_keypad_28_4thbedroom_switch
           - input_boolean.door_keypad_29_4thbedroom_switch
           - input_boolean.door_keypad_30_4thbedroom_switch
+    condition:
+      - condition: and
+        conditions:
+          - condition: template
+            value_template: >-
+              {% set object_id = trigger.to_state.object_id %}
+              {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
+              {% set select_id = 'door_keypad_' ~ code_slot ~ '_access_schedule'
+              {{ states['input_select'][select_id].state == 'Always' }}
+
     action:
       - service: lock.set_usercode
         data_template:
@@ -269,6 +279,16 @@ automation:
           - input_boolean.door_keypad_28_4thbedroom_switch
           - input_boolean.door_keypad_29_4thbedroom_switch
           - input_boolean.door_keypad_30_4thbedroom_switch
+    condition:
+      - condition: and
+        conditions:
+          - condition: template
+            value_template: >-
+              {% set object_id = trigger.to_state.object_id %}
+              {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
+              {% set select_id = 'door_keypad_' ~ code_slot ~ '_access_schedule'
+              {{ states['input_select'][select_id].state == 'Always' }}
+
     action:
       - service: lock.set_usercode
         data_template:
