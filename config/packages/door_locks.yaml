@@ -285,91 +285,6 @@ automation:
             {{ code_slot }}
 
 
-  - alias: Keypad card turned off
-    trigger:
-      - platform: state
-        to: 'off'
-        entity_id:
-          - group.door_keypad_1
-          - group.door_keypad_2
-          - group.door_keypad_3
-          - group.door_keypad_4
-          - group.door_keypad_5
-          - group.door_keypad_6
-          - group.door_keypad_7
-          - group.door_keypad_8
-          - group.door_keypad_9
-          - group.door_keypad_10
-          - group.door_keypad_11
-          - group.door_keypad_12
-          - group.door_keypad_13
-          - group.door_keypad_14
-          - group.door_keypad_15
-          - group.door_keypad_16
-          - group.door_keypad_17
-          - group.door_keypad_18
-          - group.door_keypad_19
-          - group.door_keypad_20
-          - group.door_keypad_21
-          - group.door_keypad_22
-          - group.door_keypad_23
-          - group.door_keypad_24
-          - group.door_keypad_25
-          - group.door_keypad_26
-          - group.door_keypad_27
-          - group.door_keypad_28
-          - group.door_keypad_29
-          - group.door_keypad_30
-    action:
-      - service: input_text.set_value
-        data_template:
-          value: ''
-          entity_id: >-
-            {% set object_id = trigger.to_state.object_id %}
-            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
-            {% set input_id = 'input_text.door_keypad_' ~ lock_id ~ '_name' %}
-            {{ input_id }}
-
-      - service: input_text.set_value
-        data_template:
-          value: ''
-          entity_id: >-
-            {% set object_id = trigger.to_state.object_id %}
-            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
-            {% set input_id = 'input_text.door_keypad_' ~ lock_id ~ '_code' %}
-            {{ input_id }}
-
-      - service: input_select.select_option
-        data_template:
-          value: 'Always'
-          entity_id: >-
-            {% set object_id = trigger.to_state.object_id %}
-            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
-            {% set input_id = 'input_select.door_keypad_' ~ lock_id ~ '_access_schedule' %}
-            {{ input_id }}
-
-#      - service: input_datetime.set_datetime
-#        data_template:
-#          date: ''
-#          time: ''
-#          entity_id: >-
-#            {% set object_id = trigger.to_state.object_id %}
-#            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
-#            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_start' %}
-#            {{ input_id }}
-#
-#      - service: input_datetime.set_datetime
-#        data_template:
-#          date: ''
-#          time: ''
-#          entity_id: >-
-#            {% set object_id = trigger.to_state.object_id %}
-#            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
-#            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_end' %}
-#            {{ input_id }}
-
-
-
 group:
   keypads:
     name: Door Keypads
@@ -431,6 +346,7 @@ group:
       - input_boolean.door_keypad_1_rear_switch
       - input_boolean.door_keypad_1_garageside_switch
       - input_boolean.door_keypad_1_4thbedroom_switch
+      - script.door_keypad_1_delete
   door_keypad_2:
     name: Pin Code 2
     entities:
@@ -443,6 +359,7 @@ group:
       - input_boolean.door_keypad_2_rear_switch
       - input_boolean.door_keypad_2_garageside_switch
       - input_boolean.door_keypad_2_4thbedroom_switch
+      - script.door_keypad_2_delete
   door_keypad_3:
     name: Pin Code 3
     entities:
@@ -455,6 +372,7 @@ group:
       - input_boolean.door_keypad_3_rear_switch
       - input_boolean.door_keypad_3_garageside_switch
       - input_boolean.door_keypad_3_4thbedroom_switch
+      - script.door_keypad_3_delete
   door_keypad_4:
     name: Pin Code 4
     entities:
@@ -467,6 +385,7 @@ group:
       - input_boolean.door_keypad_4_rear_switch
       - input_boolean.door_keypad_4_garageside_switch
       - input_boolean.door_keypad_4_4thbedroom_switch
+      - script.door_keypad_4_delete
   door_keypad_5:
     name: Pin Code 5
     entities:
@@ -479,6 +398,7 @@ group:
       - input_boolean.door_keypad_5_rear_switch
       - input_boolean.door_keypad_5_garageside_switch
       - input_boolean.door_keypad_5_4thbedroom_switch
+      - script.door_keypad_5_delete
   door_keypad_6:
     name: Pin Code 6
     entities:
@@ -491,6 +411,7 @@ group:
       - input_boolean.door_keypad_6_rear_switch
       - input_boolean.door_keypad_6_garageside_switch
       - input_boolean.door_keypad_6_4thbedroom_switch
+      - script.door_keypad_6_delete
   door_keypad_7:
     name: Pin Code 7
     entities:
@@ -503,6 +424,7 @@ group:
       - input_boolean.door_keypad_7_rear_switch
       - input_boolean.door_keypad_7_garageside_switch
       - input_boolean.door_keypad_7_4thbedroom_switch
+      - script.door_keypad_7_delete
   door_keypad_8:
     name: Pin Code 8
     entities:
@@ -515,6 +437,7 @@ group:
       - input_boolean.door_keypad_8_rear_switch
       - input_boolean.door_keypad_8_garageside_switch
       - input_boolean.door_keypad_8_4thbedroom_switch
+      - script.door_keypad_8_delete
   door_keypad_9:
     name: Pin Code 9
     entities:
@@ -527,6 +450,7 @@ group:
       - input_boolean.door_keypad_9_rear_switch
       - input_boolean.door_keypad_9_garageside_switch
       - input_boolean.door_keypad_9_4thbedroom_switch
+      - script.door_keypad_9_delete
   door_keypad_10:
     name: Pin Code 10
     entities:
@@ -539,6 +463,7 @@ group:
       - input_boolean.door_keypad_10_rear_switch
       - input_boolean.door_keypad_10_garageside_switch
       - input_boolean.door_keypad_10_4thbedroom_switch
+      - script.door_keypad_10_delete
 
   door_keypad_11:
     name: Maid 1
@@ -552,6 +477,7 @@ group:
       - input_boolean.door_keypad_11_rear_switch
       - input_boolean.door_keypad_11_garageside_switch
       - input_boolean.door_keypad_11_4thbedroom_switch
+      - script.door_keypad_11_delete
   door_keypad_12:
     name: Maid 2
     entities:
@@ -564,6 +490,7 @@ group:
       - input_boolean.door_keypad_12_rear_switch
       - input_boolean.door_keypad_12_garageside_switch
       - input_boolean.door_keypad_12_4thbedroom_switch
+      - script.door_keypad_12_delete
   door_keypad_13:
     name: Maid 3
     entities:
@@ -576,6 +503,7 @@ group:
       - input_boolean.door_keypad_13_rear_switch
       - input_boolean.door_keypad_13_garageside_switch
       - input_boolean.door_keypad_13_4thbedroom_switch
+      - script.door_keypad_13_delete
   door_keypad_14:
     name: Maid 4
     entities:
@@ -588,6 +516,7 @@ group:
       - input_boolean.door_keypad_14_rear_switch
       - input_boolean.door_keypad_14_garageside_switch
       - input_boolean.door_keypad_14_4thbedroom_switch
+      - script.door_keypad_14_delete
   door_keypad_15:
     name: Maid 5
     entities:
@@ -600,6 +529,7 @@ group:
       - input_boolean.door_keypad_15_rear_switch
       - input_boolean.door_keypad_15_garageside_switch
       - input_boolean.door_keypad_15_4thbedroom_switch
+      - script.door_keypad_15_delete
   door_keypad_16:
     name: Maid 6
     entities:
@@ -612,6 +542,7 @@ group:
       - input_boolean.door_keypad_16_rear_switch
       - input_boolean.door_keypad_16_garageside_switch
       - input_boolean.door_keypad_16_4thbedroom_switch
+      - script.door_keypad_16_delete
   door_keypad_17:
     name: Maid 7
     entities:
@@ -624,6 +555,7 @@ group:
       - input_boolean.door_keypad_17_rear_switch
       - input_boolean.door_keypad_17_garageside_switch
       - input_boolean.door_keypad_17_4thbedroom_switch
+      - script.door_keypad_17_delete
   door_keypad_18:
     name: Maid 8
     entities:
@@ -636,6 +568,7 @@ group:
       - input_boolean.door_keypad_18_rear_switch
       - input_boolean.door_keypad_18_garageside_switch
       - input_boolean.door_keypad_18_4thbedroom_switch
+      - script.door_keypad_18_delete
   door_keypad_19:
     name: Maid 9
     entities:
@@ -648,6 +581,7 @@ group:
       - input_boolean.door_keypad_19_rear_switch
       - input_boolean.door_keypad_19_garageside_switch
       - input_boolean.door_keypad_19_4thbedroom_switch
+      - script.door_keypad_19_delete
   door_keypad_20:
     name: Maid 10
     entities:
@@ -660,6 +594,7 @@ group:
       - input_boolean.door_keypad_20_rear_switch
       - input_boolean.door_keypad_20_garageside_switch
       - input_boolean.door_keypad_20_4thbedroom_switch
+      - script.door_keypad_20_delete
   door_keypad_21:
     name: Airbnb Guest 1
     entities:
@@ -672,6 +607,7 @@ group:
       - input_boolean.door_keypad_21_rear_switch
       - input_boolean.door_keypad_21_garageside_switch
       - input_boolean.door_keypad_21_4thbedroom_switch
+      - script.door_keypad_21_delete
   door_keypad_22:
     name: Airbnb Guest 2
     entities:
@@ -684,6 +620,7 @@ group:
       - input_boolean.door_keypad_22_rear_switch
       - input_boolean.door_keypad_22_garageside_switch
       - input_boolean.door_keypad_22_4thbedroom_switch
+      - script.door_keypad_22_delete
   door_keypad_23:
     name: Airbnb Guest 3
     entities:
@@ -696,6 +633,7 @@ group:
       - input_boolean.door_keypad_23_rear_switch
       - input_boolean.door_keypad_23_garageside_switch
       - input_boolean.door_keypad_23_4thbedroom_switch
+      - script.door_keypad_23_delete
   door_keypad_24:
     name: Airbnb Guest 4
     entities:
@@ -708,6 +646,7 @@ group:
       - input_boolean.door_keypad_24_rear_switch
       - input_boolean.door_keypad_24_garageside_switch
       - input_boolean.door_keypad_24_4thbedroom_switch
+      - script.door_keypad_24_delete
   door_keypad_25:
     name: Airbnb Guest 5
     entities:
@@ -720,6 +659,7 @@ group:
       - input_boolean.door_keypad_25_rear_switch
       - input_boolean.door_keypad_25_garageside_switch
       - input_boolean.door_keypad_25_4thbedroom_switch
+      - script.door_keypad_25_delete
   door_keypad_26:
     name: Airbnb Guest 6
     entities:
@@ -732,6 +672,7 @@ group:
       - input_boolean.door_keypad_26_rear_switch
       - input_boolean.door_keypad_26_garageside_switch
       - input_boolean.door_keypad_26_4thbedroom_switch
+      - script.door_keypad_26_delete
   door_keypad_27:
     name: Airbnb Guest 7
     entities:
@@ -744,6 +685,7 @@ group:
       - input_boolean.door_keypad_27_rear_switch
       - input_boolean.door_keypad_27_garageside_switch
       - input_boolean.door_keypad_27_4thbedroom_switch
+      - script.door_keypad_27_delete
   door_keypad_28:
     name: Airbnb Guest 8
     entities:
@@ -756,6 +698,7 @@ group:
       - input_boolean.door_keypad_28_rear_switch
       - input_boolean.door_keypad_28_garageside_switch
       - input_boolean.door_keypad_28_4thbedroom_switch
+      - script.door_keypad_28_delete
   door_keypad_29:
     name: Airbnb Guest 9
     entities:
@@ -768,6 +711,7 @@ group:
       - input_boolean.door_keypad_29_rear_switch
       - input_boolean.door_keypad_29_garageside_switch
       - input_boolean.door_keypad_29_4thbedroom_switch
+      - script.door_keypad_29_delete
   door_keypad_30:
     name: Airbnb Guest 10
     entities:
@@ -780,6 +724,7 @@ group:
       - input_boolean.door_keypad_30_rear_switch
       - input_boolean.door_keypad_30_garageside_switch
       - input_boolean.door_keypad_30_4thbedroom_switch
+      - script.door_keypad_30_delete
 
 input_text:
   door_keypad_1_name:
@@ -1568,3 +1513,516 @@ input_boolean:
     name: Garage Side Door
   door_keypad_30_4thbedroom_switch:
     name: 4th Bedroom Door
+
+
+#script:
+#  door_keypad_1_save:
+#    alias: Save
+#    sequence:
+#      - service: lock.set_usercode
+#        data:
+#          node_id: 37
+#          code_slot: 1
+#        data_template:
+#          usercode: "{{ states('input_text.door_keypad_1_code') }}"
+
+script:
+  door_keypad_1_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_1_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_1_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_1_access_schedule
+
+  door_keypad_2_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_2_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_2_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_2_access_schedule
+
+  door_keypad_3_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_3_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_3_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_3_access_schedule
+
+  door_keypad_4_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_4_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_4_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_4_access_schedule
+
+  door_keypad_5_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_5_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_5_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_5_access_schedule
+
+  door_keypad_6_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_6_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_6_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_6_access_schedule
+
+  door_keypad_7_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_7_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_7_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_7_access_schedule
+
+  door_keypad_8_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_8_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_8_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_8_access_schedule
+
+  door_keypad_9_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_9_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_9_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_9_access_schedule
+
+  door_keypad_10_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_10_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_10_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_10_access_schedule
+
+  door_keypad_11_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_11_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_11_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_11_access_schedule
+
+  door_keypad_12_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_12_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_12_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_12_access_schedule
+
+  door_keypad_13_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_13_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_13_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_13_access_schedule
+
+  door_keypad_14_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_14_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_14_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_14_access_schedule
+
+  door_keypad_15_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_15_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_15_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_15_access_schedule
+
+  door_keypad_16_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_16_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_16_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_16_access_schedule
+
+  door_keypad_17_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_17_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_17_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_17_access_schedule
+
+  door_keypad_18_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_18_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_18_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_18_access_schedule
+
+  door_keypad_19_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_19_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_19_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_19_access_schedule
+
+  door_keypad_20_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_20_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_20_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_20_access_schedule
+
+  door_keypad_21_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_21_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_21_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_21_access_schedule
+
+  door_keypad_22_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_22_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_22_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_22_access_schedule
+
+  door_keypad_23_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_23_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_23_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_23_access_schedule
+
+  door_keypad_24_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_24_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_24_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_24_access_schedule
+
+  door_keypad_25_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_25_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_25_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_25_access_schedule
+
+  door_keypad_26_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_26_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_26_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_26_access_schedule
+
+  door_keypad_27_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_27_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_27_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_27_access_schedule
+
+  door_keypad_28_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_28_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_28_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_28_access_schedule
+
+  door_keypad_29_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_29_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_29_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_29_access_schedule
+
+  door_keypad_30_delete:
+    alias: Delete
+    sequence:
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_30_name
+    - service: input_text.set_value
+      data:
+        value: ''
+        entity_id: input_text.door_keypad_30_code
+    - service: input_select.select_option
+      data:
+        value: 'Always'
+        entity_id: input_select.door_keypad_30_access_schedule
+
+#      - service: input_datetime.set_datetime
+#        data_template:
+#          date: ''
+#          time: ''
+#          entity_id: >-
+#            {% set object_id = trigger.to_state.object_id %}
+#            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
+#            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_start' %}
+#            {{ input_id }}
+#
+#      - service: input_datetime.set_datetime
+#        data_template:
+#          date: ''
+#          time: ''
+#          entity_id: >-
+#            {% set object_id = trigger.to_state.object_id %}
+#            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
+#            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_end' %}
+#            {{ input_id }}
