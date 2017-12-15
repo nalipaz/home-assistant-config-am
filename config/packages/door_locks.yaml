@@ -101,6 +101,64 @@ automation:
             {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
             {% set user_code_id = 'door_keypad_' ~ code_slot ~ '_code' %}
             {{ states['input_text'][user_code_id].state }}
+  - alias: Keypad switch turned off
+    trigger:
+      - platform: state
+        entity_id:
+          - input_boolean.door_keypad_1_front_switch
+          - input_boolean.door_keypad_2_front_switch
+          - input_boolean.door_keypad_3_front_switch
+          - input_boolean.door_keypad_4_front_switch
+          - input_boolean.door_keypad_5_front_switch
+          - input_boolean.door_keypad_6_front_switch
+          - input_boolean.door_keypad_7_front_switch
+          - input_boolean.door_keypad_8_front_switch
+          - input_boolean.door_keypad_9_front_switch
+          - input_boolean.door_keypad_10_front_switch
+          - input_boolean.door_keypad_1_rear_switch
+          - input_boolean.door_keypad_2_rear_switch
+          - input_boolean.door_keypad_3_rear_switch
+          - input_boolean.door_keypad_4_rear_switch
+          - input_boolean.door_keypad_5_rear_switch
+          - input_boolean.door_keypad_6_rear_switch
+          - input_boolean.door_keypad_7_rear_switch
+          - input_boolean.door_keypad_8_rear_switch
+          - input_boolean.door_keypad_9_rear_switch
+          - input_boolean.door_keypad_10_rear_switch
+          - input_boolean.door_keypad_1_garageside_switch
+          - input_boolean.door_keypad_2_garageside_switch
+          - input_boolean.door_keypad_3_garageside_switch
+          - input_boolean.door_keypad_4_garageside_switch
+          - input_boolean.door_keypad_5_garageside_switch
+          - input_boolean.door_keypad_6_garageside_switch
+          - input_boolean.door_keypad_7_garageside_switch
+          - input_boolean.door_keypad_8_garageside_switch
+          - input_boolean.door_keypad_9_garageside_switch
+          - input_boolean.door_keypad_10_garageside_switch
+          - input_boolean.door_keypad_1_4thbedroom_switch
+          - input_boolean.door_keypad_2_4thbedroom_switch
+          - input_boolean.door_keypad_3_4thbedroom_switch
+          - input_boolean.door_keypad_4_4thbedroom_switch
+          - input_boolean.door_keypad_5_4thbedroom_switch
+          - input_boolean.door_keypad_6_4thbedroom_switch
+          - input_boolean.door_keypad_7_4thbedroom_switch
+          - input_boolean.door_keypad_8_4thbedroom_switch
+          - input_boolean.door_keypad_9_4thbedroom_switch
+          - input_boolean.door_keypad_10_4thbedroom_switch
+        to: 'off'
+    action:
+      - service: lock.set_usercode
+        data_template:
+          node_id: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set lock_name = "_".join(object_id.split("_")[3:-1]) %}
+            {% set lock_id = 'lock_' ~ lock_name ~ '_door_locked' %}
+            {{ states['lock'][lock_id].attributes.node_id }}
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
+            {{ code_slot }}
+          usercode: '0000'
 
 group:
   keypads:
