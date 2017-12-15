@@ -335,6 +335,7 @@ group:
       - group.door_keypad_30
 
   door_keypad_1:
+    control: hidden
     name: Pin Code 1
     entities:
       - input_text.door_keypad_1_name
@@ -348,6 +349,7 @@ group:
       - input_boolean.door_keypad_1_4thbedroom_switch
       - script.door_keypad_1_delete
   door_keypad_2:
+    control: hidden
     name: Pin Code 2
     entities:
       - input_text.door_keypad_2_name
@@ -361,6 +363,7 @@ group:
       - input_boolean.door_keypad_2_4thbedroom_switch
       - script.door_keypad_2_delete
   door_keypad_3:
+    control: hidden
     name: Pin Code 3
     entities:
       - input_text.door_keypad_3_name
@@ -374,6 +377,7 @@ group:
       - input_boolean.door_keypad_3_4thbedroom_switch
       - script.door_keypad_3_delete
   door_keypad_4:
+    control: hidden
     name: Pin Code 4
     entities:
       - input_text.door_keypad_4_name
@@ -387,6 +391,7 @@ group:
       - input_boolean.door_keypad_4_4thbedroom_switch
       - script.door_keypad_4_delete
   door_keypad_5:
+    control: hidden
     name: Pin Code 5
     entities:
       - input_text.door_keypad_5_name
@@ -400,6 +405,7 @@ group:
       - input_boolean.door_keypad_5_4thbedroom_switch
       - script.door_keypad_5_delete
   door_keypad_6:
+    control: hidden
     name: Pin Code 6
     entities:
       - input_text.door_keypad_6_name
@@ -413,6 +419,7 @@ group:
       - input_boolean.door_keypad_6_4thbedroom_switch
       - script.door_keypad_6_delete
   door_keypad_7:
+    control: hidden
     name: Pin Code 7
     entities:
       - input_text.door_keypad_7_name
@@ -426,6 +433,7 @@ group:
       - input_boolean.door_keypad_7_4thbedroom_switch
       - script.door_keypad_7_delete
   door_keypad_8:
+    control: hidden
     name: Pin Code 8
     entities:
       - input_text.door_keypad_8_name
@@ -439,6 +447,7 @@ group:
       - input_boolean.door_keypad_8_4thbedroom_switch
       - script.door_keypad_8_delete
   door_keypad_9:
+    control: hidden
     name: Pin Code 9
     entities:
       - input_text.door_keypad_9_name
@@ -452,6 +461,7 @@ group:
       - input_boolean.door_keypad_9_4thbedroom_switch
       - script.door_keypad_9_delete
   door_keypad_10:
+    control: hidden
     name: Pin Code 10
     entities:
       - input_text.door_keypad_10_name
@@ -466,6 +476,7 @@ group:
       - script.door_keypad_10_delete
 
   door_keypad_11:
+    control: hidden
     name: Maid 1
     entities:
       - input_text.door_keypad_11_name
@@ -479,6 +490,7 @@ group:
       - input_boolean.door_keypad_11_4thbedroom_switch
       - script.door_keypad_11_delete
   door_keypad_12:
+    control: hidden
     name: Maid 2
     entities:
       - input_text.door_keypad_12_name
@@ -492,6 +504,7 @@ group:
       - input_boolean.door_keypad_12_4thbedroom_switch
       - script.door_keypad_12_delete
   door_keypad_13:
+    control: hidden
     name: Maid 3
     entities:
       - input_text.door_keypad_13_name
@@ -505,6 +518,7 @@ group:
       - input_boolean.door_keypad_13_4thbedroom_switch
       - script.door_keypad_13_delete
   door_keypad_14:
+    control: hidden
     name: Maid 4
     entities:
       - input_text.door_keypad_14_name
@@ -518,6 +532,7 @@ group:
       - input_boolean.door_keypad_14_4thbedroom_switch
       - script.door_keypad_14_delete
   door_keypad_15:
+    control: hidden
     name: Maid 5
     entities:
       - input_text.door_keypad_15_name
@@ -531,6 +546,7 @@ group:
       - input_boolean.door_keypad_15_4thbedroom_switch
       - script.door_keypad_15_delete
   door_keypad_16:
+    control: hidden
     name: Maid 6
     entities:
       - input_text.door_keypad_16_name
@@ -544,6 +560,7 @@ group:
       - input_boolean.door_keypad_16_4thbedroom_switch
       - script.door_keypad_16_delete
   door_keypad_17:
+    control: hidden
     name: Maid 7
     entities:
       - input_text.door_keypad_17_name
@@ -557,6 +574,7 @@ group:
       - input_boolean.door_keypad_17_4thbedroom_switch
       - script.door_keypad_17_delete
   door_keypad_18:
+    control: hidden
     name: Maid 8
     entities:
       - input_text.door_keypad_18_name
@@ -570,6 +588,7 @@ group:
       - input_boolean.door_keypad_18_4thbedroom_switch
       - script.door_keypad_18_delete
   door_keypad_19:
+    control: hidden
     name: Maid 9
     entities:
       - input_text.door_keypad_19_name
@@ -583,6 +602,7 @@ group:
       - input_boolean.door_keypad_19_4thbedroom_switch
       - script.door_keypad_19_delete
   door_keypad_20:
+    control: hidden
     name: Maid 10
     entities:
       - input_text.door_keypad_20_name
@@ -596,6 +616,7 @@ group:
       - input_boolean.door_keypad_20_4thbedroom_switch
       - script.door_keypad_20_delete
   door_keypad_21:
+    control: hidden
     name: Airbnb Guest 1
     entities:
       - input_text.door_keypad_21_name
@@ -609,6 +630,7 @@ group:
       - input_boolean.door_keypad_21_4thbedroom_switch
       - script.door_keypad_21_delete
   door_keypad_22:
+    control: hidden
     name: Airbnb Guest 2
     entities:
       - input_text.door_keypad_22_name
@@ -622,6 +644,7 @@ group:
       - input_boolean.door_keypad_22_4thbedroom_switch
       - script.door_keypad_22_delete
   door_keypad_23:
+    control: hidden
     name: Airbnb Guest 3
     entities:
       - input_text.door_keypad_23_name
@@ -635,6 +658,7 @@ group:
       - input_boolean.door_keypad_23_4thbedroom_switch
       - script.door_keypad_23_delete
   door_keypad_24:
+    control: hidden
     name: Airbnb Guest 4
     entities:
       - input_text.door_keypad_24_name
@@ -648,6 +672,7 @@ group:
       - input_boolean.door_keypad_24_4thbedroom_switch
       - script.door_keypad_24_delete
   door_keypad_25:
+    control: hidden
     name: Airbnb Guest 5
     entities:
       - input_text.door_keypad_25_name
@@ -661,6 +686,7 @@ group:
       - input_boolean.door_keypad_25_4thbedroom_switch
       - script.door_keypad_25_delete
   door_keypad_26:
+    control: hidden
     name: Airbnb Guest 6
     entities:
       - input_text.door_keypad_26_name
@@ -674,6 +700,7 @@ group:
       - input_boolean.door_keypad_26_4thbedroom_switch
       - script.door_keypad_26_delete
   door_keypad_27:
+    control: hidden
     name: Airbnb Guest 7
     entities:
       - input_text.door_keypad_27_name
@@ -687,6 +714,7 @@ group:
       - input_boolean.door_keypad_27_4thbedroom_switch
       - script.door_keypad_27_delete
   door_keypad_28:
+    control: hidden
     name: Airbnb Guest 8
     entities:
       - input_text.door_keypad_28_name
@@ -700,6 +728,7 @@ group:
       - input_boolean.door_keypad_28_4thbedroom_switch
       - script.door_keypad_28_delete
   door_keypad_29:
+    control: hidden
     name: Airbnb Guest 9
     entities:
       - input_text.door_keypad_29_name
@@ -713,6 +742,7 @@ group:
       - input_boolean.door_keypad_29_4thbedroom_switch
       - script.door_keypad_29_delete
   door_keypad_30:
+    control: hidden
     name: Airbnb Guest 10
     entities:
       - input_text.door_keypad_30_name
