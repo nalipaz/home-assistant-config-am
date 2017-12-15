@@ -297,7 +297,7 @@ group:
       - group.door_keypad_9
       - group.door_keypad_10
 
-  keypads:
+  keypads_maids:
     name: Maids
     view: yes
     icon: mdi:basket-fill
@@ -313,7 +313,7 @@ group:
       - group.door_keypad_19
       - group.door_keypad_20
 
-  keypads:
+  keypads_airbnb:
     name: Airbnb
     view: yes
     icon: mdi:hotel
