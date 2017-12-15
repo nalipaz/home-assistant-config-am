@@ -6,3 +6,4 @@ group.keypads_airbnb:
   order: 12
 group.all_locks:
   friendly_name: Locks
+  hidden: false
