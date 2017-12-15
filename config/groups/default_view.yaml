@@ -9,5 +9,4 @@ default_view:
     - group.garage
     - group.thermostat
     - group.fire_alarms
-    - group.door_locks
     - media_player.roku_5s56d1020224
