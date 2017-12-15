@@ -280,6 +280,84 @@ automation:
             {{ code_slot }}
           usercode: '0000'
 
+    - alias: Keypad card turned off
+    trigger:
+      - platform: state
+        entity_id:
+          - group.door_keypad_1
+          - group.door_keypad_2
+          - group.door_keypad_3
+          - group.door_keypad_4
+          - group.door_keypad_5
+          - group.door_keypad_6
+          - group.door_keypad_7
+          - group.door_keypad_8
+          - group.door_keypad_9
+          - group.door_keypad_10
+          - group.door_keypad_11
+          - group.door_keypad_12
+          - group.door_keypad_13
+          - group.door_keypad_14
+          - group.door_keypad_15
+          - group.door_keypad_16
+          - group.door_keypad_17
+          - group.door_keypad_18
+          - group.door_keypad_19
+          - group.door_keypad_20
+          - group.door_keypad_21
+          - group.door_keypad_22
+          - group.door_keypad_23
+          - group.door_keypad_24
+          - group.door_keypad_25
+          - group.door_keypad_26
+          - group.door_keypad_27
+          - group.door_keypad_28
+          - group.door_keypad_29
+          - group.door_keypad_30
+        to: 'off'
+    action:
+      - service: input_text.set_value
+        data_template:
+          entity_id: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
+            {% set input_id = 'input_text.door_keypad_' ~ lock_id ~ '_name' %}
+            {{ input_id }}
+          value: ''
+      - service: input_text.set_value
+        data_template:
+          entity_id: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
+            {% set input_id = 'input_text.door_keypad_' ~ lock_id ~ '_code' %}
+            {{ input_id }}
+          value: ''
+      - service: input_datetime.set_datetime
+        data_template:
+          entity_id: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
+            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_start' %}
+            {{ input_id }}
+          value: ''
+      - service: input_datetime.set_datetime
+        data_template:
+          entity_id: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
+            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_end' %}
+            {{ input_id }}
+          value: ''
+      - service: input_select.set_option
+        data_template:
+          entity_id: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
+            {% set input_id = 'input_select.door_keypad_' ~ lock_id ~ '_access_schedule' %}
+            {{ input_id }}
+          value: 'Always'
+
+
 group:
   keypads:
     name: Door Keypads
