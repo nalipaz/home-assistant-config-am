@@ -90,7 +90,7 @@ automation:
           node_id: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set lock_name = "_".join(object_id.split("_")[3:-1]) %}
-            {% set lock_id = 'lock_' ~ lock_name ~ '_locked' %}
+            {% set lock_id = 'lock_' ~ lock_name ~ '_door_locked' %}
             {{ states['lock'][lock_id].attributes.node_id }}
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
