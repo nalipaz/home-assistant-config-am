@@ -280,7 +280,7 @@ automation:
             {{ code_slot }}
           usercode: '0000'
 
-    - alias: Keypad card turned off
+  - alias: Keypad card turned off
     trigger:
       - platform: state
         entity_id:
