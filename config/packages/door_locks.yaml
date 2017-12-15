@@ -132,15 +132,18 @@ automation:
             {% set lock_name = "_".join(object_id.split("_")[3:-1]) %}
             {% set lock_id = 'lock_' ~ lock_name ~ '_door_locked' %}
             {{ states['lock'][lock_id].attributes.node_id }}
+            
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
             {{ code_slot }}
+
           usercode: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
             {% set user_code_id = 'door_keypad_' ~ code_slot ~ '_code' %}
             {{ states['input_text'][user_code_id].state }}
+
   - alias: Keypad switch turned off
     trigger:
       - platform: state
@@ -274,10 +277,12 @@ automation:
             {% set lock_name = "_".join(object_id.split("_")[3:-1]) %}
             {% set lock_id = 'lock_' ~ lock_name ~ '_door_locked' %}
             {{ states['lock'][lock_id].attributes.node_id }}
+
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
             {{ code_slot }}
+
           usercode: '0000'
 
   - alias: Keypad card turned off
@@ -323,6 +328,7 @@ automation:
             {% set lock_id = "_".join(object_id.split("_")[2:]) %}
             {% set input_id = 'input_text.door_keypad_' ~ lock_id ~ '_name' %}
             {{ input_id }}
+
           value: ''
       - service: input_text.set_value
         data_template:
@@ -331,6 +337,7 @@ automation:
             {% set lock_id = "_".join(object_id.split("_")[2:]) %}
             {% set input_id = 'input_text.door_keypad_' ~ lock_id ~ '_code' %}
             {{ input_id }}
+
           value: ''
       - service: input_datetime.set_datetime
         data_template:
@@ -339,6 +346,7 @@ automation:
             {% set lock_id = "_".join(object_id.split("_")[2:]) %}
             {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_start' %}
             {{ input_id }}
+
           value: ''
       - service: input_datetime.set_datetime
         data_template:
@@ -347,6 +355,7 @@ automation:
             {% set lock_id = "_".join(object_id.split("_")[2:]) %}
             {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_end' %}
             {{ input_id }}
+
           value: ''
       - service: input_select.set_option
         data_template:
@@ -355,6 +364,7 @@ automation:
             {% set lock_id = "_".join(object_id.split("_")[2:]) %}
             {% set input_id = 'input_select.door_keypad_' ~ lock_id ~ '_access_schedule' %}
             {{ input_id }}
+
           value: 'Always'
 
 
