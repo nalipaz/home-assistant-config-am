@@ -7,3 +7,11 @@ group.keypads_airbnb:
 group.all_locks:
   friendly_name: Locks
   hidden: false
+lock.lock_4thbedroom_door_locked:
+  friendly_name: 4th Bedroom Door
+lock.lock_front_door_locked:
+  friendly_name: Front Door
+lock.lock_garageside_door_locked:
+  friendly_name: Garage Side Door
+lock.lock_rear_door_locked:
+  friendly_name: Rear Door
