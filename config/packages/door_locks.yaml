@@ -303,7 +303,7 @@ group:
       - group.door_keypad_10
 
   keypads_maids:
-    name: Maid Entry Code Entry Codes
+    name: Maid Entry Codes
     view: yes
     icon: mdi:basket-fill
     entities:
