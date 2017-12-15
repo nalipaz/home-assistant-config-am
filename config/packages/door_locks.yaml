@@ -131,7 +131,7 @@ automation:
             value_template: >-
               {% set object_id = trigger.to_state.object_id %}
               {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
-              {% set select_id = 'door_keypad_' ~ code_slot ~ '_access_schedule'
+              {% set select_id = 'door_keypad_' ~ code_slot ~ '_access_schedule' %}
               {{ states['input_select'][select_id].state == 'Always' }}
 
     action:
@@ -286,7 +286,7 @@ automation:
             value_template: >-
               {% set object_id = trigger.to_state.object_id %}
               {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
-              {% set select_id = 'door_keypad_' ~ code_slot ~ '_access_schedule'
+              {% set select_id = 'door_keypad_' ~ code_slot ~ '_access_schedule' %}
               {{ states['input_select'][select_id].state == 'Always' }}
 
     action:
