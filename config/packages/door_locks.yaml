@@ -292,7 +292,7 @@ automation:
     action:
       - service: lock.set_usercode
         data_template:
-          usercode: {{ '0000' | int }}
+          usercode: '0000'
           node_id: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set lock_name = "_".join(object_id.split("_")[3:-1]) %}
