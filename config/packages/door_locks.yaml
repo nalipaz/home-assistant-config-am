@@ -348,7 +348,7 @@ automation:
               {% set object_id = trigger.to_state.object_id %}
               {% set code_slot = object_id[7:-18] %}
               {% set input = 'door_keypad_' ~ code_slot ~ '_front_switch' %}
-              {{ states['input_boolean'][input].state == 'on' %}
+              {{ states['input_boolean'][input].state == 'on' }}
 
     action:
       - service: lock.set_usercode
@@ -411,7 +411,7 @@ automation:
               {% set object_id = trigger.to_state.object_id %}
               {% set code_slot = object_id[7:-18] %}
               {% set input = 'door_keypad_' ~ code_slot ~ '_rear_switch' %}
-              {{ states['input_boolean'][input].state == 'on' %}
+              {{ states['input_boolean'][input].state == 'on' }}
 
     action:
       - service: lock.set_usercode
@@ -474,7 +474,7 @@ automation:
               {% set object_id = trigger.to_state.object_id %}
               {% set code_slot = object_id[7:-18] %}
               {% set input = 'door_keypad_' ~ code_slot ~ '_4thbedroom_switch' %}
-              {{ states['input_boolean'][input].state == 'on' %}
+              {{ states['input_boolean'][input].state == 'on' }}
 
     action:
       - service: lock.set_usercode
@@ -537,7 +537,7 @@ automation:
               {% set object_id = trigger.to_state.object_id %}
               {% set code_slot = object_id[7:-18] %}
               {% set input = 'door_keypad_' ~ code_slot ~ '_garageside_switch' %}
-              {{ states['input_boolean'][input].state == 'on' %}
+              {{ states['input_boolean'][input].state == 'on' }}
 
     action:
       - service: lock.set_usercode
