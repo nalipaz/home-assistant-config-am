@@ -307,7 +307,7 @@ automation:
   - alias: Keypad temporary code start
     trigger:
       - platform: state
-        to: True
+        to: 'True'
         entity_id:
           - sensor.keypad_1_temp_lock_turn_on
           - sensor.keypad_2_temp_lock_turn_on
