@@ -430,6 +430,15 @@ automation:
             {% set code_slot = object_id[7:-18] %}
             {{ code_slot }}
 
+      - service: notify.html5
+        data_template:
+          message: "new code turned on rear"
+          title: "Maravilla: New code started"
+          data:
+            requireInteraction: True
+            tag: "rear"
+            timestamp: "{{ as_timestamp(now()) | int }}"
+
   - alias: Keypad temporary code start (4th bedroom)
     trigger:
       - platform: state
