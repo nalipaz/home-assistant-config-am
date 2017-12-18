@@ -292,7 +292,7 @@ automation:
     action:
       - service: lock.set_usercode
         data_template:
-          usercode: '0000'
+          usercode: {{ '0000' | int }}
           node_id: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set lock_name = "_".join(object_id.split("_")[3:-1]) %}
@@ -345,7 +345,7 @@ automation:
         data_template:
           usercode: >-
             {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18]) %}
+            {% set code_slot = object_id[7:-18] %}
             {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
             {{ states['input_text'][input].state }}
 
@@ -361,7 +361,7 @@ automation:
         data_template:
           usercode: >-
             {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18]) %}
+            {% set code_slot = object_id[7:-18] %}
             {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
             {{ states['input_text'][input].state }}
 
@@ -377,7 +377,7 @@ automation:
         data_template:
           usercode: >-
             {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18]) %}
+            {% set code_slot = object_id[7:-18] %}
             {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
             {{ states['input_text'][input].state }}
 
@@ -386,14 +386,14 @@ automation:
 
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18]) %}
+            {% set code_slot = object_id[7:-18] %}
             {{ code_slot | int }}
 
       - service: lock.set_usercode
         data_template:
           usercode: >-
             {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18]) %}
+            {% set code_slot = object_id[7:-18] %}
             {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
             {{ states['input_text'][input].state }}
 
@@ -402,7 +402,7 @@ automation:
 
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18]) %}
+            {% set code_slot = object_id[7:-18] %}
             {{ code_slot | int }}
 #
 #  - alias: 1BR Airbnb reservation starts
