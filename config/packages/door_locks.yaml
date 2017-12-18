@@ -2670,6 +2670,7 @@ sensor:
     sensors:
       keypad_1_temp_lock_turn_on:
         friendly_name: Turn keypad 1 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_1_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2677,6 +2678,7 @@ sensor:
 
       keypad_2_temp_lock_turn_on:
         friendly_name: Turn keypad 2 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_2_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2684,6 +2686,7 @@ sensor:
 
       keypad_3_temp_lock_turn_on:
         friendly_name: Turn keypad 3 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_3_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2691,6 +2694,7 @@ sensor:
 
       keypad_4_temp_lock_turn_on:
         friendly_name: Turn keypad 4 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_4_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2698,6 +2702,7 @@ sensor:
 
       keypad_5_temp_lock_turn_on:
         friendly_name: Turn keypad 5 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_5_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2705,6 +2710,7 @@ sensor:
 
       keypad_6_temp_lock_turn_on:
         friendly_name: Turn keypad 6 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_6_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2712,6 +2718,7 @@ sensor:
 
       keypad_7_temp_lock_turn_on:
         friendly_name: Turn keypad 7 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_7_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2719,6 +2726,7 @@ sensor:
 
       keypad_8_temp_lock_turn_on:
         friendly_name: Turn keypad 8 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_8_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2726,6 +2734,7 @@ sensor:
 
       keypad_9_temp_lock_turn_on:
         friendly_name: Turn keypad 9 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_9_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2733,6 +2742,7 @@ sensor:
 
       keypad_10_temp_lock_turn_on:
         friendly_name: Turn keypad 10 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_10_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2740,6 +2750,7 @@ sensor:
 
       keypad_11_temp_lock_turn_on:
         friendly_name: Turn keypad 11 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_11_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2747,6 +2758,7 @@ sensor:
 
       keypad_12_temp_lock_turn_on:
         friendly_name: Turn keypad 12 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_12_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2754,6 +2766,7 @@ sensor:
 
       keypad_13_temp_lock_turn_on:
         friendly_name: Turn keypad 13 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_13_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2761,6 +2774,7 @@ sensor:
 
       keypad_14_temp_lock_turn_on:
         friendly_name: Turn keypad 14 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_14_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2768,6 +2782,7 @@ sensor:
 
       keypad_15_temp_lock_turn_on:
         friendly_name: Turn keypad 15 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_15_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2775,6 +2790,7 @@ sensor:
 
       keypad_16_temp_lock_turn_on:
         friendly_name: Turn keypad 16 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_16_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2782,6 +2798,7 @@ sensor:
 
       keypad_17_temp_lock_turn_on:
         friendly_name: Turn keypad 17 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_17_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2789,6 +2806,7 @@ sensor:
 
       keypad_18_temp_lock_turn_on:
         friendly_name: Turn keypad 18 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_18_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2796,6 +2814,7 @@ sensor:
 
       keypad_19_temp_lock_turn_on:
         friendly_name: Turn keypad 19 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_19_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2803,6 +2822,7 @@ sensor:
 
       keypad_20_temp_lock_turn_on:
         friendly_name: Turn keypad 20 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_20_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2810,6 +2830,7 @@ sensor:
 
       keypad_21_temp_lock_turn_on:
         friendly_name: Turn keypad 21 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_21_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2817,6 +2838,7 @@ sensor:
 
       keypad_22_temp_lock_turn_on:
         friendly_name: Turn keypad 22 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_22_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2824,6 +2846,7 @@ sensor:
 
       keypad_23_temp_lock_turn_on:
         friendly_name: Turn keypad 23 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_23_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2831,6 +2854,7 @@ sensor:
 
       keypad_24_temp_lock_turn_on:
         friendly_name: Turn keypad 24 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_24_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2838,6 +2862,7 @@ sensor:
 
       keypad_25_temp_lock_turn_on:
         friendly_name: Turn keypad 25 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_25_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2845,6 +2870,7 @@ sensor:
 
       keypad_26_temp_lock_turn_on:
         friendly_name: Turn keypad 26 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_26_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2852,6 +2878,7 @@ sensor:
 
       keypad_27_temp_lock_turn_on:
         friendly_name: Turn keypad 27 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_27_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2859,6 +2886,7 @@ sensor:
 
       keypad_28_temp_lock_turn_on:
         friendly_name: Turn keypad 28 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_28_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2866,6 +2894,7 @@ sensor:
 
       keypad_29_temp_lock_turn_on:
         friendly_name: Turn keypad 29 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_29_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
@@ -2873,7 +2902,8 @@ sensor:
 
       keypad_30_temp_lock_turn_on:
         friendly_name: Turn keypad 30 on
+        entity_id: sensor.date__time
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_30_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_30_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_30_access_schedule'].state == 'Temporary' and input.state == time_now }}
