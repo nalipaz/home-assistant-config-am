@@ -370,7 +370,7 @@ automation:
 
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18]) %}
+            {% set code_slot = object_id[7:-18] %}
             {{ code_slot }}
 
       - service: lock.set_usercode
