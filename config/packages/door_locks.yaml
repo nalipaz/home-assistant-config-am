@@ -355,7 +355,7 @@ automation:
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18] %}
-            {{ code_slot | int }}
+            {{ code_slot }}
 
       - service: lock.set_usercode
         data_template:
@@ -371,7 +371,7 @@ automation:
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18]) %}
-            {{ code_slot | int }}
+            {{ code_slot }}
 
       - service: lock.set_usercode
         data_template:
@@ -387,7 +387,7 @@ automation:
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18] %}
-            {{ code_slot | int }}
+            {{ code_slot }}
 
       - service: lock.set_usercode
         data_template:
@@ -403,7 +403,7 @@ automation:
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18] %}
-            {{ code_slot | int }}
+            {{ code_slot }}
 #
 #  - alias: 1BR Airbnb reservation starts
 #    trigger:
