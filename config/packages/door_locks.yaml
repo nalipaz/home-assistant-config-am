@@ -292,7 +292,7 @@ automation:
     action:
       - service: lock.set_usercode
         data_template:
-          usercode: {{ '0000' | int }}
+          usercode: "{{ '0000' | int }}"
           node_id: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set lock_name = "_".join(object_id.split("_")[3:-1]) %}
@@ -302,7 +302,7 @@ automation:
           code_slot: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
-            {{ code_slot }}
+            {{ code_slot | int }}
 
   - alias: Keypad temporary code start
     trigger:
@@ -347,7 +347,7 @@ automation:
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18]) %}
             {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
-            {{ states['input_text'][input].state }}
+            {{ states['input_text'][input].state | int }}
 
           node_id: >-
             {{ states['lock']['lock_4thbedroom_door_locked'].attributes.node_id }}
@@ -363,7 +363,7 @@ automation:
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18]) %}
             {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
-            {{ states['input_text'][input].state }}
+            {{ states['input_text'][input].state | int }}
 
           node_id: >-
             {{ states['lock']['lock_front_door_locked'].attributes.node_id }}
@@ -379,7 +379,7 @@ automation:
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18]) %}
             {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
-            {{ states['input_text'][input].state }}
+            {{ states['input_text'][input].state | int }}
 
           node_id: >-
             {{ states['lock']['lock_garageside_door_locked'].attributes.node_id }}
@@ -395,7 +395,7 @@ automation:
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18]) %}
             {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
-            {{ states['input_text'][input].state }}
+            {{ states['input_text'][input].state | int }}
 
           node_id: >-
             {{ states['lock']['lock_rear_door_locked'].attributes.node_id }}
