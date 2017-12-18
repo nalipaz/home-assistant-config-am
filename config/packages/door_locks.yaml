@@ -432,11 +432,22 @@ automation:
 
       - service: notify.html5
         data_template:
-          message: "new code turned on rear"
-          title: "Maravilla: New code started"
+          message: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = object_id[7:-18] %}
+            {% set usercode_input = 'door_keypad_' ~ code_slot ~ '_code' %}
+            {% set usercode = states['input_text'][usercode_input].state %}
+            {% set name_input = 'door_keypad_' ~ code_slot ~ '_name' %}
+            {% set name = states['input_text'][name_input].state %}
+            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
+            {% set start = states['input_datetime'][start_input].state %}
+            {% set end_input = 'door_keypad_' ~ code_slot ~ '_date_end' %}
+            {% set end = states['input_datetime'][end_input].state %}
+            The pin code {{ door_code }} is now temporarily enabled for {{ name }} from {{ start }} to {{ end }}.
+          title: "Maravilla: New temporary code enabled"
           data:
             requireInteraction: True
-            tag: "rear"
+            tag: "{{ trigger.to_state.object_id }}"
             timestamp: "{{ as_timestamp(now()) | int }}"
 
   - alias: Keypad temporary code start (4th bedroom)
