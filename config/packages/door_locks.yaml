@@ -2674,7 +2674,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_1_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_1_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_1_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_2_temp_lock_turn_on:
         friendly_name: Turn keypad 2 on
@@ -2682,7 +2682,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_2_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_2_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_2_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_3_temp_lock_turn_on:
         friendly_name: Turn keypad 3 on
@@ -2690,7 +2690,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_3_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_3_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_3_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_4_temp_lock_turn_on:
         friendly_name: Turn keypad 4 on
@@ -2698,7 +2698,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_4_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_4_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_4_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_5_temp_lock_turn_on:
         friendly_name: Turn keypad 5 on
@@ -2706,7 +2706,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_5_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_5_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_5_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_6_temp_lock_turn_on:
         friendly_name: Turn keypad 6 on
@@ -2714,7 +2714,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_6_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_6_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_6_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_7_temp_lock_turn_on:
         friendly_name: Turn keypad 7 on
@@ -2722,7 +2722,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_7_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_7_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_7_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_8_temp_lock_turn_on:
         friendly_name: Turn keypad 8 on
@@ -2730,7 +2730,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_8_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_8_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_8_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_9_temp_lock_turn_on:
         friendly_name: Turn keypad 9 on
@@ -2738,7 +2738,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_9_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_9_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_9_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_10_temp_lock_turn_on:
         friendly_name: Turn keypad 10 on
@@ -2746,7 +2746,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_10_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_10_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_10_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_11_temp_lock_turn_on:
         friendly_name: Turn keypad 11 on
@@ -2754,7 +2754,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_11_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_11_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_11_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_12_temp_lock_turn_on:
         friendly_name: Turn keypad 12 on
@@ -2762,7 +2762,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_12_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_12_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_12_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_13_temp_lock_turn_on:
         friendly_name: Turn keypad 13 on
@@ -2770,7 +2770,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_13_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_13_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_13_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_14_temp_lock_turn_on:
         friendly_name: Turn keypad 14 on
@@ -2778,7 +2778,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_14_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_14_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_14_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_15_temp_lock_turn_on:
         friendly_name: Turn keypad 15 on
@@ -2786,7 +2786,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_15_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_15_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_15_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_16_temp_lock_turn_on:
         friendly_name: Turn keypad 16 on
@@ -2794,7 +2794,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_16_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_16_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_16_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_17_temp_lock_turn_on:
         friendly_name: Turn keypad 17 on
@@ -2802,7 +2802,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_17_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_17_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_17_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_18_temp_lock_turn_on:
         friendly_name: Turn keypad 18 on
@@ -2810,7 +2810,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_18_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_18_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_18_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_19_temp_lock_turn_on:
         friendly_name: Turn keypad 19 on
@@ -2818,7 +2818,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_19_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_19_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_19_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_20_temp_lock_turn_on:
         friendly_name: Turn keypad 20 on
@@ -2826,7 +2826,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_20_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_20_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_20_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_21_temp_lock_turn_on:
         friendly_name: Turn keypad 21 on
@@ -2834,7 +2834,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_21_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_21_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_21_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_22_temp_lock_turn_on:
         friendly_name: Turn keypad 22 on
@@ -2842,7 +2842,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_22_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_22_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_22_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_23_temp_lock_turn_on:
         friendly_name: Turn keypad 23 on
@@ -2850,7 +2850,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_23_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_23_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_23_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_24_temp_lock_turn_on:
         friendly_name: Turn keypad 24 on
@@ -2858,7 +2858,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_24_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_24_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_24_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_25_temp_lock_turn_on:
         friendly_name: Turn keypad 25 on
@@ -2866,7 +2866,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_25_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_25_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_25_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_26_temp_lock_turn_on:
         friendly_name: Turn keypad 26 on
@@ -2874,7 +2874,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_26_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_26_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_26_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_27_temp_lock_turn_on:
         friendly_name: Turn keypad 27 on
@@ -2882,7 +2882,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_27_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_27_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_27_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_28_temp_lock_turn_on:
         friendly_name: Turn keypad 28 on
@@ -2890,7 +2890,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_28_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_28_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_28_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_29_temp_lock_turn_on:
         friendly_name: Turn keypad 29 on
@@ -2898,7 +2898,7 @@ sensor:
         value_template: >-
           {% set input = states['input_datetime']['door_keypad_29_date_start'] %}
           {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
-          {{ states['input_select']['door_keypad_29_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+          {{ states['input_select']['door_keypad_29_access_schedule'].state == 'Temporary' and input.state == time_now }}
 
       keypad_30_temp_lock_turn_on:
         friendly_name: Turn keypad 30 on
