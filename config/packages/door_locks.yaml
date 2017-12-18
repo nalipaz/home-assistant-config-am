@@ -304,6 +304,234 @@ automation:
             {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
             {{ code_slot }}
 
+  - alias: Keypad temporary code start
+    trigger:
+      - platform: state
+        to: 'on'
+        entity_id:
+          - sensor.keypad_1_temp_lock_turn_on
+          - sensor.keypad_2_temp_lock_turn_on
+          - sensor.keypad_3_temp_lock_turn_on
+          - sensor.keypad_4_temp_lock_turn_on
+          - sensor.keypad_5_temp_lock_turn_on
+          - sensor.keypad_6_temp_lock_turn_on
+          - sensor.keypad_7_temp_lock_turn_on
+          - sensor.keypad_8_temp_lock_turn_on
+          - sensor.keypad_9_temp_lock_turn_on
+          - sensor.keypad_10_temp_lock_turn_on
+          - sensor.keypad_11_temp_lock_turn_on
+          - sensor.keypad_12_temp_lock_turn_on
+          - sensor.keypad_13_temp_lock_turn_on
+          - sensor.keypad_14_temp_lock_turn_on
+          - sensor.keypad_15_temp_lock_turn_on
+          - sensor.keypad_16_temp_lock_turn_on
+          - sensor.keypad_17_temp_lock_turn_on
+          - sensor.keypad_18_temp_lock_turn_on
+          - sensor.keypad_19_temp_lock_turn_on
+          - sensor.keypad_20_temp_lock_turn_on
+          - sensor.keypad_21_temp_lock_turn_on
+          - sensor.keypad_22_temp_lock_turn_on
+          - sensor.keypad_23_temp_lock_turn_on
+          - sensor.keypad_24_temp_lock_turn_on
+          - sensor.keypad_25_temp_lock_turn_on
+          - sensor.keypad_26_temp_lock_turn_on
+          - sensor.keypad_27_temp_lock_turn_on
+          - sensor.keypad_28_temp_lock_turn_on
+          - sensor.keypad_29_temp_lock_turn_on
+          - sensor.keypad_30_temp_lock_turn_on
+
+    action:
+      - service: lock.set_usercode
+        data_template:
+          usercode: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = "_".join(object_id.split("_")[7:-18]) %}
+            {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
+            {{ states['input_text'][input].state }}
+
+          node_id: >-
+            {{ states['lock']['lock_4thbedroom_door_locked'].attributes.node_id }}
+
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = "_".join(object_id.split("_")[7:-18]) %}
+            {{ code_slot }}
+
+      - service: lock.set_usercode
+        data_template:
+          usercode: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = "_".join(object_id.split("_")[7:-18]) %}
+            {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
+            {{ states['input_text'][input].state }}
+
+          node_id: >-
+            {{ states['lock']['lock_front_door_locked'].attributes.node_id }}
+
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = "_".join(object_id.split("_")[7:-18]) %}
+            {{ code_slot }}
+
+      - service: lock.set_usercode
+        data_template:
+          usercode: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = "_".join(object_id.split("_")[7:-18]) %}
+            {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
+            {{ states['input_text'][input].state }}
+
+          node_id: >-
+            {{ states['lock']['lock_garageside_door_locked'].attributes.node_id }}
+
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = "_".join(object_id.split("_")[7:-18]) %}
+            {{ code_slot }}
+
+      - service: lock.set_usercode
+        data_template:
+          usercode: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = "_".join(object_id.split("_")[7:-18]) %}
+            {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
+            {{ states['input_text'][input].state }}
+
+          node_id: >-
+            {{ states['lock']['lock_rear_door_locked'].attributes.node_id }}
+
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = "_".join(object_id.split("_")[7:-18]) %}
+            {{ code_slot }}
+#
+#  - alias: 1BR Airbnb reservation starts
+#    trigger:
+#      - platform: state
+#        to: 'on'
+#        entity_id:
+#          - calendar.airbnb_1br
+#        for:
+#          hours: 14
+#          minutes: 30
+#          seconds: 0
+#    action:
+#      - service: input_text.set_value
+#        data_template:
+#          entity_id: 'input_text.door_keypad_21_code'
+#          code_slot: '31'
+#          usercode: >-
+#            {% set desc = trigger.attributes.description %}
+#            {% set phone_line = " ".join(desc.split("\n")[3:-3]) | replace(" ", "") | replace("-", "") | replace("(", "") | replace(")", "") %}
+#            {% set last_four = phone_line[-4:] %}
+#            {{ last_four }}
+#
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: 'input_boolean.door_keypad_31_rear_switch'
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: 'input_boolean.door_keypad_31_garageside_switch'
+#
+#  - alias: 1BR Airbnb reservation ends
+#    trigger:
+#      - platform: state
+#        to: 'off'
+#        entity_id:
+#          - calendar.airbnb_1br
+#        for:
+#          hours: 12
+#          minutes: 30
+#          seconds: 0
+#    action:
+#      - service: input_boolean.turn_off
+#        data:
+#          entity_id: 'input_boolean.door_keypad_31_rear_switch'
+#      - service: input_boolean.turn_off
+#        data:
+#          entity_id: 'input_boolean.door_keypad_31_garageside_switch'
+#
+#  - alias: 3BR Airbnb reservation starts
+#    trigger:
+#      - platform: state
+#        to: 'on'
+#        entity_id:
+#          - calendar.airbnb_3br
+#        for:
+#          hours: 14
+#          minutes: 30
+#          seconds: 0
+#    action:
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: 'input_boolean.door_keypad_32_front_switch'
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: 'input_boolean.door_keypad_32_garageside_switch'
+#
+#  - alias: 3BR Airbnb reservation ends
+#    trigger:
+#      - platform: state
+#        to: 'off'
+#        entity_id:
+#          - calendar.airbnb_3br
+#        for:
+#          hours: 12
+#          minutes: 30
+#          seconds: 0
+#    action:
+#      - service: input_boolean.turn_off
+#        data:
+#          entity_id: 'input_boolean.door_keypad_32_front_switch'
+#      - service: input_boolean.turn_off
+#        data:
+#          entity_id: 'input_boolean.door_keypad_32_garageside_switch'
+#
+#  - alias: 4BR Airbnb reservation starts
+#    trigger:
+#      - platform: state
+#        to: 'on'
+#        entity_id:
+#          - calendar.airbnb_4br
+#        for:
+#          hours: 14
+#          minutes: 30
+#          seconds: 0
+#    action:
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: 'input_boolean.door_keypad_33_front_switch'
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: 'input_boolean.door_keypad_33_garageside_switch'
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: 'input_boolean.door_keypad_33_4thbedroom_switch'
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: 'input_boolean.door_keypad_33_rear_switch'
+#      - service: lock.unlock
+#        data:
+#          entity_id: 'lock.lock_4thbedroom_door_locked'
+#
+#  - alias: 4BR Airbnb reservation ends
+#    trigger:
+#      - platform: state
+#        to: 'off'
+#        entity_id:
+#          - calendar.airbnb_4br
+#        for:
+#          hours: 12
+#          minutes: 30
+#          seconds: 0
+#    action:
+#      - service: input_boolean.turn_off
+#        data:
+#          entity_id: 'input_boolean.door_keypad_33_front_switch'
+#      - service: input_boolean.turn_off
+#        data:
+#          entity_id: 'input_boolean.door_keypad_33_garageside_switch'
+
 
 group:
   keypads:
@@ -2436,3 +2664,276 @@ script:
 #            {% set lock_id = "_".join(object_id.split("_")[2:]) %}
 #            {% set input_id = 'input_datetime.door_keypad_' ~ lock_id ~ '_date_end' %}
 #            {{ input_id }}
+
+sensor:
+  - platform: template
+    sensors:
+      keypad_1_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_1_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_1_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_2_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_2_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_2_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_3_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_3_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_3_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_4_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_4_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_4_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_5_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_5_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_5_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_6_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_6_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_6_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_7_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_7_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_7_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_8_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_8_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_8_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_9_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_9_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_9_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_10_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_10_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_10_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_11_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_11_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_11_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_12_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_12_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_12_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_13_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_13_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_13_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_14_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_14_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_14_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_15_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_15_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_15_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_16_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_16_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_16_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_17_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_17_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_17_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_18_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_18_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_18_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_19_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_19_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_19_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_20_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_20_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_20_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_21_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_21_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_21_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_22_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_22_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_22_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_23_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_23_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_23_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_24_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_24_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_24_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_25_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_25_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_25_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_26_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_26_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_26_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_27_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_27_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_27_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_28_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_28_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_28_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_29_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_29_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_29_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
+
+      keypad_30_temp_lock_turn_on:
+        friendly_name:
+        entity_id:
+        value_template: >-
+          {% set input = states['input_datetime']['door_keypad_30_date_start'].state %}
+          {% set input_dt = input %}
+          {% set time_now = states['sensor']['date__time'].state | replace(',', '') ~ ':00' %}
+          {{ states['input_select']['door_keypad_30_access_schedule'].state == 'Temporary' and input.attributes.timestamp == time_now }}
