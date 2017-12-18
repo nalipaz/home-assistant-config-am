@@ -304,7 +304,7 @@ automation:
             {% set code_slot = "_".join(object_id.split("_")[2:-2]) %}
             {{ code_slot }}
 
-  - alias: Keypad temporary code start
+  - alias: Keypad temporary code start (front)
     trigger:
       - platform: state
         to: 'True'
@@ -340,6 +340,142 @@ automation:
           - sensor.keypad_29_temp_lock_turn_on
           - sensor.keypad_30_temp_lock_turn_on
 
+    condition:
+      - condition: and
+        conditions:
+          - condition: template
+            value_template: >-
+              {% set object_id = trigger.to_state.object_id %}
+              {% set code_slot = object_id[7:-18] %}
+              {% set input = 'door_keypad_' ~ code_slot ~ '_front_switch' %}
+              {{ states['input_boolean'][input].state == 'on' %}
+
+    action:
+      - service: lock.set_usercode
+        data_template:
+          usercode: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = object_id[7:-18] %}
+            {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
+            {{ states['input_text'][input].state }}
+
+          node_id: >-
+            {{ states['lock']['lock_front_door_locked'].attributes.node_id }}
+
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = object_id[7:-18] %}
+            {{ code_slot }}
+
+  - alias: Keypad temporary code start (rear)
+    trigger:
+      - platform: state
+        to: 'True'
+        entity_id:
+          - sensor.keypad_1_temp_lock_turn_on
+          - sensor.keypad_2_temp_lock_turn_on
+          - sensor.keypad_3_temp_lock_turn_on
+          - sensor.keypad_4_temp_lock_turn_on
+          - sensor.keypad_5_temp_lock_turn_on
+          - sensor.keypad_6_temp_lock_turn_on
+          - sensor.keypad_7_temp_lock_turn_on
+          - sensor.keypad_8_temp_lock_turn_on
+          - sensor.keypad_9_temp_lock_turn_on
+          - sensor.keypad_10_temp_lock_turn_on
+          - sensor.keypad_11_temp_lock_turn_on
+          - sensor.keypad_12_temp_lock_turn_on
+          - sensor.keypad_13_temp_lock_turn_on
+          - sensor.keypad_14_temp_lock_turn_on
+          - sensor.keypad_15_temp_lock_turn_on
+          - sensor.keypad_16_temp_lock_turn_on
+          - sensor.keypad_17_temp_lock_turn_on
+          - sensor.keypad_18_temp_lock_turn_on
+          - sensor.keypad_19_temp_lock_turn_on
+          - sensor.keypad_20_temp_lock_turn_on
+          - sensor.keypad_21_temp_lock_turn_on
+          - sensor.keypad_22_temp_lock_turn_on
+          - sensor.keypad_23_temp_lock_turn_on
+          - sensor.keypad_24_temp_lock_turn_on
+          - sensor.keypad_25_temp_lock_turn_on
+          - sensor.keypad_26_temp_lock_turn_on
+          - sensor.keypad_27_temp_lock_turn_on
+          - sensor.keypad_28_temp_lock_turn_on
+          - sensor.keypad_29_temp_lock_turn_on
+          - sensor.keypad_30_temp_lock_turn_on
+
+    condition:
+      - condition: and
+        conditions:
+          - condition: template
+            value_template: >-
+              {% set object_id = trigger.to_state.object_id %}
+              {% set code_slot = object_id[7:-18] %}
+              {% set input = 'door_keypad_' ~ code_slot ~ '_rear_switch' %}
+              {{ states['input_boolean'][input].state == 'on' %}
+
+    action:
+      - service: lock.set_usercode
+        data_template:
+          usercode: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = object_id[7:-18] %}
+            {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
+            {{ states['input_text'][input].state }}
+
+          node_id: >-
+            {{ states['lock']['lock_rear_door_locked'].attributes.node_id }}
+
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = object_id[7:-18] %}
+            {{ code_slot }}
+
+  - alias: Keypad temporary code start (4th bedroom)
+    trigger:
+      - platform: state
+        to: 'True'
+        entity_id:
+          - sensor.keypad_1_temp_lock_turn_on
+          - sensor.keypad_2_temp_lock_turn_on
+          - sensor.keypad_3_temp_lock_turn_on
+          - sensor.keypad_4_temp_lock_turn_on
+          - sensor.keypad_5_temp_lock_turn_on
+          - sensor.keypad_6_temp_lock_turn_on
+          - sensor.keypad_7_temp_lock_turn_on
+          - sensor.keypad_8_temp_lock_turn_on
+          - sensor.keypad_9_temp_lock_turn_on
+          - sensor.keypad_10_temp_lock_turn_on
+          - sensor.keypad_11_temp_lock_turn_on
+          - sensor.keypad_12_temp_lock_turn_on
+          - sensor.keypad_13_temp_lock_turn_on
+          - sensor.keypad_14_temp_lock_turn_on
+          - sensor.keypad_15_temp_lock_turn_on
+          - sensor.keypad_16_temp_lock_turn_on
+          - sensor.keypad_17_temp_lock_turn_on
+          - sensor.keypad_18_temp_lock_turn_on
+          - sensor.keypad_19_temp_lock_turn_on
+          - sensor.keypad_20_temp_lock_turn_on
+          - sensor.keypad_21_temp_lock_turn_on
+          - sensor.keypad_22_temp_lock_turn_on
+          - sensor.keypad_23_temp_lock_turn_on
+          - sensor.keypad_24_temp_lock_turn_on
+          - sensor.keypad_25_temp_lock_turn_on
+          - sensor.keypad_26_temp_lock_turn_on
+          - sensor.keypad_27_temp_lock_turn_on
+          - sensor.keypad_28_temp_lock_turn_on
+          - sensor.keypad_29_temp_lock_turn_on
+          - sensor.keypad_30_temp_lock_turn_on
+
+    condition:
+      - condition: and
+        conditions:
+          - condition: template
+            value_template: >-
+              {% set object_id = trigger.to_state.object_id %}
+              {% set code_slot = object_id[7:-18] %}
+              {% set input = 'door_keypad_' ~ code_slot ~ '_4thbedroom_switch' %}
+              {{ states['input_boolean'][input].state == 'on' %}
+
     action:
       - service: lock.set_usercode
         data_template:
@@ -357,22 +493,53 @@ automation:
             {% set code_slot = object_id[7:-18] %}
             {{ code_slot }}
 
-      - service: lock.set_usercode
-        data_template:
-          usercode: >-
-            {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18] %}
-            {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
-            {{ states['input_text'][input].state }}
+  - alias: Keypad temporary code start (garage side)
+    trigger:
+      - platform: state
+        to: 'True'
+        entity_id:
+          - sensor.keypad_1_temp_lock_turn_on
+          - sensor.keypad_2_temp_lock_turn_on
+          - sensor.keypad_3_temp_lock_turn_on
+          - sensor.keypad_4_temp_lock_turn_on
+          - sensor.keypad_5_temp_lock_turn_on
+          - sensor.keypad_6_temp_lock_turn_on
+          - sensor.keypad_7_temp_lock_turn_on
+          - sensor.keypad_8_temp_lock_turn_on
+          - sensor.keypad_9_temp_lock_turn_on
+          - sensor.keypad_10_temp_lock_turn_on
+          - sensor.keypad_11_temp_lock_turn_on
+          - sensor.keypad_12_temp_lock_turn_on
+          - sensor.keypad_13_temp_lock_turn_on
+          - sensor.keypad_14_temp_lock_turn_on
+          - sensor.keypad_15_temp_lock_turn_on
+          - sensor.keypad_16_temp_lock_turn_on
+          - sensor.keypad_17_temp_lock_turn_on
+          - sensor.keypad_18_temp_lock_turn_on
+          - sensor.keypad_19_temp_lock_turn_on
+          - sensor.keypad_20_temp_lock_turn_on
+          - sensor.keypad_21_temp_lock_turn_on
+          - sensor.keypad_22_temp_lock_turn_on
+          - sensor.keypad_23_temp_lock_turn_on
+          - sensor.keypad_24_temp_lock_turn_on
+          - sensor.keypad_25_temp_lock_turn_on
+          - sensor.keypad_26_temp_lock_turn_on
+          - sensor.keypad_27_temp_lock_turn_on
+          - sensor.keypad_28_temp_lock_turn_on
+          - sensor.keypad_29_temp_lock_turn_on
+          - sensor.keypad_30_temp_lock_turn_on
 
-          node_id: >-
-            {{ states['lock']['lock_front_door_locked'].attributes.node_id }}
+    condition:
+      - condition: and
+        conditions:
+          - condition: template
+            value_template: >-
+              {% set object_id = trigger.to_state.object_id %}
+              {% set code_slot = object_id[7:-18] %}
+              {% set input = 'door_keypad_' ~ code_slot ~ '_garageside_switch' %}
+              {{ states['input_boolean'][input].state == 'on' %}
 
-          code_slot: >-
-            {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18] %}
-            {{ code_slot }}
-
+    action:
       - service: lock.set_usercode
         data_template:
           usercode: >-
@@ -389,21 +556,6 @@ automation:
             {% set code_slot = object_id[7:-18] %}
             {{ code_slot }}
 
-      - service: lock.set_usercode
-        data_template:
-          usercode: >-
-            {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18] %}
-            {% set input = 'door_keypad_' ~ code_slot ~ '_code' %}
-            {{ states['input_text'][input].state }}
-
-          node_id: >-
-            {{ states['lock']['lock_rear_door_locked'].attributes.node_id }}
-
-          code_slot: >-
-            {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-18] %}
-            {{ code_slot }}
 #
 #  - alias: 1BR Airbnb reservation starts
 #    trigger:
