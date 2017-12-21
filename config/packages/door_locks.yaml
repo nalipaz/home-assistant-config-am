@@ -381,12 +381,14 @@ automation:
             {% set end_input = 'door_keypad_' ~ code_slot ~ '_date_end' %}
             {% set end = states['input_datetime'][end_input].state %}
             The pin code {{ usercode }} is now temporarily enabled for {{ name }} from {{ start }} to {{ end }}.
+
           title: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18] %}
             {% set switch_input = 'door_keypad_' ~ code_slot ~ '_front_switch' %}
             {% set switch_name = states['input_boolean'][switch_input].attributes.friendly_name %}
             Maravilla: Temporary code enabled on {{ switch_name }}
+
           data:
             requireInteraction: True
             tag: "{{ trigger.to_state.object_id }}"
@@ -469,12 +471,14 @@ automation:
             {% set end_input = 'door_keypad_' ~ code_slot ~ '_date_end' %}
             {% set end = states['input_datetime'][end_input].state %}
             The pin code {{ usercode }} is now temporarily enabled for {{ name }} from {{ start }} to {{ end }}.
+
           title: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18] %}
             {% set switch_input = 'door_keypad_' ~ code_slot ~ '_rear_switch' %}
             {% set switch_name = states['input_boolean'][switch_input].attributes.friendly_name %}
             Maravilla: Temporary code enabled on {{ switch_name }}
+
           data:
             requireInteraction: True
             tag: "{{ trigger.to_state.object_id }}"
@@ -557,12 +561,14 @@ automation:
             {% set end_input = 'door_keypad_' ~ code_slot ~ '_date_end' %}
             {% set end = states['input_datetime'][end_input].state %}
             The pin code {{ usercode }} is now temporarily enabled for {{ name }} from {{ start }} to {{ end }}.
+
           title: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18] %}
             {% set switch_input = 'door_keypad_' ~ code_slot ~ '_4thbedroom_switch' %}
             {% set switch_name = states['input_boolean'][switch_input].attributes.friendly_name %}
             Maravilla: Temporary code enabled on {{ switch_name }}
+
           data:
             requireInteraction: True
             tag: "{{ trigger.to_state.object_id }}"
@@ -645,12 +651,14 @@ automation:
             {% set end_input = 'door_keypad_' ~ code_slot ~ '_date_end' %}
             {% set end = states['input_datetime'][end_input].state %}
             The pin code {{ usercode }} is now temporarily enabled for {{ name }} from {{ start }} to {{ end }}.
+
           title: >-
             {% set object_id = trigger.to_state.object_id %}
             {% set code_slot = object_id[7:-18] %}
             {% set switch_input = 'door_keypad_' ~ code_slot ~ '_garageside_switch' %}
             {% set switch_name = states['input_boolean'][switch_input].attributes.friendly_name %}
             Maravilla: Temporary code enabled on {{ switch_name }}
+
           data:
             requireInteraction: True
             tag: "{{ trigger.to_state.object_id }}"
@@ -703,6 +711,7 @@ automation:
             {% set name_input = 'door_keypad_' ~ code_slot ~ '_name' %}
             {% set name = states['input_text'][name_input].state %}
             The pin code {{ usercode }} for {{ name }} has now been removed from all doors.
+
           title: "Maravilla: Temporary code disabled on all doors"
           data:
             requireInteraction: True
