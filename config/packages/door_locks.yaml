@@ -722,11 +722,11 @@ automation:
         conditions:
           - condition: template
             value_template: >-
-            {% set object_id = trigger.to_state.object_id %}
-            {% set code_slot = object_id[7:-19] %}
-            {% set input = 'door_keypad_' ~ code_slot ~ '_access_schedule' %}
-            {% set input_value = states['input_select'][input].state %}
-            {{ input_value == 'Temporary' }}
+              {% set object_id = trigger.to_state.object_id %}
+              {% set code_slot = object_id[7:-19] %}
+              {% set input = 'door_keypad_' ~ code_slot ~ '_access_schedule' %}
+              {% set input_value = states['input_select'][input].state %}
+              {{ input_value == 'Temporary' }}
 
       - service: script.turn_on
         data_template:
