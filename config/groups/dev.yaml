@@ -1,4 +1,4 @@
-default_view:
+dev:
   name: Dev
   view: yes
   icon: mdi:code-tags
