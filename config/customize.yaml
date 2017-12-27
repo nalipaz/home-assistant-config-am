@@ -9,6 +9,8 @@ group.all_locks:
   hidden: false
 group.all_automations:
   hidden: false
+group.dev:
+  order: 99
 lock.lock_4thbedroom_door_locked:
   friendly_name: 4th Bedroom Door
 lock.lock_front_door_locked:
