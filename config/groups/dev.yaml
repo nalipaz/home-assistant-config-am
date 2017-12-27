@@ -1,0 +1,6 @@
+default_view:
+  name: Dev
+  view: yes
+  icon: mdi:code-tags
+  entities:
+    - group.all_automations
