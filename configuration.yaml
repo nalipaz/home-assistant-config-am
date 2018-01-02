@@ -22,3 +22,4 @@ google:
   client_id: !secret google_calendar_client_id
   client_secret: !secret google_calendar_client_secret
 sensor: !include config/sensors.yaml
+history_graph: !include config/history_graph.yaml

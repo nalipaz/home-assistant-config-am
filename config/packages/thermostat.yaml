@@ -1,0 +1,8 @@
+history_graph:
+  heat:
+    name: Temperature
+    hours_to_show: 168
+    refresh: 120
+    entities:
+      - sensor.thermostat_temperature
+      - sensor.thermostat_temperature_2
