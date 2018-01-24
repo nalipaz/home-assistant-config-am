@@ -10,3 +10,7 @@ zwcfg_*.xml
 zwscene.xml
 html5_push_registrations.conf
 options.xml
+.google.token
+.wink.conf
+google_calendars.yaml
+www/google*.html
