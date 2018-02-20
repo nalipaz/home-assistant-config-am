@@ -23,3 +23,8 @@ google:
   client_secret: !secret google_calendar_client_secret
 sensor: !include config/sensors.yaml
 history_graph: !include config/history_graph.yaml
+skybell:
+  username: !secret skybell_username
+  password: !secret skybell_password
+camera:
+  - platform: skybell
