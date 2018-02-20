@@ -701,6 +701,46 @@ automation:
           - sensor.keypad_30_temp_lock_turn_off
 
     action:
+      - service: lock.set_usercode
+        data_template:
+          usercode: >-
+            {{ range(1000, 9999) | random }}
+
+          node_id: 37
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = object_id[7:-19] %}
+            {{ code_slot }}
+      - service: lock.set_usercode
+        data_template:
+          usercode: >-
+            {{ range(1000, 9999) | random }}
+
+          node_id: 38
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = object_id[7:-19] %}
+            {{ code_slot }}
+      - service: lock.set_usercode
+        data_template:
+          usercode: >-
+            {{ range(1000, 9999) | random }}
+
+          node_id: 39
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = object_id[7:-19] %}
+            {{ code_slot }}
+      - service: lock.set_usercode
+        data_template:
+          usercode: >-
+            {{ range(1000, 9999) | random }}
+
+          node_id: 45
+          code_slot: >-
+            {% set object_id = trigger.to_state.object_id %}
+            {% set code_slot = object_id[7:-19] %}
+            {{ code_slot }}
       - service: notify.html5
         data_template:
           message: >-
@@ -741,190 +781,190 @@ automation:
 #PHONE: +1 (123) 456-7890
 #EMAIL: name-1698560a5e0r6gct@guest.airbnb.com
 #PROPERTY: Listing name
-  - alias: 1BR Airbnb reservation starts
-    trigger:
-      - platform: state
-        to: 'on'
-        entity_id:
-          - calendar.airbnb_1br
-    action:
-      - service: input_text.set_value
-        data_template:
-          value: >-
-            {{ trigger.attributes.message }}
-
-          entity_id: input_text.door_keypad_21_name
-      - service: input_text.set_value
-        data_template:
-          value: >-
-            {% set desc = trigger.attributes.description %}
-            {% set phone_line = " ".join(desc.split("\n")[3:-3]) | replace(" ", "") | replace("-", "") | replace("(", "") | replace(")", "") %}
-            {% set last_four = phone_line[-4:] %}
-            {{ last_four }}
-
-          entity_id: input_text.door_keypad_21_code
-      - service: input_select.select_option
-        data:
-          option: 'Temporary'
-          entity_id: input_select.door_keypad_21_access_schedule
-      - service: input_boolean.turn_on
-        data:
-          entity_id: input_boolean.door_keypad_21_rear_switch
-      - service: input_boolean.turn_on
-        data:
-          entity_id: input_boolean.door_keypad_21_garageside_switch
-      - service: input_datetime.set_datetime
-        data_template:
-          value: >-
-            {% set code_slot = 21 %}
-            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
-            {% set start = states['input_datetime'][start_input].state %}
-            {% set desc = trigger.attributes.description %}
-            {% set checkin = " ".join(desc.split("\n")[0:1]) | replace(" ", "") %}
-            {% set year = checkin[-4:] %}
-            {% set day = checkin[-7:-5] %}
-            {% set month = checkin[-10:-8] %}
-            {{ year }}-{{ month }}-{{ day }} 14:45:00
-
-          entity_id: input_text.door_keypad_21_date_start
-      - service: input_datetime.set_datetime
-        data_template:
-          value: >-
-            {% set code_slot = 21 %}
-            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
-            {% set start = states['input_datetime'][start_input].state %}
-            {% set desc = trigger.attributes.description %}
-            {% set checkin = " ".join(desc.split("\n")[1:2]) | replace(" ", "") %}
-            {% set year = checkout[-4:] %}
-            {% set day = checkout[-7:-5] %}
-            {% set month = checkout[-10:-8] %}
-            {{ year }}-{{ month }}-{{ day }} 12:15:00
-
-          entity_id: input_text.door_keypad_21_date_end
-
-
-  - alias: 3BR Airbnb reservation starts
-    trigger:
-      - platform: state
-        to: 'on'
-        entity_id:
-          - calendar.airbnb_3br
-    action:
-      - service: input_text.set_value
-        data_template:
-          value: >-
-            {{ trigger.attributes.message }}
-
-          entity_id: input_text.door_keypad_22_name
-      - service: input_text.set_value
-        data_template:
-          value: >-
-            {% set desc = trigger.attributes.description %}
-            {% set phone_line = " ".join(desc.split("\n")[3:-3]) | replace(" ", "") | replace("-", "") | replace("(", "") | replace(")", "") %}
-            {% set last_four = phone_line[-4:] %}
-            {{ last_four }}
-
-          entity_id: input_text.door_keypad_22_code
-      - service: input_select.select_option
-        data:
-          option: 'Temporary'
-          entity_id: input_select.door_keypad_22_access_schedule
-      - service: input_boolean.turn_on
-        data:
-          entity_id: input_boolean.door_keypad_22_front_switch
-      - service: input_boolean.turn_on
-        data:
-          entity_id: input_boolean.door_keypad_22_garageside_switch
-      - service: input_datetime.set_datetime
-        data_template:
-          value: >-
-            {% set code_slot = 22 %}
-            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
-            {% set start = states['input_datetime'][start_input].state %}
-            {% set desc = trigger.attributes.description %}
-            {% set checkin = " ".join(desc.split("\n")[0:1]) | replace(" ", "") %}
-            {% set year = checkin[-4:] %}
-            {% set day = checkin[-7:-5] %}
-            {% set month = checkin[-10:-8] %}
-            {{ year }}-{{ month }}-{{ day }} 14:45:00
-
-          entity_id: input_text.door_keypad_22_date_start
-      - service: input_datetime.set_datetime
-        data_template:
-          value: >-
-            {% set code_slot = 22 %}
-            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
-            {% set start = states['input_datetime'][start_input].state %}
-            {% set desc = trigger.attributes.description %}
-            {% set checkin = " ".join(desc.split("\n")[1:2]) | replace(" ", "") %}
-            {% set year = checkout[-4:] %}
-            {% set day = checkout[-7:-5] %}
-            {% set month = checkout[-10:-8] %}
-            {{ year }}-{{ month }}-{{ day }} 12:15:00
-
-          entity_id: input_text.door_keypad_22_date_end
-
-
-  - alias: 4BR Airbnb reservation starts
-    trigger:
-      - platform: state
-        to: 'on'
-        entity_id:
-          - calendar.airbnb_4br
-    action:
-      - service: input_text.set_value
-        data_template:
-          value: >-
-            {{ trigger.attributes.message }}
-
-          entity_id: input_text.door_keypad_23_name
-      - service: input_text.set_value
-        data_template:
-          value: >-
-            {% set desc = trigger.attributes.description %}
-            {% set phone_line = " ".join(desc.split("\n")[3:-3]) | replace(" ", "") | replace("-", "") | replace("(", "") | replace(")", "") %}
-            {% set last_four = phone_line[-4:] %}
-            {{ last_four }}
-
-          entity_id: input_text.door_keypad_23_code
-      - service: input_select.select_option
-        data:
-          option: 'Temporary'
-          entity_id: input_select.door_keypad_23_access_schedule
-      - service: input_boolean.turn_on
-        data:
-          entity_id: input_boolean.door_keypad_23_front_switch
-      - service: input_boolean.turn_on
-        data:
-          entity_id: input_boolean.door_keypad_23_garageside_switch
-      - service: input_datetime.set_datetime
-        data_template:
-          value: >-
-            {% set code_slot = 23 %}
-            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
-            {% set start = states['input_datetime'][start_input].state %}
-            {% set desc = trigger.attributes.description %}
-            {% set checkin = " ".join(desc.split("\n")[0:1]) | replace(" ", "") %}
-            {% set year = checkin[-4:] %}
-            {% set day = checkin[-7:-5] %}
-            {% set month = checkin[-10:-8] %}
-            {{ year }}-{{ month }}-{{ day }} 14:45:00
-
-          entity_id: input_text.door_keypad_23_date_start
-      - service: input_datetime.set_datetime
-        data_template:
-          value: >-
-            {% set code_slot = 23 %}
-            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
-            {% set start = states['input_datetime'][start_input].state %}
-            {% set desc = trigger.attributes.description %}
-            {% set checkin = " ".join(desc.split("\n")[1:2]) | replace(" ", "") %}
-            {% set year = checkout[-4:] %}
-            {% set day = checkout[-7:-5] %}
-            {% set month = checkout[-10:-8] %}
-            {{ year }}-{{ month }}-{{ day }} 12:15:00
-
-          entity_id: input_text.door_keypad_23_date_end
+#  - alias: 1BR Airbnb reservation starts
+#    trigger:
+#      - platform: state
+#        to: 'on'
+#        entity_id:
+#          - calendar.airbnb_1br
+#    action:
+#      - service: input_text.set_value
+#        data_template:
+#          value: >-
+#            {{ trigger.attributes.message }}
+#
+#          entity_id: input_text.door_keypad_21_name
+#      - service: input_text.set_value
+#        data_template:
+#          value: >-
+#            {% set desc = trigger.attributes.description %}
+#            {% set phone_line = " ".join(desc.split("\n")[3:-3]) | replace(" ", "") | replace("-", "") | replace("(", "") | replace(")", "") %}
+#            {% set last_four = phone_line[-4:] %}
+#            {{ last_four }}
+#
+#          entity_id: input_text.door_keypad_21_code
+#      - service: input_select.select_option
+#        data:
+#          option: 'Temporary'
+#          entity_id: input_select.door_keypad_21_access_schedule
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: input_boolean.door_keypad_21_rear_switch
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: input_boolean.door_keypad_21_garageside_switch
+#      - service: input_datetime.set_datetime
+#        data_template:
+#          value: >-
+#            {% set code_slot = 21 %}
+#            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
+#            {% set start = states['input_datetime'][start_input].state %}
+#            {% set desc = trigger.attributes.description %}
+#            {% set checkin = " ".join(desc.split("\n")[0:1]) | replace(" ", "") %}
+#            {% set year = checkin[-4:] %}
+#            {% set day = checkin[-7:-5] %}
+#            {% set month = checkin[-10:-8] %}
+#            {{ year }}-{{ month }}-{{ day }} 14:45:00
+#
+#          entity_id: input_text.door_keypad_21_date_start
+#      - service: input_datetime.set_datetime
+#        data_template:
+#          value: >-
+#            {% set code_slot = 21 %}
+#            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
+#            {% set start = states['input_datetime'][start_input].state %}
+#            {% set desc = trigger.attributes.description %}
+#            {% set checkin = " ".join(desc.split("\n")[1:2]) | replace(" ", "") %}
+#            {% set year = checkout[-4:] %}
+#            {% set day = checkout[-7:-5] %}
+#            {% set month = checkout[-10:-8] %}
+#            {{ year }}-{{ month }}-{{ day }} 12:15:00
+#
+#          entity_id: input_text.door_keypad_21_date_end
+#
+#
+#  - alias: 3BR Airbnb reservation starts
+#    trigger:
+#      - platform: state
+#        to: 'on'
+#        entity_id:
+#          - calendar.airbnb_3br
+#    action:
+#      - service: input_text.set_value
+#        data_template:
+#          value: >-
+#            {{ trigger.attributes.message }}
+#
+#          entity_id: input_text.door_keypad_22_name
+#      - service: input_text.set_value
+#        data_template:
+#          value: >-
+#            {% set desc = trigger.attributes.description %}
+#            {% set phone_line = " ".join(desc.split("\n")[3:-3]) | replace(" ", "") | replace("-", "") | replace("(", "") | replace(")", "") %}
+#            {% set last_four = phone_line[-4:] %}
+#            {{ last_four }}
+#
+#          entity_id: input_text.door_keypad_22_code
+#      - service: input_select.select_option
+#        data:
+#          option: 'Temporary'
+#          entity_id: input_select.door_keypad_22_access_schedule
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: input_boolean.door_keypad_22_front_switch
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: input_boolean.door_keypad_22_garageside_switch
+#      - service: input_datetime.set_datetime
+#        data_template:
+#          value: >-
+#            {% set code_slot = 22 %}
+#            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
+#            {% set start = states['input_datetime'][start_input].state %}
+#            {% set desc = trigger.attributes.description %}
+#            {% set checkin = " ".join(desc.split("\n")[0:1]) | replace(" ", "") %}
+#            {% set year = checkin[-4:] %}
+#            {% set day = checkin[-7:-5] %}
+#            {% set month = checkin[-10:-8] %}
+#            {{ year }}-{{ month }}-{{ day }} 14:45:00
+#
+#          entity_id: input_text.door_keypad_22_date_start
+#      - service: input_datetime.set_datetime
+#        data_template:
+#          value: >-
+#            {% set code_slot = 22 %}
+#            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
+#            {% set start = states['input_datetime'][start_input].state %}
+#            {% set desc = trigger.attributes.description %}
+#            {% set checkin = " ".join(desc.split("\n")[1:2]) | replace(" ", "") %}
+#            {% set year = checkout[-4:] %}
+#            {% set day = checkout[-7:-5] %}
+#            {% set month = checkout[-10:-8] %}
+#            {{ year }}-{{ month }}-{{ day }} 12:15:00
+#
+#          entity_id: input_text.door_keypad_22_date_end
+#
+#
+#  - alias: 4BR Airbnb reservation starts
+#    trigger:
+#      - platform: state
+#        to: 'on'
+#        entity_id:
+#          - calendar.airbnb_4br
+#    action:
+#      - service: input_text.set_value
+#        data_template:
+#          value: >-
+#            {{ trigger.attributes.message }}
+#
+#          entity_id: input_text.door_keypad_23_name
+#      - service: input_text.set_value
+#        data_template:
+#          value: >-
+#            {% set desc = trigger.attributes.description %}
+#            {% set phone_line = " ".join(desc.split("\n")[3:-3]) | replace(" ", "") | replace("-", "") | replace("(", "") | replace(")", "") %}
+#            {% set last_four = phone_line[-4:] %}
+#            {{ last_four }}
+#
+#          entity_id: input_text.door_keypad_23_code
+#      - service: input_select.select_option
+#        data:
+#          option: 'Temporary'
+#          entity_id: input_select.door_keypad_23_access_schedule
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: input_boolean.door_keypad_23_front_switch
+#      - service: input_boolean.turn_on
+#        data:
+#          entity_id: input_boolean.door_keypad_23_garageside_switch
+#      - service: input_datetime.set_datetime
+#        data_template:
+#          value: >-
+#            {% set code_slot = 23 %}
+#            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
+#            {% set start = states['input_datetime'][start_input].state %}
+#            {% set desc = trigger.attributes.description %}
+#            {% set checkin = " ".join(desc.split("\n")[0:1]) | replace(" ", "") %}
+#            {% set year = checkin[-4:] %}
+#            {% set day = checkin[-7:-5] %}
+#            {% set month = checkin[-10:-8] %}
+#            {{ year }}-{{ month }}-{{ day }} 14:45:00
+#
+#          entity_id: input_text.door_keypad_23_date_start
+#      - service: input_datetime.set_datetime
+#        data_template:
+#          value: >-
+#            {% set code_slot = 23 %}
+#            {% set start_input = 'door_keypad_' ~ code_slot ~ '_date_start' %}
+#            {% set start = states['input_datetime'][start_input].state %}
+#            {% set desc = trigger.attributes.description %}
+#            {% set checkin = " ".join(desc.split("\n")[1:2]) | replace(" ", "") %}
+#            {% set year = checkout[-4:] %}
+#            {% set day = checkout[-7:-5] %}
+#            {% set month = checkout[-10:-8] %}
+#            {{ year }}-{{ month }}-{{ day }} 12:15:00
+#
+#          entity_id: input_text.door_keypad_23_date_end
 
 
 group:
