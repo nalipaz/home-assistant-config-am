@@ -1,0 +1,6 @@
+cameras_view:
+  name: Cameras
+  view: yes
+  icon: mdi:cctv
+  entities:
+    - camera.front_door
