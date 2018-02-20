@@ -13,8 +13,6 @@ automation:
         entity_id: cover.garage_door
         to: 'open'
     action:
-      - service: cover.close_cover
-        entity_id: cover.garage_door
       - service: notify.html5
         data_template:
           message: >
@@ -34,7 +32,7 @@ automation:
         entity_id: cover.garage_door
         to: 'open'
         for:
-          minutes: 10
+          minutes: 1
     action:
       - service: cover.close_cover
         entity_id: cover.garage_door
