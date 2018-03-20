@@ -182,7 +182,7 @@ history_graph:
       - lock.lock_front_door_locked
       - binary_sensor.door_rear_door_sensor
       - lock.lock_rear_door_locked
-      - binary_sensor.door_4thbedroom_door_sensor
+      - binary_sensor.door_4th_bedroom_sensor
       - lock.lock_4thbedroom_door_locked
-      - binary_sensor.door_garageside_door_sensor
+      - binary_sensor.door_garage_side_sensor
       - lock.lock_garageside_door_locked
