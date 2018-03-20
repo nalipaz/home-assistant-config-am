@@ -171,3 +171,12 @@ group:
       - sensor.slider_batteries_slider_fourth_bedroom
       - sensor.slider_batteries_slider_living_room
       - sensor.slider_batteries_slider_master_bedroom
+
+history_graph:
+  front_door:
+    name: Front Door
+    hours_to_show: 168
+    refresh: 120
+    entities:
+      - binary_sensor.door_front_door_sensor
+      - lock.lock_front_door_locked

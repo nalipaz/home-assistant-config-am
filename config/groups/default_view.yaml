@@ -11,3 +11,4 @@ default_view:
     - group.fire_alarms
     - media_player.roku_5s56d1020224
     - history_graph.temperature
+    - history_graph.front_door
