@@ -179,10 +179,10 @@ history_graph:
     refresh: 120
     entities:
       - binary_sensor.door_front_door_sensor
-      - lock.lock_front_door_locked
       - binary_sensor.door_rear_door_sensor
-      - lock.lock_rear_door_locked
       - binary_sensor.door_fourth_bedroom_sensor
-      - lock.lock_4thbedroom_door_locked
       - binary_sensor.door_garage_side_sensor
+      - lock.lock_front_door_locked
+      - lock.lock_rear_door_locked
+      - lock.lock_4thbedroom_door_locked
       - lock.lock_garageside_door_locked
