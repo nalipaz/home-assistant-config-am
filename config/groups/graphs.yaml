@@ -1,0 +1,7 @@
+graphs:
+  name: Graphs
+  view: yes
+  icon: mdi:chart-line
+  entities:
+    - history_graph.temperature
+    - history_graph.doors
