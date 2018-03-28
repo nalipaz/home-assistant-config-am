@@ -968,6 +968,20 @@ automation:
 
 
 group:
+  door_lock_batteries:
+    name: Door Locks
+    entities:
+      - sensor.door_lock_batteries_4thbedroom_door
+      - sensor.door_lock_batteries_front_door
+      - sensor.door_lock_batteries_garageside_door
+      - sensor.door_lock_batteries_rear_door
+  lock_status:
+    name: Lock Status
+    entities:
+      - zwave.lock.4thbedroom_door
+      - zwave.lock.front_door
+      - zwave.lock.garageside_door
+      - zwave.lock.rear_door
   keypads:
     name: Personal Entry Codes
     view: yes
@@ -3102,6 +3116,78 @@ script:
 sensor:
   - platform: template
     sensors:
+      door_lock_batteries_fourth_bedroom_door:
+        value_template: '{{states["zwave"]["lock_4thbedroom_door"]["attributes"]["battery_level"]}}'
+        friendly_name: Fourth Bedroom
+        unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["lock_4thbedroom_door"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
+      door_lock_batteries_front_door:
+        value_template: '{{states["zwave"]["lock_front_door"]["attributes"]["battery_level"]}}'
+        friendly_name: Front Door
+        unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["lock_front_door"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
+      door_lock_batteries_garageside_door:
+        value_template: '{{states["zwave"]["lock_garageside_door"]["attributes"]["battery_level"]}}'
+        friendly_name: Garage Side Door
+        unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["lock_garageside_door"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
+      door_lock_batteries_rear_door:
+        value_template: '{{states["zwave"]["lock_rear_door"]["attributes"]["battery_level"]}}'
+        friendly_name: Rear Door
+        unit_of_measurement: '%'
+        icon_template: >-
+          {% set level = ((states["zwave"]["lock_rear_door"]["attributes"]["battery_level"]*0.1)|round)*10|int %}
+            mdi:battery
+          {%- if level > 90 -%}
+
+          {%- elif level > 70 or ( level < 31 and level > 10 ) -%}
+            -{{ level }}
+          {%- elif level > 50 -%}
+            -60
+          {%- elif level > 30 -%}
+            -40
+          {%- else -%}
+            -alert
+          {%- endif -%}
       keypad_1_temp_lock_turn_on:
         friendly_name: Turn keypad 1 on
         entity_id: sensor.date__time

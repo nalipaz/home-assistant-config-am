@@ -7,3 +7,4 @@ batteries:
     - group.door_batteries
     - group.slider_batteries
     - group.window_batteries
+    - group.door_lock_batteries
